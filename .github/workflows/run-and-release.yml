@@ -56,7 +56,7 @@ jobs:
 
 
       - name: Commit changes
-        if: steps.changed.outputs.any_changed == 'true'
+        if: steps.changed.outputs.files_changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -74,7 +74,7 @@ jobs:
 
       # Create Release only when changes were committed
       - name: Create Release
-        if: steps.changed.outputs.any_changed == 'true'
+        if: steps.changed.outputs.files_changed == 'true'
         run: |
           tag="v1.${{ github.run_number }}"
           echo "Creating release $tag"
