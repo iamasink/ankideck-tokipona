@@ -41,12 +41,23 @@ jobs:
         run: python app.py
 
 
+      - name: git add
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+
+
       - name: Check for changed files
         id: changed
         uses: tj-actions/changed-files@v46
         with:
           files: toki-pona-deck.apkg
           since_last_remote_commit: true
+        run: |
+          for file in ${ALL_CHANGED_FILES}; do
+            echo "$file was changed"
+          done
 
 
       - name: Commit changes
