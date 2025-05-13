@@ -143,7 +143,9 @@ except Exception as e:
 # Loop through entries and add cards
 for entry in words:
 	word = words[entry]
-	logger.info(f"Processing entry for word: '{word["word"]}'")
+	wordname = word["word"]
+
+	logger.info(f"Processing entry for word: '{wordname}'")
 	if word["usage_category"] not in ENABLED_CATEGORIES:
 		logger.info(f"skipping word, its in category {word["usage_category"]}, which isn't enabled.")
 		continue
@@ -167,7 +169,7 @@ for entry in words:
 	# Audio (relative path)
 	# audio_html = ""
 	# for person in AUDIO_PEOPLE:
-	# 	rel_mp3 = AUDIO_SUBDIR / person / f"{word["word"]}.mp3"
+	# 	rel_mp3 = AUDIO_SUBDIR / person / f"{wordname}.mp3"
 	# 	abs_mp3 = BASE_DIR / rel_mp3
 	# 	if abs_mp3.exists():
 	# 		audio_html += f"[sound:{rel_mp3.name}]"
@@ -177,12 +179,12 @@ for entry in words:
 	# Audio: copy to files/audio/word-author.mp3 and reference relatively
 	audio_html = ""
 	for author in AUDIO_PEOPLE:
-		rel_source = AUDIO_SUBDIR / author / f"{word["word"]}.mp3"
+		rel_source = AUDIO_SUBDIR / author / f"{wordname}.mp3"
 		abs_source = BASE_DIR / rel_source
 		if abs_source.exists():
 			logger.info(f"adding audio from {abs_source}")
 			# define target filename
-			target_filename = f"{word["word"]}-{author}.mp3"
+			target_filename = f"{wordname}-{author}.mp3"
 			abs_target = TARGET_AUDIO_DIR / target_filename
 			# copy file
 			shutil.copy2(abs_source, abs_target)
@@ -194,7 +196,7 @@ for entry in words:
 	logger.info(audio)
 
 	# Glyphs (relative paths)
-	pattern = re.compile(rf"^{re.escape(word["word"])}-(\d+)\.png$")
+	pattern = re.compile(rf"^{re.escape(wordname)}-(\d+)\.png$")
 	glyphs = sorted(
 		(p for p in (BASE_DIR / GLYPH_SUBDIR).iterdir() if pattern.match(p.name)),
 		key=lambda p: int(pattern.match(p.name).group(1))
@@ -212,7 +214,7 @@ for entry in words:
 	# Create and add note
 	note = MyNote(
 		model=my_model,
-		fields=[word["word"], definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph]
+		fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph]
 	)
 
 
