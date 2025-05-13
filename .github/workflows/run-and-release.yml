@@ -54,7 +54,6 @@ jobs:
         with:
           files: toki-pona-deck.apkg
 
-
       - name: Commit changes
         if: steps.changed.outputs.files_changed == 'true'
         run: |
