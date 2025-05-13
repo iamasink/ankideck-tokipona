@@ -221,7 +221,7 @@ for entry in words:
 	# logger.debug(f"Added card: {word}")
 
 # Write out the .apkg file
-output_file = "output.apkg"
+output_file = "toki-pona-deck.apkg"
 logger.info(my_package.media_files)
 my_package.write_to_file(output_file)
 logger.info(f"Done! Written {len(my_deck.notes)} notes to {output_file}")
