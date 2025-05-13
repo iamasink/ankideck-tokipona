@@ -147,7 +147,7 @@ for entry in words:
 
 	logger.info(f"Processing entry for word: '{wordname}'")
 	if word["usage_category"] not in ENABLED_CATEGORIES:
-		logger.info(f"skipping word, its in category {word["usage_category"]}, which isn't enabled.")
+		logger.info("skipping word, its in category" + word["usage_category"] + "which isn't enabled.")
 		continue
 
 	# Extract answer from translations or definition
@@ -162,8 +162,8 @@ for entry in words:
 	usage_data = word["usage"]
 	latest_date = max(usage_data.keys())
 	latest_usage = usage_data[latest_date]
-	usage = html.escape(f"{latest_usage}")
-	usage_category = html.escape(f"{word["usage_category"]}")
+	usage = html.escape(latest_usage)
+	usage_category = html.escape(word["usage_category"])
 
 
 	# Audio (relative path)
