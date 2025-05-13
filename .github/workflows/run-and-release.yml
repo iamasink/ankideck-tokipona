@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true  
+          submodules: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -32,7 +32,6 @@ jobs:
           git pull --recurse-submodules
           git submodule update --remote --recursive
 
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -41,14 +40,12 @@ jobs:
       - name: Build APKG
         run: python app.py
 
-
-
       - name: Create Release
         run: |
           gh release create \
-            ${{ format('Release {0}', github.run_id) }} \
+            ${{ format('{0}', github.run_id) }} \
             toki-pona-deck.apkg \
-            --title "Release ${{ format('Release {0}', github.run_id) }}" \
+            --title "Release ${{ format('{0}', github.run_id) }}" \
             --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
