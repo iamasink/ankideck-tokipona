@@ -5,11 +5,11 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * 1' 
+    - cron: '0 0 * * 1'
   workflow_dispatch:
 
 permissions:
-  contents: write   
+  contents: write
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      # Update references
+      # Update submodules to latest
       - name: Git Submodule Update
         run: |
           git pull --recurse-submodules
@@ -40,12 +40,39 @@ jobs:
       - name: Build APKG
         run: python app.py
 
-      - name: Create Release
+      # commit changes
+      - name: Commit changes
+        id: commit
         run: |
-          gh release create \
-            ${{ format('{0}', github.run_id) }} \
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --quiet && echo "No changes to commit" || \
+            (git commit -m "chore: update generated files" && git push)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for changes
+        id: changed
+        run: |
+          git fetch --depth=2
+          files=$(git diff --name-only HEAD~1 HEAD)
+          echo "changed_files=$files" >> $GITHUB_OUTPUT
+          if echo "$files" | grep -E 'toki-pona-deck\.apkg'; then
+            echo "should_release=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_release=false" >> $GITHUB_OUTPUT
+          fi
+
+      # create release if there are changes
+      - name: Create Release
+        if: steps.changed.outputs.should_release == 'true'
+        run: |
+          tag="v1.${{ github.run_number }}"
+          echo "Creating release $tag"
+          gh release create $tag \
             toki-pona-deck.apkg \
-            --title "Release ${{ format('{0}', github.run_id) }}" \
+            --title "Release $tag" \
             --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
