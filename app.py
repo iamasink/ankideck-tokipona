@@ -121,7 +121,7 @@ my_model = genanki.Model(
 # Create your deck
 my_deck = genanki.Deck(
 	2059400110,
-	"Sample Deck"
+	"toki pona"
 )
 my_package = genanki.Package(my_deck)
 
@@ -146,7 +146,7 @@ for entry in words:
 	wordname = word["word"]
 
 	logger.info(f"Processing entry for word: '{wordname}'")
-	
+
 	if word["usage_category"] not in ENABLED_CATEGORIES:
 		logger.info("skipping word, its in category" + word["usage_category"] + "which isn't enabled.")
 		continue
