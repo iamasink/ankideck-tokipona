@@ -123,6 +123,7 @@ my_deck = genanki.Deck(
 	2059400110,
 	"toki pona 4"
 )
+
 my_package = genanki.Package(my_deck)
 
 # Fetch all words and their details in a single request
