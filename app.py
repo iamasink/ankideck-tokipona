@@ -146,6 +146,7 @@ for entry in words:
 	wordname = word["word"]
 
 	logger.info(f"Processing entry for word: '{wordname}'")
+	
 	if word["usage_category"] not in ENABLED_CATEGORIES:
 		logger.info("skipping word, its in category" + word["usage_category"] + "which isn't enabled.")
 		continue
