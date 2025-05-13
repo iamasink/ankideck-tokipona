@@ -5,6 +5,11 @@ import genanki
 import logging
 import html
 import re
+import json
+import hashlib
+
+FORCE_CHANGE = False
+
 
 # set custom guid with only the Word so it can be overwritten in future!
 class MyNote(genanki.Note):
@@ -21,6 +26,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).parent
+DATA_FILE = BASE_DIR / "cached_words.json"
 AUDIO_SUBDIR = Path("ijo") / "kalama"
 GLYPH_SUBDIR = Path("ijo") / "sitelensitelen" / "jonathangabel"
 AUDIO_PEOPLE = ["kalaasi2023", "jlakuse"]
@@ -121,7 +127,7 @@ my_model = genanki.Model(
 # Create your deck
 my_deck = genanki.Deck(
 	2059400110,
-	"toki pona 4"
+	"toki pona"
 )
 
 my_package = genanki.Package(my_deck)
@@ -136,9 +142,26 @@ try:
 	resp.raise_for_status()
 	words = resp.json()  # List of dicts with keys like "word", "translations", "definition", etc.
 	logger.info(f"Got {len(words)} entries.")
+	def hash_data(data):
+		return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
+	# Load old data hash
+	if DATA_FILE.exists():
+		with DATA_FILE.open("r", encoding="utf-8") as f:
+			old_data = json.load(f)
+		if hash_data(old_data) == hash_data(resp.text):
+			if not FORCE_CHANGE:
+				logger.info("Data unchanged.")
+				exit()
+
+	# Save new data
+	with DATA_FILE.open("w", encoding="utf-8") as f:
+		json.dump(resp.text, f, ensure_ascii=False, indent=2)
 except Exception as e:
 	logger.error(f"Failed to fetch words: {e}")
 	raise
+
+
+
 
 
 # Loop through entries and add cards
