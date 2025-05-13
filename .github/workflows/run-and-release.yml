@@ -54,10 +54,6 @@ jobs:
         with:
           files: toki-pona-deck.apkg
           since_last_remote_commit: true
-        run: |
-          for file in ${ALL_CHANGED_FILES}; do
-            echo "$file was changed"
-          done
 
 
       - name: Commit changes
