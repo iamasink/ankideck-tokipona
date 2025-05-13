@@ -41,17 +41,14 @@ jobs:
       - name: Build APKG
         run: python app.py
 
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
 
       - name: Create Release
         run: |
           gh release create \
-            ${{ format('${{ steps.date.outputs.date }}', github.run_id) }} \
+            ${{ format('Release {0}', github.run_id) }} \
             toki-pona-deck.apkg \
-            --title "Release ${{ format('${{ steps.date.outputs.date }}', github.run_id) }}" \
+            --title "Release ${{ format('Release {0}', github.run_id) }}" \
             --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
