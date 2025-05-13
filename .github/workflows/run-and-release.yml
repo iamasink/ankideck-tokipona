@@ -46,6 +46,7 @@ jobs:
         uses: tj-actions/changed-files@v46
         with:
           files: toki-pona-deck.apkg
+          since_last_remote_commit: true
 
 
       - name: Commit changes
