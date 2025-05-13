@@ -35,9 +35,9 @@ jobs:
       - name: Create Release
         run: |
           gh release create \
-            ${{ github.ref_name || 'weekly-' + github.run_id }} \
+            ${{ format('weekly-{0}', github.run_id) }} \
             toki-pona-deck.apkg \
-            --title "Release ${{ github.ref_name || 'weekly-' + github.run_id }}" \
+            --title "Release ${{ format('weekly-{0}', github.run_id) }}" \
             --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
