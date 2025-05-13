@@ -52,7 +52,7 @@ jobs:
         id: changed
         uses: tj-actions/verify-changed-files@v20
         with:
-          files: toki-pona-deck-*.apkg
+          files: generated/*.apkg
 
       - name: Commit changes
         if: steps.changed.outputs.files_changed == 'true'
@@ -78,7 +78,7 @@ jobs:
           tag="v1.${{ github.run_number }}"
           echo "Creating release $tag"
           gh release create $tag \
-            toki-pona-deck-*.apkg \
+            ./generated/*.apkg \
             --title "Release $tag" \
             --generate-notes
         env:

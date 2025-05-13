@@ -29,8 +29,8 @@ for lang in LANGUAGES:
 	)
 	logger = logging.getLogger(__name__)
 
-	BASE_DIR = Path(__file__).parent
-	DATA_FILE = BASE_DIR / f"cached_words-{lang}.json"
+	BASE_DIR = Path(__file__).parent 
+	DATA_FILE = BASE_DIR / "generated" /  f"cached_words-{lang}.json"
 	AUDIO_SUBDIR = Path("ijo") / "kalama"
 	GLYPH_SUBDIR = Path("ijo") / "sitelensitelen" / "jonathangabel"
 	AUDIO_PEOPLE = ["kalaasi2023", "jlakuse"]
@@ -219,7 +219,7 @@ for lang in LANGUAGES:
 			rel_source = AUDIO_SUBDIR / author / f"{wordname}.mp3"
 			abs_source = BASE_DIR / rel_source
 			if abs_source.exists():
-				logger.info(f"adding audio from {abs_source}")
+				# logger.info(f"adding audio from {abs_source}")
 				# define target filename
 				target_filename = f"{wordname}-{author}.mp3"
 				abs_target = TARGET_AUDIO_DIR / target_filename
@@ -230,7 +230,7 @@ for lang in LANGUAGES:
 				# add sound tag with correct filename
 				audio_html += f"[sound:{target_filename}] "
 		audio = html.escape(audio_html)
-		logger.info(audio)
+		# logger.info(audio)
 
 		# Glyphs (relative paths)
 		pattern = re.compile(rf"^{re.escape(wordname)}-(\d+)\.png$")
@@ -261,6 +261,5 @@ for lang in LANGUAGES:
 
 	# Write out the .apkg file
 	output_file = f"toki-pona-deck-{lang}.apkg"
-	logger.info(my_package.media_files)
-	my_package.write_to_file(output_file)
+	my_package.write_to_file("generated/" + output_file)
 	logger.info(f"Done! Written {len(my_deck.notes)} notes to {output_file}")
