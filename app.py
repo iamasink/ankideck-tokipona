@@ -167,6 +167,9 @@ for lang in LANGUAGES:
 					logger.info("Data unchanged.")
 					continue
 
+		# ensure folder exist
+		DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+
 		# Save new data
 		with DATA_FILE.open("w", encoding="utf-8") as f:
 			json.dump(resp.text, f, ensure_ascii=False, indent=2)
