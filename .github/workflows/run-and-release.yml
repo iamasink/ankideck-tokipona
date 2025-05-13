@@ -50,7 +50,7 @@ jobs:
 
       - name: Check for changed files
         id: changed
-        uses: tj-actions/changed-files@v46
+        uses: tj-actions/verify-changed-files@v20
         with:
           files: toki-pona-deck.apkg
           since_last_remote_commit: true
