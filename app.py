@@ -9,7 +9,9 @@ import json
 import hashlib
 
 FORCE_CHANGE = False
-LANGUAGES = ["en", "eo"]
+
+# do not reorder this or ids will be incompatible
+LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
 
 for lang in LANGUAGES:
 	
@@ -139,8 +141,8 @@ for lang in LANGUAGES:
 
 	# Create your deck
 	my_deck = genanki.Deck(
-		2059400110,
-		"toki pona"
+		1747151651209 + LANGUAGES.index(lang),
+		"toki pona " + lang
 	)
 
 	my_package = genanki.Package(my_deck)
