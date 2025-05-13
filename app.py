@@ -121,7 +121,7 @@ my_model = genanki.Model(
 # Create your deck
 my_deck = genanki.Deck(
 	2059400110,
-	"toki pona"
+	"toki pona 2"
 )
 my_package = genanki.Package(my_deck)
 
