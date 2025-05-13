@@ -9,12 +9,19 @@ import json
 import hashlib
 
 FORCE_CHANGE = False
+# Configure logging
+logging.basicConfig(
+	level=logging.INFO,
+	format="%(asctime)s %(levelname)s: %(message)s",
+	datefmt="%H:%M:%S"
+)
+logger = logging.getLogger(__name__)
 
 # do not reorder this or ids will be incompatible
 LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
 
 for lang in LANGUAGES:
-	
+	logger.info("running language " + lang + " " + str(LANGUAGES.index(lang)))
 
 
 	# set custom guid with only the Word so it can be overwritten in future!
@@ -23,13 +30,6 @@ for lang in LANGUAGES:
 		def guid(self):
 			return genanki.guid_for("iamasink toki pona " + lang, self.fields[0])
 
-	# Configure logging
-	logging.basicConfig(
-		level=logging.INFO,
-		format="%(asctime)s %(levelname)s: %(message)s",
-		datefmt="%H:%M:%S"
-	)
-	logger = logging.getLogger(__name__)
 
 	BASE_DIR = Path(__file__).parent 
 	DATA_FILE = BASE_DIR / "generated" /  f"cached_words-{lang}.json"
@@ -165,7 +165,7 @@ for lang in LANGUAGES:
 			if hash_data(old_data) == hash_data(resp.text):
 				if not FORCE_CHANGE:
 					logger.info("Data unchanged.")
-					exit()
+					continue
 
 		# Save new data
 		with DATA_FILE.open("w", encoding="utf-8") as f:
