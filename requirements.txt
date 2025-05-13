@@ -1,1 +1,7 @@
+pathlib
+shutil
+requests
 genanki
+logging
+html
+re
