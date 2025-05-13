@@ -162,7 +162,7 @@ for entry in words:
 	usage_data = word["usage"]
 	latest_date = max(usage_data.keys())
 	latest_usage = usage_data[latest_date]
-	usage = html.escape(latest_usage)
+	usage = html.escape(str(latest_usage))
 	usage_category = html.escape(word["usage_category"])
 
 
