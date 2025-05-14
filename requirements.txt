@@ -1,2 +1,4 @@
 requests
 genanki
+cairosvg
+lxml

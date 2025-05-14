@@ -7,8 +7,14 @@ import html
 import re
 import json
 import hashlib
+import os
+FORCE_CHANGE = True
+FONT_NAME = "sitelenselikiwenmonoasuki"
 
-FORCE_CHANGE = False
+
+
+
+
 # Configure logging
 logging.basicConfig(
 	level=logging.INFO,
@@ -17,9 +23,19 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
+
+
+
+
+
+
+
+
+
 # do not reorder this or ids will be incompatible
-LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
-# LANGUAGES = ["en"]
+# LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
+LANGUAGES = ["en"]
 
 for lang in LANGUAGES:
 	logger.info("running language " + lang + " " + str(LANGUAGES.index(lang)))
@@ -241,33 +257,45 @@ for lang in LANGUAGES:
 
 		# Glyphs (relative paths)
 		# TODO: use representations.ligatures instead of reading directory, many files shouldn't be shown
-		pattern = re.compile(rf"^{re.escape(wordname)}-(\d+)\.png$")
-		glyphs = sorted(
-			(p for p in (BASE_DIR / GLYPH_SUBDIR).iterdir() if pattern.match(p.name)),
-			key=lambda p: int(pattern.match(p.name).group(1))
-		)
-		glyph_html = "".join(f"<img src='{p.name}'/>" for p in glyphs)
-		for p in glyphs:
-			rel_img = GLYPH_SUBDIR / p.name
-			abs_img = BASE_DIR / rel_img
-			my_package.media_files.append(str(abs_img))
+		#
+		ligatures = list(word["representations"]["ligatures"])
+		logger.info(ligatures)
+
+		processed = []
+		for lig in ligatures:
+			logger.info("processing " + lig)
+			# If last char is not a digit, append “-1”
+			if (lig and lig[-1].isdigit()):
+				# add hyphen
+				lig = lig[0:-1] + "-" + lig[-1]
+			processed.append(lig)
+
+		logger.info("final ligatures: %s", processed)
+
+		glyphfolder = os.path.join("sitelenpona", FONT_NAME)
+
+		glyph_html = "".join(f"<img src='{glyphname}'/>" for glyphname in processed)
+		for p in processed:
+			rel_img = os.path.join(glyphfolder , p)
+			abs_img = os.path.join(BASE_DIR, rel_img)
+			my_package.media_files.append(str(abs_img) + ".png")
 		glyph = glyph_html
 
-		logger.info(glyph)
+		# logger.info(glyph)
 		
 
 		# answer = definition + "\n" + commentary
 		# print(answer)
 
 		# Create and add note
-		note = MyNote(
-			model=my_model,
-			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph]
-		)
+		# note = MyNote(
+		# 	model=my_model,
+		# 	fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph]
+		# )
 
 
 
-		my_deck.add_note(note)
+		# my_deck.add_note(note)
 		# logger.debug(f"Added card: {word}")
 
 	# Write out the .apkg file
