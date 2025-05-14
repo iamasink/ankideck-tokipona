@@ -18,7 +18,7 @@ FONT_NAME = "sitelenselikiwenmonoasuki"
 # Configure logging
 logging.basicConfig(
 	level=logging.INFO,
-	format="%(asctime)s %(levelname)s: %(message)s",
+	format="%(asctime)s.%(msecs)03d %(levelname)s: %(message)s",
 	datefmt="%H:%M:%S"
 )
 logger = logging.getLogger(__name__)
@@ -27,18 +27,26 @@ logger = logging.getLogger(__name__)
 
 
 
-
+def get_latest_usage(w):
+    usage_data = w.get("usage", {})
+    if not usage_data:
+        return 0
+    latest_date = max(usage_data.keys())
+    return usage_data[latest_date]
 
 
 
 
 
 # do not reorder this or ids will be incompatible
-# LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
-LANGUAGES = ["en"]
+LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
+# LANGUAGES = ["en"]
+totallanguages = len(LANGUAGES)
 
 for lang in LANGUAGES:
-	logger.info("running language " + lang + " " + str(LANGUAGES.index(lang)))
+	index = LANGUAGES.index(lang)
+	percent = (index + 1) / totallanguages * 100
+	logger.info(f"running language '{lang}' {index+1}/{totallanguages} ({percent:.1f}%)")
 
 
 	# set custom guid with only the Word so it can be overwritten in future!
@@ -55,8 +63,8 @@ for lang in LANGUAGES:
 	GLYPH_SUBDIR = Path("ijo") / "sitelenpona" / "sitelen-seli-kiwen"
 	AUDIO_PEOPLE = ["kalaasi2023", "jlakuse"]
 
-	TARGET_AUDIO_DIR = BASE_DIR / "files" / "audio"
-	TARGET_AUDIO_DIR.mkdir(parents=True, exist_ok=True)
+	FILES_DIR = BASE_DIR / "files"
+	FILES_DIR.mkdir(parents=True, exist_ok=True)
 
 	ENABLED_CATEGORIES = [
 		"core",
@@ -69,7 +77,7 @@ for lang in LANGUAGES:
 	# Define your model
 	my_model = genanki.Model(
 		1747075454,
-		"Simple Model",
+		"Toki Pona Model",
 		fields=[
 			{"name": "Word"}, 
 			{"name": "Definition"},
@@ -116,7 +124,41 @@ for lang in LANGUAGES:
 				Found in <span class="book">{{#Book}}{{Book}}{{/Book}}{{^Book}}No Book{{/Book}}</span>
 			</div>
 			""",
-			}],
+			},
+			{
+				"name": "Toki Pona sitelen pona",
+				"qfmt": """
+			<div class="centered">
+				<strong>{{Glyph}}</strong><br>
+			</div>
+			""",
+			"afmt": """
+			<div class="centered">
+				{{FrontSide}}
+				<hr id="answer">
+				<div class="warningbanner">
+					<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
+					<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
+				</div>
+				{{Word}}
+				<br/>
+				{{Audio}}
+				<br/>
+				{{Definition}}
+				<br/>
+				<div class="comment">{{Commentary}}</div>
+				<hr>
+				<br/>
+				Usage: <span class="usagespan usagecat{{Usage Category}}">{{Usage Category}} · {{Usage}}</span>
+				<br/>
+				Coined by <em>{{Creator}}</em>, {{Coined Era}}, {{Coined Year}}
+				<br/>
+				Found in <span class="book">{{#Book}}{{Book}}{{/Book}}{{^Book}}No Book{{/Book}}</span>
+			</div>
+"""
+			}
+			
+			],
 		css="""
 	/* colours from nimi.li */
 	.usagecatcore {
@@ -196,12 +238,50 @@ for lang in LANGUAGES:
 		raise
 
 
+	# sort words by nimi pu -> nimi ku suli -> nimi ku lili -> no book
+	book_priority = {
+    "nimi pu": 0,
+    "nimi ku suli": 1,
+    "nimi ku lili": 2,
+	}
+	# get a list of word-dicts
+	word_list = list(words.values())
+	# order of word introduction from wasona https://wasona.com
+	word_order = [
+    "jan", "kute", "nanpa", "kalama", "akesi", "soweli", "waso", "pipi", "kasi", "moku",
+    "lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "sona", "suwi",
+    "ni", "mi", "sina", "ona", "nimi", "sitelen", "toki", "ma", "tomo", "weka", "pana", "kama",
+    "awen", "tawa", "lon", "tan", "utala", "lape", "kalama", "musi", "nasa", "wile", "ken",
+    "alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
+    "telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
+    "leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
+    "pakala", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "akesi", "kala", "pan",
+    "kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
+    "lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
+    "luka", "mute", "ale", "kipisi", "nanpa", "olin", "unpa", "mama", "mije", "meli", "tonsi",
+    "en", "kule", "walo", "pimeja", "loje", "jelo", "laso", "kin", "taso", "n", "mu",
+    "kijetesantakalu", "pu", "ku", "su", "lanpan"
+]
 
+	sorted_words = sorted(
+		word_list,
+		key=lambda w: (
+			# sort by word order list
+			word_order.index(w["word"]) if w["word"] in word_order else len(word_order),
+			# then sort by usage
+			-get_latest_usage(w) if w["word"] not in word_order else 0,
+			# then alphabetically
+			w.get("word","")
+		)
+	)
 
+	# logger.info(sorted_words)
+	# for w in sorted_words:
+		# logger.info(w["word"])
 
 	# Loop through entries and add cards
-	for entry in words:
-		word = words[entry]
+	for entry in sorted_words:
+		word = entry
 		wordname = word["word"]
 
 		# logger.info(f"Processing entry for word: '{wordname}'")
@@ -213,6 +293,7 @@ for lang in LANGUAGES:
 		# Extract answer from translations or definition
 		definition = html.escape(word["translations"][lang]["definition"])
 		commentary = html.escape(word["translations"][lang]["commentary"])
+		
 		creator = html.escape(", ".join((word["creator"])))
 		coined_era = html.escape(word["coined_era"])
 		coined_year =html.escape(word["coined_year"])
@@ -221,8 +302,8 @@ for lang in LANGUAGES:
 
 		usage_data = word["usage"]
 		latest_date = max(usage_data.keys())
-		latest_usage = usage_data[latest_date]
-		usage = html.escape(str(latest_usage))
+		latest_usage = get_latest_usage(word)
+		usage = html.escape(str(get_latest_usage(word)))
 		usage_category = html.escape(word["usage_category"])
 
 
@@ -244,8 +325,8 @@ for lang in LANGUAGES:
 			if abs_source.exists():
 				# logger.info(f"adding audio from {abs_source}")
 				# define target filename
-				target_filename = f"{wordname}-{author}.mp3"
-				abs_target = TARGET_AUDIO_DIR / target_filename
+				target_filename = f"tp_{wordname}-{author}.mp3"
+				abs_target = FILES_DIR / target_filename
 				# copy file
 				shutil.copy2(abs_source, abs_target)
 				# register in package using relative path
@@ -259,36 +340,40 @@ for lang in LANGUAGES:
 		# TODO: use representations.ligatures instead of reading directory, many files shouldn't be shown
 		#
 		ligatures = list(word["representations"]["ligatures"])
-		logger.info(ligatures)
+		# logger.info(ligatures)
 
 		processed = []
 		for lig in ligatures:
-			logger.info("processing " + lig)
+			# logger.info("processing " + lig)
 			# If last char is not a digit, append “-1”
 			if (lig and lig[-1].isdigit()):
 				# add hyphen
 				lig = lig[0:-1] + "-" + lig[-1]
 			processed.append(lig)
 
-		logger.info("final ligatures: %s", processed)
+		# logger.info("final ligatures: %s", processed)
 
 		# glyphfolder = os.path.join(""sitelenpona", FONT_NAME)
 		glyphfolder = os.path.join("ijo", "sitelenpona", "sitelen-seli-kiwen")
 
 		glyphs_html = ""
 		for p in processed:
-			rel_img = os.path.join(glyphfolder , p)
-			abs_img = os.path.join(BASE_DIR, rel_img) + ".png"
+			target_filename = f"tp_{p}.png"
+			rel_img = os.path.join(glyphfolder, target_filename)
+			abs_img_source = os.path.join(BASE_DIR, glyphfolder, p + ".png")
 			# first ensure this exists, otherwise just skip it
-			if (os.path.isfile(abs_img)):
-				my_package.media_files.append(str(abs_img) )
-				glyphs_html += f"<img src='{p}'/>"
+			if (os.path.isfile(abs_img_source)):
+				abs_target = BASE_DIR / "files" / target_filename
+				# copy file
+				shutil.copy2(abs_img_source, abs_target)
+				my_package.media_files.append(str(abs_target) )
+				glyphs_html += f"<img src='{target_filename}'/>"
 			else:
-				logger.warn(f"file {abs_img} doesn't exist.. skipping!")
+				logger.warning(f"file {abs_img_source} doesn't exist.. skipping!")
 
 		glyph = glyphs_html
 
-		logger.info(glyph)
+		# logger.info(glyph)
 		
 
 		# Create and add note
@@ -305,4 +390,4 @@ for lang in LANGUAGES:
 	# Write out the .apkg file
 	output_file = f"toki-pona-deck-{lang}.apkg"
 	my_package.write_to_file("generated/" + output_file)
-	logger.info(f"Done! Written {len(my_deck.notes)} notes to {output_file}")
+	logger.info(f"Done {lang}! Written {len(my_deck.notes)} notes to {output_file}")
