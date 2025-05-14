@@ -101,6 +101,15 @@ for lang in LANGUAGES:
 		# "sandbox" # won't work by default
 	]
 
+	wordhtmlfile = open('cards/sitelenpona.html','r')
+	wordhtml = wordhtmlfile.read(-1)
+	sitelenponahtmlfile = open('cards/sitelenpona.html','r')
+	sitelenponahtml = sitelenponahtmlfile.read(-1)
+	csscontentfile = open('cards/css.css','r')
+	csscontent = csscontentfile.read(-1)
+
+	logger.info(wordhtml)
+
 	# Define your model
 	my_model = genanki.Model(
 		1747075454,
@@ -123,108 +132,24 @@ for lang in LANGUAGES:
 			templates=[{
 			"name": "Toki Pona Word",
 			"qfmt": """
-			<div class="centered">
-				<strong>{{Word}}</strong><br>
-			</div>
+<div class="centered">
+	<strong>{{Word}}</strong><br>
+</div>
 			""",
-			"afmt": """
-			<div class="centered">
-				{{FrontSide}}
-				<hr id="answer">
-				<div class="warningbanner">
-					<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
-					<br/>
-					<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
-				</div>
-				{{Audio}}
-				<br/>
-				{{Glyph}}
-				<br/>
-				{{Definition}}
-				<br/>
-				<div class="comment">{{Commentary}}</div>
-				<hr>
-				<br/>
-				Usage: <span class="usagespan usagecat{{Usage Category}}">{{Usage Category}} · {{Usage}}</span>
-				<br/>
-				Coined by <em>{{Creator}}</em>, {{Coined Era}}, {{Coined Year}}
-				<br/>
-				Found in <span class="book">{{#Book}}{{Book}}{{/Book}}{{^Book}}No Book{{/Book}}</span>
-			</div>
-			""",
+			"afmt": wordhtml
 			},
 			{
 				"name": "Toki Pona sitelen pona",
 				"qfmt": """
-			<div class="centered">
-				<strong>{{Glyph}}</strong><br>
-			</div>
+<div class="centered">
+	<strong>{{Glyph}}</strong><br>
+</div>
 			""",
-			"afmt": """
-			<div class="centered">
-				{{FrontSide}}
-				<hr id="answer">
-				<div class="warningbanner">
-					<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
-					<br/>
-					<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
-				</div>
-				{{Word}}
-				<br/>
-				{{Audio}}
-				<br/>
-				{{Definition}}
-				<br/>
-				<div class="comment">{{Commentary}}</div>
-				<hr>
-				<br/>
-				Usage: <span class="usagespan usagecat{{Usage Category}}">{{Usage Category}} · {{Usage}}</span>
-				<br/>
-				Coined by <em>{{Creator}}</em>, {{Coined Era}}, {{Coined Year}}
-				<br/>
-				Found in <span class="book">{{#Book}}{{Book}}{{/Book}}{{^Book}}No Book{{/Book}}</span>
-			</div>
-"""
+			"afmt": sitelenponahtml
 			}
 			
 			],
-		css="""
-	/* colours from nimi.li */
-	.usagecatcore {
-		color: rgb(52 211 153);
-	}
-	.usagecatcommon {
-		color: rgb(56 189 248);
-	}
-	.usagecatuncommon {
-		color: rgb(250 204 21);
-	}
-	.usagecatobscure {
-		color: rgb(232 121 249);
-	}
-	.usagecatsandbox {
-		color: rgb(209 213 219);
-	}
-	/* unknown or unset category */
-	.usagecat {
-		color: rgb(209 213 219);
-	}
-	.book, .bold {
-		font-weight: bolder;
-	}
-	.warningbanner-obscure.warningobscure {
-		visibility: visible !important;
-	}
-	.warningbanner-sandbox.warningsandbox {
-		visibility: visible !important;
-	} 
-	.warning {
-		visibility: collapse;
-	}
-	.centered {
-		text-align: center;
-	}
-	"""
+		css=csscontent
 	)
 
 	# get the langid from the code 

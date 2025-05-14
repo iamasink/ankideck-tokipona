@@ -1,0 +1,46 @@
+/* colours from nimi.li */
+.usagecatcore {
+	color: rgb(52 211 153);
+}
+
+.usagecatcommon {
+	color: rgb(56 189 248);
+}
+
+.usagecatuncommon {
+	color: rgb(250 204 21);
+}
+
+.usagecatobscure {
+	color: rgb(232 121 249);
+}
+
+.usagecatsandbox {
+	color: rgb(209 213 219);
+}
+
+/* unknown or unset category */
+.usagecat {
+	color: rgb(209 213 219);
+}
+
+.book,
+.bold {
+	font-weight: bolder;
+}
+
+.warningbanner-obscure.warningobscure {
+	visibility: visible !important;
+}
+
+.warningbanner-sandbox.warningsandbox {
+	visibility: visible !important;
+}
+
+.warning {
+	visibility: collapse;
+}
+
+.centered {
+	text-align: center;
+}
