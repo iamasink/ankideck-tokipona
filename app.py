@@ -275,29 +275,32 @@ for lang in LANGUAGES:
 		# glyphfolder = os.path.join(""sitelenpona", FONT_NAME)
 		glyphfolder = os.path.join("ijo", "sitelenpona", "sitelen-seli-kiwen")
 
-		glyph_html = "".join(f"<img src='{glyphname}'/>" for glyphname in processed)
+		glyphs_html = ""
 		for p in processed:
 			rel_img = os.path.join(glyphfolder , p)
-			abs_img = os.path.join(BASE_DIR, rel_img)
-			my_package.media_files.append(str(abs_img) + ".png")
-		glyph = glyph_html
+			abs_img = os.path.join(BASE_DIR, rel_img) + ".png"
+			# first ensure this exists, otherwise just skip it
+			if (os.path.isfile(abs_img)):
+				my_package.media_files.append(str(abs_img) )
+				glyphs_html += f"<img src='{p}'/>"
+			else:
+				logger.warn(f"file {abs_img} doesn't exist.. skipping!")
 
-		# logger.info(glyph)
+		glyph = glyphs_html
+
+		logger.info(glyph)
 		
 
-		# answer = definition + "\n" + commentary
-		# print(answer)
-
 		# Create and add note
-		# note = MyNote(
-		# 	model=my_model,
-		# 	fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph]
-		# )
+		note = MyNote(
+			model=my_model,
+			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph]
+		)
 
 
 
-		# my_deck.add_note(note)
-		# logger.debug(f"Added card: {word}")
+		my_deck.add_note(note)
+		logger.debug(f"Added card: {word}")
 
 	# Write out the .apkg file
 	output_file = f"toki-pona-deck-{lang}.apkg"

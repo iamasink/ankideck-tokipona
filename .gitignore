@@ -1,2 +1,4 @@
 files
 scripts
+# we don't want packages in the repo, they'll be in releases!
+*.apkg
