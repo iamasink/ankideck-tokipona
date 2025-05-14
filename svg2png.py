@@ -9,6 +9,6 @@ if __name__ == "__main__":
 	args = [
 		"python",
 		"scripts/svg2png.py",
-		"--directory ./sitelenpona/sitelenselikiwenmonoasuki",
+		"--directory", "./sitelenpona/sitelenselikiwenmonoasuki",
 	]
 	subprocess.run(args, check=True)
