@@ -387,3 +387,10 @@ tok = "toki Pasi"
 kay(f)bop(t)   
 locale = "kbt"  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-kbt.apkg  
+
+
+
+
+# setup fonts
+install fontforge
+run setupfonts.py
