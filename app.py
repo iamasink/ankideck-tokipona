@@ -28,24 +28,51 @@ logger = logging.getLogger(__name__)
 
 
 def get_latest_usage(w):
-    usage_data = w.get("usage", {})
-    if not usage_data:
-        return 0
-    latest_date = max(usage_data.keys())
-    return usage_data[latest_date]
+	usage_data = w.get("usage", {})
+	if not usage_data:
+		return 0
+	latest_date = max(usage_data.keys())
+	return usage_data[latest_date]
 
 
 
 
+JUST_FETCH_ENGLISH = False
 
-# do not reorder this or ids will be incompatible
-# LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
-LANGUAGES = ["en"]
+ids = []
+
+
+if (JUST_FETCH_ENGLISH):
+	LANGUAGES = ["en"]
+else:
+	LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
+	# LANGUAGES = ["en"]
+
+
+# get languages from api https://api.linku.la/v1/languages
+# add any that don't already exist in LANGUAGES
+# Existing list of languages
+if (not JUST_FETCH_ENGLISH):
+	try:
+		resp = requests.get("https://api.linku.la/v1/languages")
+		resp.raise_for_status()
+		api_languages = resp.json()
+
+		for lang in api_languages:
+			if lang not in LANGUAGES:
+				LANGUAGES.append(lang)
+				logger.info("added language not previously in list: " + lang)
+
+		logger.info(f"Updated LANGUAGES list: {LANGUAGES}")
+	except requests.RequestException as e:
+		logger.error(f"Error fetching languages: {e}")
+
 totallanguages = len(LANGUAGES)
+
 
 for lang in LANGUAGES:
 	index = LANGUAGES.index(lang)
-	percent = (index + 1) / totallanguages * 100
+	percent = (index) / totallanguages * 100
 	logger.info(f"running language '{lang}' {index+1}/{totallanguages} ({percent:.1f}%)")
 
 
@@ -200,10 +227,19 @@ for lang in LANGUAGES:
 	"""
 	)
 
+	# get the langid from the code 
+	# this is to automatically support future languages with unique ids
+	# maybe this is a bad way to do it but /shrug
+	langupper = lang.replace("_","").replace("-","").replace(":","").upper()
+	lang3 = langupper[:4] + langupper[-1:]
+	langid = ''.join(str(ord(c) - ord("A")) if c.isalpha() else 'A' for c in lang3)
+	deckid = int(1747151651209 + int(langid))
+	ids.append(deckid)
 
 	# Create your deck
 	my_deck = genanki.Deck(
-		1747151651209 + LANGUAGES.index(lang),
+		# custom id per lang
+		deckid,
 		"toki pona " + lang
 	)
 
@@ -240,29 +276,29 @@ for lang in LANGUAGES:
 		raise
 
 
-	# sort words by nimi pu -> nimi ku suli -> nimi ku lili -> no book
-	book_priority = {
-    "nimi pu": 0,
-    "nimi ku suli": 1,
-    "nimi ku lili": 2,
-	}
+	# # sort words by nimi pu -> nimi ku suli -> nimi ku lili -> no book
+	# book_priority = {
+	# "nimi pu": 0,
+	# "nimi ku suli": 1,
+	# "nimi ku lili": 2,
+	# }
 	# get a list of word-dicts
 	word_list = list(words.values())
 	# order of word introduction from wasona https://wasona.com
 	word_order = [
-    "jan", "kute", "nanpa", "kalama", "akesi", "soweli", "waso", "pipi", "kasi", "moku",
-    "lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "sona", "suwi",
-    "ni", "mi", "sina", "ona", "nimi", "sitelen", "toki", "ma", "tomo", "weka", "pana", "kama",
-    "awen", "tawa", "lon", "tan", "utala", "lape", "kalama", "musi", "nasa", "wile", "ken",
-    "alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
-    "telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
-    "leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
-    "pakala", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "akesi", "kala", "pan",
-    "kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
-    "lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
-    "luka", "mute", "ale", "kipisi", "nanpa", "olin", "unpa", "mama", "mije", "meli", "tonsi",
-    "en", "kule", "walo", "pimeja", "loje", "jelo", "laso", "kin", "taso", "n", "mu",
-    "kijetesantakalu", "pu", "ku", "su", "lanpan"
+	"jan", "kute", "nanpa", "kalama", "akesi", "soweli", "waso", "pipi", "kasi", "moku",
+	"lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "sona", "suwi",
+	"ni", "mi", "sina", "ona", "nimi", "sitelen", "toki", "ma", "tomo", "weka", "pana", "kama",
+	"awen", "tawa", "lon", "tan", "utala", "lape", "kalama", "musi", "nasa", "wile", "ken",
+	"alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
+	"telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
+	"leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
+	"pakala", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "akesi", "kala", "pan",
+	"kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
+	"lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
+	"luka", "mute", "ale", "kipisi", "nanpa", "olin", "unpa", "mama", "mije", "meli", "tonsi",
+	"en", "kule", "walo", "pimeja", "loje", "jelo", "laso", "kin", "taso", "n", "mu",
+	"kijetesantakalu", "pu", "ku", "su", "lanpan"
 ]
 
 	sorted_words = sorted(
@@ -405,4 +441,10 @@ for lang in LANGUAGES:
 	# Write out the .apkg file
 	output_file = f"toki-pona-deck-{lang}.apkg"
 	my_package.write_to_file("generated/" + output_file)
-	logger.info(f"Done {lang}! Written {len(my_deck.notes)} notes to {output_file}")
+	logger.info(f"Done {lang}! Written {len(my_deck.notes)} notes to {output_file} (id {deckid})")
+
+logger.info("all ids:")
+logger.info(ids)
+
+if len(ids) != len(set(ids)):
+    logger.error("Duplicates found")
