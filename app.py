@@ -272,7 +272,8 @@ for lang in LANGUAGES:
 
 		logger.info("final ligatures: %s", processed)
 
-		glyphfolder = os.path.join("sitelenpona", FONT_NAME)
+		# glyphfolder = os.path.join(""sitelenpona", FONT_NAME)
+		glyphfolder = os.path.join("ijo", "sitelenpona", "sitelen-seli-kiwen")
 
 		glyph_html = "".join(f"<img src='{glyphname}'/>" for glyphname in processed)
 		for p in processed:
