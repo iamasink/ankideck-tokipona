@@ -19,6 +19,7 @@ logger = logging.getLogger(__name__)
 
 # do not reorder this or ids will be incompatible
 LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
+# LANGUAGES = ["en"]
 
 for lang in LANGUAGES:
 	logger.info("running language " + lang + " " + str(LANGUAGES.index(lang)))
@@ -34,7 +35,8 @@ for lang in LANGUAGES:
 	BASE_DIR = Path(__file__).parent 
 	DATA_FILE = BASE_DIR / "generated" /  f"cached_words-{lang}.json"
 	AUDIO_SUBDIR = Path("ijo") / "kalama"
-	GLYPH_SUBDIR = Path("ijo") / "sitelensitelen" / "jonathangabel"
+	# GLYPH_SUBDIR = Path("ijo") / "sitelensitelen" / "jonathangabel"
+	GLYPH_SUBDIR = Path("ijo") / "sitelenpona" / "sitelen-seli-kiwen"
 	AUDIO_PEOPLE = ["kalaasi2023", "jlakuse"]
 
 	TARGET_AUDIO_DIR = BASE_DIR / "files" / "audio"
@@ -238,6 +240,7 @@ for lang in LANGUAGES:
 		# logger.info(audio)
 
 		# Glyphs (relative paths)
+		# TODO: use representations.ligatures instead of reading directory, many files shouldn't be shown
 		pattern = re.compile(rf"^{re.escape(wordname)}-(\d+)\.png$")
 		glyphs = sorted(
 			(p for p in (BASE_DIR / GLYPH_SUBDIR).iterdir() if pattern.match(p.name)),
@@ -246,8 +249,11 @@ for lang in LANGUAGES:
 		glyph_html = "".join(f"<img src='{p.name}'/>" for p in glyphs)
 		for p in glyphs:
 			rel_img = GLYPH_SUBDIR / p.name
-			my_package.media_files.append(str(rel_img))
-		glyph = html.escape(glyph_html)
+			abs_img = BASE_DIR / rel_img
+			my_package.media_files.append(str(abs_img))
+		glyph = glyph_html
+
+		logger.info(glyph)
 		
 
 		# answer = definition + "\n" + commentary
