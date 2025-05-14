@@ -39,8 +39,8 @@ def get_latest_usage(w):
 
 
 # do not reorder this or ids will be incompatible
-LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
-# LANGUAGES = ["en"]
+# LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
+LANGUAGES = ["en"]
 totallanguages = len(LANGUAGES)
 
 for lang in LANGUAGES:
@@ -70,7 +70,7 @@ for lang in LANGUAGES:
 		"core",
 		"common",
 		"uncommon",
-		# "obscure",
+		"obscure",
 		# "sandbox" # won't work by default
 	]
 
@@ -106,6 +106,7 @@ for lang in LANGUAGES:
 				<hr id="answer">
 				<div class="warningbanner">
 					<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
+					<br/>
 					<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
 				</div>
 				{{Audio}}
@@ -138,6 +139,7 @@ for lang in LANGUAGES:
 				<hr id="answer">
 				<div class="warningbanner">
 					<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
+					<br/>
 					<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
 				</div>
 				{{Word}}
@@ -298,7 +300,11 @@ for lang in LANGUAGES:
 		coined_era = html.escape(word["coined_era"])
 		coined_year =html.escape(word["coined_year"])
 
-		book = html.escape(word["book"])
+		origbook = word["book"]
+		if (not origbook or origbook == "none"):
+			book = "no book"
+		else:
+			book = html.escape(word["book"])
 
 		usage_data = word["usage"]
 		latest_date = max(usage_data.keys())
@@ -337,7 +343,6 @@ for lang in LANGUAGES:
 		# logger.info(audio)
 
 		# Glyphs (relative paths)
-		# TODO: use representations.ligatures instead of reading directory, many files shouldn't be shown
 		#
 		ligatures = list(word["representations"]["ligatures"])
 		# logger.info(ligatures)
@@ -374,18 +379,28 @@ for lang in LANGUAGES:
 		glyph = glyphs_html
 
 		# logger.info(glyph)
+
+
+		# add tags
+		tag_prefix = "TP::"
+		mytags = [
+			tag_prefix + "book_" + origbook.replace(" ", "-"),
+			tag_prefix + "usage_" + usage_category.replace(" ", "-")
+		]
 		
 
 		# Create and add note
 		note = MyNote(
 			model=my_model,
-			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph]
+			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph],
+			tags=mytags,
+			due=0,
 		)
 
 
 
 		my_deck.add_note(note)
-		logger.debug(f"Added card: {word}")
+		logger.debug(f"Added note: {word}")
 
 	# Write out the .apkg file
 	output_file = f"toki-pona-deck-{lang}.apkg"
