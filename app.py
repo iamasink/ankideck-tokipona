@@ -8,10 +8,14 @@ import re
 import json
 import hashlib
 import os
-FORCE_CHANGE = True
-FONT_NAME = "sitelenselikiwenmonoasuki"
+
+import argparse
 
 
+
+parser = argparse.ArgumentParser("simple_example")
+parser.add_argument("-f", "--forceChange", help="Whether to force build even if there are no changed", default=False, required=False, action="store_true")
+args = parser.parse_args()
 
 # Configure logging
 logging.basicConfig(
@@ -20,6 +24,15 @@ logging.basicConfig(
 	datefmt="%H:%M:%S"
 )
 logger = logging.getLogger(__name__)
+
+
+logger.info(args)
+
+FORCE_CHANGE = args.forceChange
+FONT_NAME = "sitelenselikiwenmonoasuki"
+
+
+
 
 
 def get_latest_usage(w):

@@ -1,0 +1,97 @@
+name: Weekly Build
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Update submodules to latest
+      - name: Git Submodule Update
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+
+      # - name: svg2png.py
+      #   run: python svg2png.py
+
+      - name: Build APKG
+        run: python app.py
+
+
+      # - name: git add
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "github-actions[bot]@users.noreply.github.com"
+      #     git add .
+
+
+      - name: Check for changed files
+        id: changed
+        uses: tj-actions/verify-changed-files@v20
+        with:
+          files: generated/*
+
+      - name: Commit changes
+        if: steps.changed.outputs.files_changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes detected"
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "chore: update generated files"
+            git push
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions-ecosystem/action-get-latest-tag@v1
+        id: get-latest-tag
+      - name: Bump SemVer
+        id: bump
+        uses: us-ignite/action-bump-semver@v1
+        with:
+          current_version: ${{ steps.get-latest-tag.outputs.tag }}
+          bump-level: patch
+
+      # Create Release only when changes were committed
+      - name: Create Release
+        if: steps.changed.outputs.files_changed == 'true'
+        run: |
+          tag="v${{ steps.bump.outputs.new_version }}"
+          echo "Creating release $tag"
+          gh release create $tag \
+            ./generated/*.apkg \
+            --title "Release $tag" \
+            --generate-notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
