@@ -53,8 +53,8 @@ jobs:
       - name: Check for changed files
         id: changed
         uses: tj-actions/verify-changed-files@v20
-        with:
-          files: generated/*
+        # with:
+        #   files: generated/*
 
       - name: Commit changes
         if: steps.changed.outputs.files_changed == 'true'
