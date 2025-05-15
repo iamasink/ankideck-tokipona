@@ -44,3 +44,28 @@
 .centered {
 	text-align: center;
 }
+
+.card {
+	width: 95%;
+}
+
+.content {
+	max-width: 75ch;
+	margin: 0 auto;
+}
+
+.comment {
+	color: rgb(54, 55, 56);
+}
+
+.nightMode .comment {
+	color: rgb(168, 168, 168);
+}
+
+.definition {
+	font-weight: bolder;
+}
+
+.word {
+	font-weight: bolder;
+}

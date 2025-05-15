@@ -1,23 +1,27 @@
 <div class="centered">
-	{{FrontSide}}
-	<hr id="answer">
-	<div class="warningbanner">
-		<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
-		<br/>
-		<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
+	<div class="content">
+		{{FrontSide}}
+		<hr id="answer">
+		{{Audio}}
+		<div class="warningbanner">
+			<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
+			<br />
+			<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
+			</div>
+		<br />
+		{{Glyph}}
+		<br />
+		<div class="definition">{{Definition}}</div>
+		<br />
+		<br />
+		{{#Commentary}}<p>Commentary:</p>{{/Commentary}}
+		<div class="comment">{{Commentary}}</div>
+		<hr>
+		<br />
+		Usage: <span class="usagespan usagecat{{Usage Category}}">{{Usage Category}}・{{Usage}}%</span>
+		<br />
+		Coined by <em>{{Creator}}</em>, {{Coined Era}}, {{Coined Year}}
+		<br />
+		Found in <span class="book">{{#Book}}{{Book}}{{/Book}}{{^Book}}No Book{{/Book}}</span>
 	</div>
-	{{Audio}}
-	<br/>
-	{{Glyph}}
-	<br/>
-	{{Definition}}
-	<br/>
-	<div class="comment">{{Commentary}}</div>
-	<hr>
-	<br/>
-	Usage: <span class="usagespan usagecat{{Usage Category}}">{{Usage Category}} · {{Usage}}</span>
-	<br/>
-	Coined by <em>{{Creator}}</em>, {{Coined Era}}, {{Coined Year}}
-	<br/>
-	Found in <span class="book">{{#Book}}{{Book}}{{/Book}}{{^Book}}No Book{{/Book}}</span>
 </div>
