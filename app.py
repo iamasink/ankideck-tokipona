@@ -71,14 +71,14 @@ for l in apilanguages:
 	language_data[l] = apilanguages[l]
 
 # write back to file
-LANGUAGE_FILE.write_text(json.dumps(language_data, sort_keys=True, ensure_ascii=False, indent=4), encoding="utf-8")
+LANGUAGE_FILE.write_text(json.dumps(language_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 for l in apilanguages:
 	if not l in language_config_data:
 		language_config_data[l] = {
 			"enabled": False,
 			"id": -1,
 		}
-LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, ensure_ascii=False, indent=4), encoding="utf-8")
+LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 
 # Define your model
 my_model = genanki.Model(
@@ -193,7 +193,7 @@ for lang in language_data:
 		resp = requests.get("https://api.linku.la/v1/words?lang=" + lang)
 		logger.info(f"Requested /words endpoint, received status {resp.status_code}")
 		resp.raise_for_status()
-		words = resp.json()  # List of dicts with keys like "word", "translations", "definition", etc.
+		words = resp.json()
 		logger.info(f"Got {len(words)} entries.")
 		def hash_data(data):
 			return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
@@ -201,6 +201,7 @@ for lang in language_data:
 		if DATA_FILE.exists():
 			with DATA_FILE.open("r", encoding="utf-8") as f:
 				old_data = json.load(f)
+			# compare hash to see if changed
 			if hash_data(old_data) == hash_data(resp.text):
 				if not FORCE_CHANGE:
 					logger.info("Data unchanged.")
@@ -225,6 +226,8 @@ for lang in language_data:
 	# }
 	# get a list of word-dicts
 	word_list = list(words.values())
+
+
 	# order of word introduction from wasona https://wasona.com
 	word_order = [
 	"jan", "kute", "nanpa", "kalama", "akesi", "soweli", "waso", "pipi", "kasi", "moku",
@@ -273,7 +276,7 @@ for lang in language_data:
 			continue
 
 		# Extract answer from translations or definition
-		worddef = word["translations"][lang]["definition"].replace(";", ";\n")
+		worddef = word["translations"][lang]["definition"].replace(";", ";<br/>\n")
 
 		if word["deprecated"]:
 			definition = html.escape("(This word is deprecated by its creator, and its use is discouraged.)\n" + worddef)

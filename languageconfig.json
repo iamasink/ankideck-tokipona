@@ -1,164 +1,215 @@
 {
 	"ar": {
-		"enabled": true,
-		"id": 1
-	},
-	"ca": {
-		"id": 2
-	},
-	"ceb_l": {
+		"enabled": false,
 		"id": 3
 	},
-	"cs": {
+	"ca": {
+		"enabled": false,
 		"id": 4
 	},
-	"cy": {
+	"ceb_l": {
+		"enabled": false,
 		"id": 5
 	},
-	"da": {
+	"cs": {
+		"enabled": false,
 		"id": 6
 	},
-	"de": {
+	"cy": {
+		"enabled": false,
 		"id": 7
 	},
-	"el": {
+	"da": {
+		"enabled": false,
 		"id": 8
+	},
+	"de": {
+		"enabled": false,
+		"id": 9
+	},
+	"el": {
+		"enabled": false,
+		"id": 10
 	},
 	"en": {
 		"enabled": true,
-		"id": 9
+		"id": 1
 	},
 	"eo": {
-		"id": 10
+		"enabled": false,
+		"id": 2
 	},
 	"es": {
-		"id": 11
+		"enabled": false,
+		"id": 54
 	},
 	"fa": {
-		"id": 12
+		"enabled": false,
+		"id": 11
 	},
 	"fi": {
-		"id": 13
+		"enabled": false,
+		"id": 12
 	},
 	"fr": {
-		"id": 14
+		"enabled": false,
+		"id": 13
 	},
 	"haw": {
-		"id": 15
+		"enabled": false,
+		"id": 14
 	},
 	"he": {
-		"id": 16
+		"enabled": false,
+		"id": 15
 	},
 	"hi": {
-		"id": 17
+		"enabled": false,
+		"id": 16
 	},
 	"hr": {
-		"id": 18
+		"enabled": false,
+		"id": 17
 	},
 	"hu": {
-		"id": 19
+		"enabled": false,
+		"id": 18
 	},
 	"id": {
-		"id": 20
+		"enabled": false,
+		"id": 19
 	},
 	"io": {
-		"id": 21
+		"enabled": false,
+		"id": 20
 	},
 	"isv_c": {
-		"id": 22
+		"enabled": false,
+		"id": 21
 	},
 	"isv_l": {
-		"id": 23
+		"enabled": false,
+		"id": 22
 	},
 	"it": {
-		"id": 24
+		"enabled": false,
+		"id": 23
 	},
 	"ith_n": {
-		"id": 25
+		"enabled": false,
+		"id": 24
 	},
 	"ja": {
-		"id": 26
+		"enabled": false,
+		"id": 25
 	},
 	"kbt": {
-		"id": 27
+		"enabled": false,
+		"id": 26
 	},
 	"ko": {
-		"id": 28
+		"enabled": false,
+		"id": 27
 	},
 	"la": {
-		"id": 29
+		"enabled": false,
+		"id": 28
 	},
 	"lou": {
-		"id": 30
+		"enabled": false,
+		"id": 29
 	},
 	"lt": {
-		"id": 31
+		"enabled": false,
+		"id": 30
 	},
 	"mi": {
-		"id": 32
+		"enabled": false,
+		"id": 31
 	},
 	"nb": {
-		"id": 33
+		"enabled": false,
+		"id": 32
 	},
 	"nl": {
-		"id": 34
+		"enabled": false,
+		"id": 33
 	},
 	"nn": {
-		"id": 35
+		"enabled": false,
+		"id": 34
 	},
 	"pa": {
-		"id": 36
+		"enabled": false,
+		"id": 35
 	},
 	"pl": {
-		"id": 37
+		"enabled": false,
+		"id": 36
 	},
 	"pt": {
-		"id": 38
+		"enabled": false,
+		"id": 37
 	},
 	"ro": {
-		"id": 39
+		"enabled": false,
+		"id": 38
 	},
 	"ru": {
-		"id": 40
+		"enabled": false,
+		"id": 39
 	},
 	"sl": {
-		"id": 41
+		"enabled": false,
+		"id": 40
 	},
 	"sv": {
-		"id": 42
+		"enabled": false,
+		"id": 41
 	},
 	"th": {
-		"id": 43
+		"enabled": false,
+		"id": 42
 	},
 	"tkl": {
-		"id": 44
+		"enabled": false,
+		"id": 43
 	},
 	"tl_l": {
-		"id": 45
+		"enabled": false,
+		"id": 44
 	},
 	"tok": {
-		"id": 46
+		"enabled": false,
+		"id": 45
 	},
 	"tr": {
-		"id": 47
+		"enabled": false,
+		"id": 46
 	},
 	"uk": {
-		"id": 48
+		"enabled": false,
+		"id": 47
 	},
 	"ur": {
-		"id": 49
+		"enabled": false,
+		"id": 48
 	},
 	"wuu": {
-		"id": 50
+		"enabled": false,
+		"id": 49
 	},
 	"yi": {
-		"id": 51
+		"enabled": false,
+		"id": 50
 	},
 	"yue": {
-		"id": 52
+		"enabled": false,
+		"id": 51
 	},
 	"zh_hans": {
-		"id": 53
+		"enabled": false,
+		"id": 52
 	},
 	"zh_hant": {
 		"id": 54
