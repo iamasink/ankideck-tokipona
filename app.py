@@ -41,7 +41,7 @@ with open('cards/css.css','r', encoding="utf-8") as f:
 
 
 # update languages file
-LANGUAGE_FILE = Path("languages.json")
+LANGUAGE_FILE = Path("generated/languages.json")
 LANGUAGE_CONFIGFILE = Path("languageconfig.json")
 language_data = {}
 language_config_data = {}
@@ -95,7 +95,8 @@ my_model = genanki.Model(
 		{"name": "Usage"},
 		{"name": "Usage Category"},
 		{"name": "Audio"}, # can have multiple "[sound:name.mp3] [sound:name2.mp3]"
-		{"name": "Glyph"}
+		{"name": "Glyph"},
+		{"name": "Links"},
 		#  {"name": },
 		#  {"name": },
 		],
@@ -371,6 +372,18 @@ for lang in language_data:
 		# logger.info(glyph)
 
 
+
+		# add links
+		links = ""
+		links += "nimi.li: https://nimi.li/" + word["word"]
+
+		for r in word["resources"]:
+			links += "<br/>\n" + r.replace("_"," ") + ": " + word["resources"][r]
+
+
+
+
+
 		# add tags
 		tag_prefix = "TP::"
 		mytags = [
@@ -382,7 +395,7 @@ for lang in language_data:
 		# Create and add note
 		note = MyNote(
 			model=my_model,
-			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph],
+			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links],
 			tags=mytags,
 			due=wordnum,
 		)
