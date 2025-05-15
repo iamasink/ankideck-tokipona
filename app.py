@@ -215,6 +215,7 @@ for lang in language_data:
 
 		# Save new data
 		with DATA_FILE.open("w", encoding="utf-8") as f:
+			logger.info("saving new data")
 			json.dump(resp.text, f, ensure_ascii=False, indent=2)
 	except Exception as e:
 		logger.error(f"Failed to fetch words: {e}")

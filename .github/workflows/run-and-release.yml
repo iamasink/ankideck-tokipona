@@ -56,7 +56,7 @@ jobs:
         id: changed
         uses: tj-actions/verify-changed-files@v20
         with:
-          files: generated/*.apkg
+          files: generated/*
 
       - name: Commit changes
         if: steps.changed.outputs.files_changed == 'true'
