@@ -1,34 +1,34 @@
 {
 	"ar": {
-		"enabled": false,
+		"enabled": true,
 		"id": 3
 	},
 	"ca": {
-		"enabled": false,
+		"enabled": true,
 		"id": 4
 	},
 	"ceb_l": {
-		"enabled": false,
+		"enabled": true,
 		"id": 5
 	},
 	"cs": {
-		"enabled": false,
+		"enabled": true,
 		"id": 6
 	},
 	"cy": {
-		"enabled": false,
+		"enabled": true,
 		"id": 7
 	},
 	"da": {
-		"enabled": false,
+		"enabled": true,
 		"id": 8
 	},
 	"de": {
-		"enabled": false,
+		"enabled": true,
 		"id": 9
 	},
 	"el": {
-		"enabled": false,
+		"enabled": true,
 		"id": 10
 	},
 	"en": {
@@ -36,182 +36,183 @@
 		"id": 1
 	},
 	"eo": {
-		"enabled": false,
+		"enabled": true,
 		"id": 2
 	},
 	"es": {
-		"enabled": false,
+		"enabled": true,
 		"id": 54
 	},
 	"fa": {
-		"enabled": false,
+		"enabled": true,
 		"id": 11
 	},
 	"fi": {
-		"enabled": false,
+		"enabled": true,
 		"id": 12
 	},
 	"fr": {
-		"enabled": false,
+		"enabled": true,
 		"id": 13
 	},
 	"haw": {
-		"enabled": false,
+		"enabled": true,
 		"id": 14
 	},
 	"he": {
-		"enabled": false,
+		"enabled": true,
 		"id": 15
 	},
 	"hi": {
-		"enabled": false,
+		"enabled": true,
 		"id": 16
 	},
 	"hr": {
-		"enabled": false,
+		"enabled": true,
 		"id": 17
 	},
 	"hu": {
-		"enabled": false,
+		"enabled": true,
 		"id": 18
 	},
 	"id": {
-		"enabled": false,
+		"enabled": true,
 		"id": 19
 	},
 	"io": {
-		"enabled": false,
+		"enabled": true,
 		"id": 20
 	},
 	"isv_c": {
-		"enabled": false,
+		"enabled": true,
 		"id": 21
 	},
 	"isv_l": {
-		"enabled": false,
+		"enabled": true,
 		"id": 22
 	},
 	"it": {
-		"enabled": false,
+		"enabled": true,
 		"id": 23
 	},
 	"ith_n": {
-		"enabled": false,
+		"enabled": true,
 		"id": 24
 	},
 	"ja": {
-		"enabled": false,
+		"enabled": true,
 		"id": 25
 	},
 	"kbt": {
-		"enabled": false,
+		"enabled": true,
 		"id": 26
 	},
 	"ko": {
-		"enabled": false,
+		"enabled": true,
 		"id": 27
 	},
 	"la": {
-		"enabled": false,
+		"enabled": true,
 		"id": 28
 	},
 	"lou": {
-		"enabled": false,
+		"enabled": true,
 		"id": 29
 	},
 	"lt": {
-		"enabled": false,
+		"enabled": true,
 		"id": 30
 	},
 	"mi": {
-		"enabled": false,
+		"enabled": true,
 		"id": 31
 	},
 	"nb": {
-		"enabled": false,
+		"enabled": true,
 		"id": 32
 	},
 	"nl": {
-		"enabled": false,
+		"enabled": true,
 		"id": 33
 	},
 	"nn": {
-		"enabled": false,
+		"enabled": true,
 		"id": 34
 	},
 	"pa": {
-		"enabled": false,
+		"enabled": true,
 		"id": 35
 	},
 	"pl": {
-		"enabled": false,
+		"enabled": true,
 		"id": 36
 	},
 	"pt": {
-		"enabled": false,
+		"enabled": true,
 		"id": 37
 	},
 	"ro": {
-		"enabled": false,
+		"enabled": true,
 		"id": 38
 	},
 	"ru": {
-		"enabled": false,
+		"enabled": true,
 		"id": 39
 	},
 	"sl": {
-		"enabled": false,
+		"enabled": true,
 		"id": 40
 	},
 	"sv": {
-		"enabled": false,
+		"enabled": true,
 		"id": 41
 	},
 	"th": {
-		"enabled": false,
+		"enabled": true,
 		"id": 42
 	},
 	"tkl": {
-		"enabled": false,
+		"enabled": true,
 		"id": 43
 	},
 	"tl_l": {
-		"enabled": false,
+		"enabled": true,
 		"id": 44
 	},
 	"tok": {
-		"enabled": false,
+		"enabled": true,
 		"id": 45
 	},
 	"tr": {
-		"enabled": false,
+		"enabled": true,
 		"id": 46
 	},
 	"uk": {
-		"enabled": false,
+		"enabled": true,
 		"id": 47
 	},
 	"ur": {
-		"enabled": false,
+		"enabled": true,
 		"id": 48
 	},
 	"wuu": {
-		"enabled": false,
+		"enabled": true,
 		"id": 49
 	},
 	"yi": {
-		"enabled": false,
+		"enabled": true,
 		"id": 50
 	},
 	"yue": {
-		"enabled": false,
+		"enabled": true,
 		"id": 51
 	},
 	"zh_hans": {
-		"enabled": false,
+		"enabled": true,
 		"id": 52
 	},
 	"zh_hant": {
+		"enabled": true,
 		"id": 54
 	}
 }
