@@ -50,14 +50,7 @@ jobs:
       #     git add .
 
 
-      - name: Check for changed files
-        id: changed
-        uses: tj-actions/verify-changed-files@v20
-        # with:
-        #   files: generated/*
-
       - name: Commit changes
-        if: steps.changed.outputs.files_changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -75,7 +68,6 @@ jobs:
 
 
       - name: Bump version and push tag
-        if: steps.changed.outputs.files_changed == 'true'
         uses: anothrNick/github-tag-action@v1
         id: bump
         env:
@@ -87,7 +79,6 @@ jobs:
 
       # Create Release only when changes were committed
       - name: Create Release
-        if: steps.changed.outputs.files_changed == 'true'
         run: |
           tag="v${{ steps.bump.outputs.new_tag }}"
           echo "Creating release $tag"
