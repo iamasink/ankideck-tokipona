@@ -177,12 +177,14 @@ for lang in language_data:
 
 	deckid = int(1747151651209 + int(langid))
 	ids.append(deckid)
+	endonym = langinfo["name"].get("endonym", "")
+	tokname = langinfo["name"].get("tok", "")
 
 	# Create your deck
 	my_deck = genanki.Deck(
 		# custom id per lang
 		deckid,
-		f"toki pona {langinfo["name"]["endonym"]} ({langinfo["name"]["tok"]})"
+		f"toki pona {endonym} ({tokname})"
 	)
 
 	my_package = genanki.Package(my_deck)
