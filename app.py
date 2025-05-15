@@ -277,12 +277,12 @@ for lang in language_data:
 			continue
 
 		# Extract answer from translations or definition
-		worddef = word["translations"][lang]["definition"]
+		worddef = word["translations"][lang]["definition"].replace(";","\n")
 
 		if word["deprecated"]:
-			definition = html.escape("(This word is deprecated by its creator, and its use is discouraged.)\n" + worddef).replace(";", ";<br/>\n")
+			definition = html.escape("(This word is deprecated by its creator, and its use is discouraged.)\n" + worddef).replace("\n", "<br/>\n")
 		else :
-			definition = html.escape(worddef).replace(";", ";<br/>\n")
+			definition = html.escape(worddef).replace("\n", "<br/>\n")
 
 
 		commentary = html.escape(word["translations"][lang]["commentary"])
