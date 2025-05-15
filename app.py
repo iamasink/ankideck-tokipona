@@ -13,8 +13,6 @@ FONT_NAME = "sitelenselikiwenmonoasuki"
 
 
 
-
-
 # Configure logging
 logging.basicConfig(
 	level=logging.INFO,
@@ -22,9 +20,6 @@ logging.basicConfig(
 	datefmt="%H:%M:%S"
 )
 logger = logging.getLogger(__name__)
-
-
-
 
 
 def get_latest_usage(w):
@@ -35,45 +30,117 @@ def get_latest_usage(w):
 	return usage_data[latest_date]
 
 
-
-
-JUST_FETCH_ENGLISH = False
-
 ids = []
 
+with open('cards/word.html','r', encoding="utf-8") as f:
+	wordhtml = f.read(-1)
+with open('cards/sitelenpona.html','r', encoding="utf-8") as f:
+	sitelenponahtml = f.read(-1)
+with open('cards/css.css','r', encoding="utf-8") as f:
+	csscontent = f.read(-1)
 
-if (JUST_FETCH_ENGLISH):
-	LANGUAGES = ["en"]
+
+# update languages file
+LANGUAGE_FILE = Path("languages.json")
+LANGUAGE_CONFIGFILE = Path("languageconfig.json")
+language_data = {}
+language_config_data = {}
+if LANGUAGE_FILE.exists():
+	with LANGUAGE_FILE.open("r", encoding="utf-8") as f:
+		language_data = json.load(f)
 else:
-	LANGUAGES = ["en","eo","ar","ceb_l","cs","cy","da","de","el","es","fi","fr","haw","he","hi","hr","id","io","isv_c","isv_l","it","ith_n","ja","ko","la","lou","lt","mi","nl","nn","nb","pa","pl","pt","ro","ru","sl","sv","tkl","tl_l","tok","tr","uk","ur","yi","zh_hans","ca","wuu","hu","yue","fa","kbt"]
-	# LANGUAGES = ["en"]
+	logger.fatal("language file doesn't exist")
+	exit()
+
+if LANGUAGE_CONFIGFILE.exists():
+	with LANGUAGE_CONFIGFILE.open("r", encoding="utf-8") as f:
+		language_config_data = json.load(f)
+else:
+	logger.fatal("language file doesn't exist")
+	exit()
+
+resp = requests.get("https://api.linku.la/v1/languages")
+logger.info(f"Requested /languages endpoint, received status {resp.status_code}")
+resp.raise_for_status()
+apilanguages = resp.json() 
+logger.info(f"Got {len(apilanguages)} languages.")
+
+for l in apilanguages:
+	if not l in language_data:
+		language_data[l] = {}
+	language_data[l] = apilanguages[l]
+
+# write back to file
+LANGUAGE_FILE.write_text(json.dumps(language_data, sort_keys=True, ensure_ascii=False, indent=4), encoding="utf-8")
+for l in apilanguages:
+	if not l in language_config_data:
+		language_config_data[l] = {
+			"enabled": False,
+			"id": -1,
+		}
+LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, ensure_ascii=False, indent=4), encoding="utf-8")
+
+# Define your model
+my_model = genanki.Model(
+	1747075454,
+	"Toki Pona Model",
+	fields=[
+		{"name": "Word"}, 
+		{"name": "Definition"},
+		{"name": "Commentary"},
+		{"name": "Creator"},
+		{"name": "Coined Era"},
+		{"name": "Coined Year"},
+		{"name": "Book"},
+		{"name": "Usage"},
+		{"name": "Usage Category"},
+		{"name": "Audio"}, # can have multiple "[sound:name.mp3] [sound:name2.mp3]"
+		{"name": "Glyph"}
+		#  {"name": },
+		#  {"name": },
+		],
+		templates=[{
+		"name": "Toki Pona Word",
+		"qfmt": """
+<div class="centered">
+<strong>{{Word}}</strong><br>
+</div>
+		""",
+		"afmt": wordhtml
+		},
+		{
+			"name": "Toki Pona sitelen pona",
+			"qfmt": """
+<div class="centered">
+<strong>{{Glyph}}</strong><br>
+</div>
+		""",
+		"afmt": sitelenponahtml
+		}
+		
+		],
+	css=csscontent
+)
 
 
-# get languages from api https://api.linku.la/v1/languages
-# add any that don't already exist in LANGUAGES
-# Existing list of languages
-if (not JUST_FETCH_ENGLISH):
-	try:
-		resp = requests.get("https://api.linku.la/v1/languages")
-		resp.raise_for_status()
-		api_languages = resp.json()
 
-		for lang in api_languages:
-			if lang not in LANGUAGES:
-				LANGUAGES.append(lang)
-				logger.info("added language not previously in list: " + lang)
-
-		logger.info(f"Updated LANGUAGES list: {LANGUAGES}")
-	except requests.RequestException as e:
-		logger.error(f"Error fetching languages: {e}")
-
-totallanguages = len(LANGUAGES)
+languagecount = len(language_data)
 
 
-for lang in LANGUAGES:
-	index = LANGUAGES.index(lang)
-	percent = (index) / totallanguages * 100
-	logger.info(f"running language '{lang}' {index+1}/{totallanguages} ({percent:.1f}%)")
+for lang in language_data:
+	logger.info("lang: "+ lang)
+	langinfo = language_data[lang]
+	langconfig = language_config_data[lang]
+
+	logger.info("langinfo: " + str(langinfo))
+	enabled = langconfig.get("enabled", False)
+	
+	if (not enabled):
+		logger.info(f"skipping disabled language ({langinfo["name"]["en"]})")
+		continue
+	
+	langid = langconfig["id"]
+	logger.info(f"running language '{lang}' ({langinfo["name"]["en"]})")
 
 
 	# set custom guid with only the Word so it can be overwritten in future!
@@ -101,63 +168,12 @@ for lang in LANGUAGES:
 		# "sandbox" # won't work by default
 	]
 
-	wordhtmlfile = open('cards/sitelenpona.html','r')
-	wordhtml = wordhtmlfile.read(-1)
-	sitelenponahtmlfile = open('cards/sitelenpona.html','r')
-	sitelenponahtml = sitelenponahtmlfile.read(-1)
-	csscontentfile = open('cards/css.css','r')
-	csscontent = csscontentfile.read(-1)
 
-	logger.info(wordhtml)
 
-	# Define your model
-	my_model = genanki.Model(
-		1747075454,
-		"Toki Pona Model",
-		fields=[
-			{"name": "Word"}, 
-			{"name": "Definition"},
-			{"name": "Commentary"},
-			{"name": "Creator"},
-			{"name": "Coined Era"},
-			{"name": "Coined Year"},
-			{"name": "Book"},
-			{"name": "Usage"},
-			{"name": "Usage Category"},
-			{"name": "Audio"}, # can have multiple "[sound:name.mp3] [sound:name2.mp3]"
-			{"name": "Glyph"}
-			#  {"name": },
-			#  {"name": },
-			],
-			templates=[{
-			"name": "Toki Pona Word",
-			"qfmt": """
-<div class="centered">
-	<strong>{{Word}}</strong><br>
-</div>
-			""",
-			"afmt": wordhtml
-			},
-			{
-				"name": "Toki Pona sitelen pona",
-				"qfmt": """
-<div class="centered">
-	<strong>{{Glyph}}</strong><br>
-</div>
-			""",
-			"afmt": sitelenponahtml
-			}
-			
-			],
-		css=csscontent
-	)
 
-	# get the langid from the code 
-	# this is to automatically support future languages with unique ids
-	# maybe this is a bad way to do it but /shrug
-	langupper = lang.replace("_","").replace("-","").replace(":","").upper()
-	lang3 = langupper[:4] + langupper[-1:]
-	langid = ''.join(str(ord(c) - ord("A")) if c.isalpha() else 'A' for c in lang3)
+	# logger.info(wordhtml)
+
+
 	deckid = int(1747151651209 + int(langid))
 	ids.append(deckid)
 
@@ -165,7 +181,7 @@ for lang in LANGUAGES:
 	my_deck = genanki.Deck(
 		# custom id per lang
 		deckid,
-		"toki pona " + lang
+		f"toki pona {langinfo["name"]["endonym"]} ({langinfo["name"]["tok"]})"
 	)
 
 	my_package = genanki.Package(my_deck)
@@ -243,7 +259,10 @@ for lang in LANGUAGES:
 		# logger.info(w["word"])
 
 	# Loop through entries and add cards
+	wordnum = 0
+
 	for entry in sorted_words:
+		wordnum+=1
 		word = entry
 		wordname = word["word"]
 
@@ -254,7 +273,14 @@ for lang in LANGUAGES:
 			continue
 
 		# Extract answer from translations or definition
-		definition = html.escape(word["translations"][lang]["definition"])
+		worddef = word["translations"][lang]["definition"].replace(";", ";\n")
+
+		if word["deprecated"]:
+			definition = html.escape("(This word is deprecated by its creator, and its use is discouraged.)\n" + worddef)
+		else :
+			definition = html.escape(worddef)
+
+
 		commentary = html.escape(word["translations"][lang]["commentary"])
 		
 		creator = html.escape(", ".join((word["creator"])))
@@ -355,7 +381,7 @@ for lang in LANGUAGES:
 			model=my_model,
 			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph],
 			tags=mytags,
-			due=0,
+			due=wordnum,
 		)
 
 

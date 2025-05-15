@@ -1,5 +1,5 @@
 # Anki deck using sona Linku
-This repo automatically generates an Anki deck based on [sona Linku](https://linku.la/about) and translations from nimi Linku
+This repo automatically generates an Anki deck based on [sona Linku](https://linku.la/about)
 
 # How to install
 Download the latest file below, and open in Anki by double-clicking, dragging into Anki or File -> Import  
@@ -14,7 +14,8 @@ endonym = "English"
 tok = "toki Inli"  
 
 > [!NOTE] 
-Some languages are incomplete, and use English as a backup for untranslated text.  
+Many languages are incomplete, and use English as a backup for untranslated text.  
+You can see language progress at https://linku.crowdin.com  
   
 [ja]  
 Japanese   
@@ -394,3 +395,5 @@ https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona
 # setup fonts
 install fontforge
 run setupfonts.py
+
+
