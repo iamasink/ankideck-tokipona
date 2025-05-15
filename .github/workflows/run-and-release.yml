@@ -82,7 +82,7 @@ jobs:
           tag="v1.${{ github.run_number }}"
           echo "Renaming output files to include $tag"
           for f in generated/*.apkg; do
-            mv "$f" "${f%.apkg}-$tag.apkg"
+            mv "$f" "${f%.apkg}.apkg"
           done
           echo "Creating release $tag"
           gh release create $tag \
