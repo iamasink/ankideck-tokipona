@@ -375,10 +375,13 @@ for lang in language_data:
 
 		# add links
 		links = ""
-		links += "nimi.li: https://nimi.li/" + word["word"]
+		links += f"nimi.li: <a href='https://nimi.li/{word["word"]}'>{word["word"]}</a><br/>"
+
+		for w in word["see_also"]:
+			links += f" <a href='https://nimi.li/{w}'>{w}</a>"
 
 		for r in word["resources"]:
-			links += "<br/>\n" + r.replace("_"," ") + ": " + word["resources"][r]
+			links += f"<br/> {r.replace("_"," ")}: <a href={word["resources"][r]}>{word["word"]}</a>"
 
 
 
