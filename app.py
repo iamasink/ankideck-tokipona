@@ -165,7 +165,7 @@ for lang in language_data:
 		"common",
 		"uncommon",
 		"obscure",
-		# "sandbox" # won't work by default
+		# "sandbox" # won't work by default (need to request sandbox api)
 	]
 
 
