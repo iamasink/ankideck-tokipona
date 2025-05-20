@@ -14,7 +14,7 @@ import argparse
 
 
 parser = argparse.ArgumentParser("simple_example")
-parser.add_argument("-f", "--forceChange", help="Whether to force build even if there are no changed", default=False, required=False, action="store_true")
+parser.add_argument("-f", "--forceChange", help="Whether to force build even if there are no changes", default=False, required=False, action="store_true")
 args = parser.parse_args()
 
 # Configure logging
