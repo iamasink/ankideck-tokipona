@@ -8,6 +8,7 @@ import re
 import json
 import hashlib
 import os
+import random
 
 import argparse
 
@@ -87,9 +88,11 @@ for l in apilanguages:
 LANGUAGE_FILE.write_text(json.dumps(language_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 for l in apilanguages:
 	if not l in language_config_data:
+		# create a random number id
+		id = random.randint(100,999)
 		language_config_data[l] = {
 			"enabled": False,
-			"id": -1,
+			"id": id,
 		}
 LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 
@@ -167,11 +170,11 @@ for lang in language_data:
 	BASE_DIR = Path(__file__).parent 
 	DATA_FILE = BASE_DIR / "generated" /  f"cached_words-{lang}.json"
 	AUDIO_SUBDIR = Path("ijo") / "kalama"
-	# GLYPH_SUBDIR = Path("ijo") / "sitelensitelen" / "jonathangabel"
 	GLYPH_SUBDIR = Path("ijo") / "sitelenpona" / "sitelen-seli-kiwen"
 	AUDIO_PEOPLE = ["kalaasi2023", "jlakuse"]
 
 	FILES_DIR = BASE_DIR / "files"
+	# ensure dir exists
 	FILES_DIR.mkdir(parents=True, exist_ok=True)
 
 	ENABLED_CATEGORIES = [
@@ -292,12 +295,15 @@ for lang in language_data:
 			# logger.info("skipping word, its in category" + word["usage_category"] + "which isn't enabled.")
 			continue
 
-		# Extract answer from translations or definition
+		# set definition and split newlines by ;
 		worddef = word["translations"][lang]["definition"].replace(";","\n")
 
 		if word["deprecated"]:
+			# add dewprecated warning
+			# replace newline chars with <br/> + newline
 			definition = html.escape("(This word is deprecated by its creator, and its use is discouraged.)\n" + worddef).replace("\n", "<br/>\n")
 		else :
+			# replace newline chars with <br/> + newline
 			definition = html.escape(worddef).replace("\n", "<br/>\n")
 
 
@@ -305,7 +311,7 @@ for lang in language_data:
 		
 		creator = html.escape(", ".join((word["creator"])))
 		coined_era = html.escape(word["coined_era"])
-		coined_year =html.escape(word["coined_year"])
+		coined_year = html.escape(word["coined_year"])
 
 		origbook = word["book"]
 		if (not origbook or origbook == "none"):
@@ -330,7 +336,8 @@ for lang in language_data:
 		# 		my_package.media_files.append(str(rel_mp3))
 		# audio = html.escape(audio_html)
 
-		# Audio: copy to files/audio/word-author.mp3 and reference relatively
+		# Audio: copy to custom filename so the imported file will have this filename
+		# (to prevent conflicts)
 		audio_html = ""
 		for author in AUDIO_PEOPLE:
 			rel_source = AUDIO_SUBDIR / author / f"{wordname}.mp3"
@@ -349,8 +356,8 @@ for lang in language_data:
 		audio = html.escape(audio_html)
 		# logger.info(audio)
 
-		# Glyphs (relative paths)
-		#
+
+
 		ligatures = list(word["representations"]["ligatures"])
 		# logger.info(ligatures)
 
@@ -428,9 +435,3 @@ for lang in language_data:
 	output_file = f"toki-pona-deck-{lang}.apkg"
 	my_package.write_to_file("generated/" + output_file)
 	logger.info(f"Done {lang}! Written {len(my_deck.notes)} notes to {output_file} (id {deckid})")
-
-logger.info("all ids:")
-logger.info(ids)
-
-if len(ids) != len(set(ids)):
-    logger.error("Duplicates found")
