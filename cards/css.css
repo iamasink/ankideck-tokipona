@@ -53,6 +53,7 @@
 
 .card {
 	width: 95%;
+	font-size: 18px;
 }
 
 .content {
@@ -81,4 +82,7 @@
 
 .word {
 	font-weight: bolder;
+}
+.bigword {
+	font-size: 28px;
 }
