@@ -1,27 +1,33 @@
 /* colours from nimi.li */
 .usagecatcore {
 	color: rgb(52 211 153);
+	font-weight: bolder;
 }
 
 .usagecatcommon {
 	color: rgb(56 189 248);
+	font-weight: bolder;
 }
 
 .usagecatuncommon {
 	color: rgb(250 204 21);
+	font-weight: bolder;
 }
 
 .usagecatobscure {
 	color: rgb(232 121 249);
+	font-weight: bolder;
 }
 
 .usagecatsandbox {
 	color: rgb(209 213 219);
+	font-weight: bolder;
 }
 
 /* unknown or unset category */
 .usagecat {
 	color: rgb(209 213 219);
+	font-weight: bolder;
 }
 
 .book,
@@ -62,6 +68,13 @@
 	color: rgb(168, 168, 168);
 }
 
+.glyph {
+	filter: invert(1);
+}
+
+.nightMode .glyph {
+	filter: invert(0);
+}
 .definition {
 	font-weight: bolder;
 }
