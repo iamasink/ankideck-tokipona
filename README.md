@@ -1,5 +1,5 @@
 # Anki deck using sona Linku
-This repo automatically generates Anki decks based on [sona Linku](https://linku.la/about) for all languages.
+This repo automatically generates Anki decks based on [sona Linku](https://linku.la/about) for all languages.  
 
 # How to install
 Download the latest file below, and open in Anki by double-clicking or dragging into Anki or File -> Import  
