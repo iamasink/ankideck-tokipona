@@ -120,7 +120,7 @@ my_model = genanki.Model(
 		templates=[{
 		"name": "Toki Pona Word",
 		"qfmt": """
-<div class="centered">
+<div class="centered word">
 <strong>{{Word}}</strong><br>
 </div>
 		""",
@@ -129,8 +129,8 @@ my_model = genanki.Model(
 		{
 			"name": "Toki Pona sitelen pona",
 			"qfmt": """
-<div class="centered">
-<strong>{{Glyph}}</strong><br>
+<div class="centered glyph">
+{{Glyph}}<br>
 </div>
 		""",
 		"afmt": sitelenponahtml
