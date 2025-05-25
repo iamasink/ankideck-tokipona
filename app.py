@@ -16,6 +16,7 @@ import argparse
 
 parser = argparse.ArgumentParser("simple_example")
 parser.add_argument("-f", "--forceChange", help="Whether to force build even if there are no changes", default=False, required=False, action="store_true")
+parser.add_argument("-e", "--englishOnly", help="only run english", default=False, required=False, action="store_true")
 args = parser.parse_args()
 
 # Configure logging
@@ -145,6 +146,10 @@ languagecount = len(language_data)
 
 
 for lang in language_data:
+	if args.englishOnly and lang != "en":
+		logger.info(f"skipping language {lang} because englishOnly is set")
+		continue
+
 	logger.info("lang: "+ lang)
 	langinfo = language_data[lang]
 	langconfig = language_config_data[lang]
