@@ -262,7 +262,7 @@ for lang in language_data:
 	"alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
 	"telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
 	"leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
-	"pakala", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "akesi", "kala", "pan",
+	"pakala", "a", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "akesi", "kala", "pan",
 	"kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
 	"lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
 	"luka", "mute", "ale", "kipisi", "nanpa", "olin", "unpa", "mama", "mije", "meli", "tonsi",
