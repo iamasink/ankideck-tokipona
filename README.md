@@ -12,369 +12,6 @@ There are languages other than English available at https://github.com/iamasink/
 # How to install
 Download the latest file below, and open in Anki by double-clicking it, dragging it into Anki or File -> Import  
 
-# Download
-  
-### English (English)
-[en]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-en.apkg  
-"en-US"  
-tok = "toki Inli"  
-
-
-### Nederlands (Dutch)
-[nl]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nl.apkg  
-"nl-NL"  
-tok = "toki Netelan"  
-
-### Türkçe (Turkish)
-[tr]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tr.apkg  
-"tr-TR"  
-tok = "toki Tuki"  
-
-### Polski (Polish)
-[pl]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pl.apkg  
-"pl-PL"  
-tok = "toki Posuka"  
-
-### 中文（简体） (Chinese (Simplified))
-[zh_hans]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-zh_hans.apkg  
-"zh-CN"  
-tok = "toki Sonko (sitelen Kansi pi ijo lili)"  
-  
-### 中文（繁體） (Chinese (Traditional))
-[zh_hant]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-zh_hant.apkg  
-"zh-TW"  
-tok = "toki Sonko (sitelen Kansi pi ijo mute)"  
-
-### עברית (Hebrew)
-[he]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-he.apkg  
-"he-IL"  
-tok = "toki Iwisi"  
-
-### Français (French)
-[fr]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fr.apkg  
-"fr-FR"  
-tok = "toki Kanse"  
-
-### Čeština (Czech)
-[cs]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-cs.apkg  
-"cs-CZ"  
-tok = "toki Seki"  
-
-### Español (Spanish)
-[es]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-es.apkg  
-"es-ES"  
-tok = "toki Epanja"  
-
-### Português (Portuguese)
-[pt]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pt.apkg  
-"pt-BR"  
-tok = "toki Potuke"  
-
-### català (Catalan)
-[ca]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ca.apkg  
-"ca-ES"  
-tok = "toki Katala"  
-
-### Italiano (Italian)
-[it]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-it.apkg  
-"it-IT"  
-tok = "toki Italija"  
-
-### toki pona
-[tok]  
-(this shows definitions in toki pona, not suggested for learning lol)  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tok.apkg  
-"tok-US"  
-
-### Esperanto (Esperanto)
-[eo]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-eo.apkg  
-"eo-UY"  
-tok = "toki Epelanto"  
-
-### Norsk (Nynorsk) (Norwegian (Nynorsk))
-[nn]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nn.apkg  
-"nn-NO"  
-tok = "toki Nosiki sin"  
-
-### Deutsch (German)
-[de]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-de.apkg  
-"de-DE"  
-tok = "toki Tosi"  
-
-### Русский (Russian)
-[ru]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ru.apkg  
-"ru-RU"  
-tok = "toki Losi"  
-
-> [!NOTE] 
-Many languages are incomplete, and use English as a backup for untranslated text.  
-You can see language progress at https://linku.crowdin.com/nimi-linku  
-  
-### 日本語 (Japanese)
-[ja]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ja.apkg  
-"ja-JP"  
-tok = "toki Nijon"  
-
-### 上海閑話 (Wu (Shanghai))
-[wuu]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-wuu.apkg  
-"wuu"  
-tok = "toki Sane"  
-
-### Ελληνικά (Greek)
-[el]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-el.apkg  
-"el-GR"  
-tok = "toki Elena"  
-
-  
-<br/>  
-
-### اللغة العربية (Standard Arabic)
-[ar]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ar.apkg  
-"ar-SA"  
-tok = "toki Alapi"  
-  
-### Sinugboanon (Sa Sinulatan Nga Latin) (Cebuano (Latin))
-[ceb_l]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ceb_l.apkg  
-"ceb-PH"  
-tok = "toki Sinupuwanon (sitelen Lasina)"  
-  
-
-  
-### Cymraeg (Welsh)
-[cy]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-cy.apkg  
-"cy-GB"  
-tok = "toki Kinli"  
-  
-### Dansk (Danish)
-[da]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-da.apkg  
-"da-DK"  
-tok = "toki Tansi"  
-  
-
-  
-
-  
-
-  
-### Suomi (Finnish)
-[fi]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fi.apkg  
-"fi-FI"  
-tok = "toki Sumi"  
-  
-
-  
-### ʻŌlelo Hawaiʻi (Hawaiian)
-[haw]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-haw.apkg  
-"haw-US"  
-tok = "toki Awaje"  
-  
-
-  
-### हिंदी (Hindi)
-[hi]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-hi.apkg  
-"hi-IN"  
-tok = "toki Insi"  
-  
-### Hrvatski (Croatian)
-[hr]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-hr.apkg  
-"hr-HR"  
-tok = "toki Lowasi"  
-  
-### Bahasa Indonesia (Indonesian)
-[id]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-id.apkg  
-"id-ID"  
-tok = "toki Intonesija"  
-  
-### Ido (Ido)
-[io]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-io.apkg  
-"io-EN"  
-tok = "toki Ito"  
-  
-### Меджусловјанскы (кирилица) (Interslavic (Cyrillic))
-[isv_c]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-isv_c.apkg  
-"isvc"  
-tok = "toki Mesulojanki (sitelen Kililisa)"  
-  
-### Medžuslovjansky (latinica) (Interslavic (Latin))
-[isv_l]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-isv_l.apkg  
-"isvl"  
-tok = "toki Mesulojanki (sitelen Lasina)"  
-  
-
-  
-### Malëuţřait (New Ithkuil)
-[ith_n]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ith_n.apkg  
-"itk"  
-tok = "toki Ikuwi"  
-  
-### 한국어 (Korean)
-[ko]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ko.apkg  
-"ko-KR"  
-tok = "toki Anku"  
-  
-### Latina (Latin)
-[la]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-la.apkg  
-"la-LA"  
-tok = "toki Lasina"  
-  
-### Kouri-Vini (Louisiana Creole)
-[lou]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-lou.apkg  
-"lou"  
-tok = "toki Kuliwini"  
-  
-### Lietuvių (Lithuanian)
-[lt]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-lt.apkg  
-"lt-LT"  
-tok = "toki Lijutawa"  
-  
-### Te Reo Māori (Māori)
-[mi]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-mi.apkg  
-"mi-NZ"  
-tok = "toki Mali"  
-  
-  
-
-  
-### Norsk (Bokmål) (Norwegian (Bokmål))
-[nb]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nb.apkg  
-"nb-NO"  
-tok = "toki Nosiki"  
-  
-### ਪੰਜਾਬੀ (Punjabi)
-[pa]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pa.apkg  
-"pa-IN"  
-tok = "toki Pansapi"  
-  
-
-  
-
-  
-### Română (Romanian)
-[ro]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ro.apkg  
-"ro-RO"  
-tok = "toki Lomuno"  
-  
-
-  
-### Slovenščina (Slovene)
-[sl]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-sl.apkg  
-"sl-SI"  
-tok = "toki Lowensina"  
-  
-### Svenska (Swedish)
-[sv]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-sv.apkg  
-"sv-SE"  
-tok = "toki Sensa"  
-  
-### Te Gagana Tokelau (Tokelauan)
-[tkl]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tkl.apkg  
-"tkl"  
-tok = "toki Tokela"  
-  
-### Tagalog (Latin) (Tagalog (Latin))
-[tl_l]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tl_l.apkg  
-"tl-PH"  
-tok = "toki Takalo (sitelen Lasina)"  
-  
-  
-  
-### Українська (Ukrainian)
-[uk]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-uk.apkg  
-"uk-UA"  
-tok = "toki Ukawina"  
-  
-### اردو (Urdu)
-[ur]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ur.apkg  
-"ur-PK"  
-tok = "toki Utu"  
-  
-### ייִדיש‎ (Yiddish)
-[yi]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-yi.apkg  
-"yi-DE"  
-tok = "toki Isisi"  
-  
-
-  
-
-  
-
-  
-### magyar (Hungarian)
-[hu]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-hu.apkg  
-"hu-HU"  
-tok = "toki Mata"  
-  
-### 粤语 (Cantonese)
-[yue]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-yue.apkg  
-"yue"  
-tok = "toki Kontonwa"  
-  
-### ภาษาไทย (Thai)
-[th]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-th.apkg  
-"th-TH"  
-  
-### فارسی (Persian)
-[fa]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fa.apkg  
-"fa-IR"  
-tok = "toki Pasi"  
-  
-### kay(f)bop(t)   
-[kbt]  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-kbt.apkg  
-"kbt"  
-
 
 
 # todo
@@ -388,3 +25,223 @@ https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona
 # setup fonts
 install fontforge
 run setupfonts.py -->
+
+
+# Downloads
+
+## English
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-en.apkg    
+
+
+## French  
+(Français) - `fr-FR`  
+Definitions: 100%, Commentary: 100%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fr.apkg
+## Dutch  
+(Nederlands) - `nl-NL`  
+Definitions: 100%, Commentary: 100%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nl.apkg
+## Polish  
+(Polski) - `pl-PL`  
+Definitions: 100%, Commentary: 100%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pl.apkg
+## Turkish  
+(Türkçe) - `tr-TR`  
+Definitions: 100%, Commentary: 100%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tr.apkg
+## Chinese (Simplified)  
+(中文（简体）) - `zh-CN`  
+Definitions: 100%, Commentary: 62%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-zh-CN.apkg
+## Chinese (Traditional)  
+(中文（繁體）) - `zh-TW`  
+Definitions: 100%, Commentary: 62%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-zh-TW.apkg
+## Spanish  
+(Español) - `es-ES`  
+Definitions: 100%, Commentary: 40%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-es.apkg
+## Czech  
+(Čeština) - `cs-CZ`  
+Definitions: 98%, Commentary: 49%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-cs.apkg
+## Catalan  
+(català) - `ca-ES`  
+Definitions: 98%, Commentary: 20%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ca.apkg
+## Italian  
+(Italiano) - `it-IT`  
+Definitions: 99%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-it.apkg
+## Norwegian (Nynorsk)  
+(Norsk (Nynorsk)) - `nn-NO`  
+Definitions: 92%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nn-NO.apkg
+## German  
+(Deutsch) - `de-DE`  
+Definitions: 91%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-de.apkg
+## Portuguese  
+(Português) - `pt-BR`  
+Definitions: 81%, Commentary: 42%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pt-BR.apkg
+## Hebrew  
+(עברית) - `he-IL`  
+Definitions: 76%, Commentary: 49%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-he.apkg
+## Greek  
+(Ελληνικά) - `el-GR`  
+Definitions: 79%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-el.apkg
+## Persian  
+(فارسی) - `fa-IR`  
+Definitions: 77%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fa.apkg
+## Esperanto  
+(Esperanto) - `eo-UY`  
+Definitions: 74%, Commentary: 19%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-eo.apkg
+## Russian  
+(Русский) - `ru-RU`  
+Definitions: 75%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ru.apkg
+## Danish  
+(Dansk) - `da-DK`  
+Definitions: 74%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-da.apkg
+## Japanese  
+(日本語) - `ja-JP`  
+Definitions: 74%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ja.apkg
+## Hindi  
+(हिंदी) - `hi-IN`  
+Definitions: 72%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-hi.apkg
+## Croatian  
+(Hrvatski) - `hr-HR`  
+Definitions: 72%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-hr.apkg
+## Norwegian (Bokmål)  
+(Norsk (Bokmål)) - `nb-NO`  
+Definitions: 72%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nb.apkg
+## Toki Pona  
+(toki pona) - `tok-US`  
+Definitions: 70%, Commentary: 11%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tok.apkg
+## Indonesian  
+(Bahasa Indonesia) - `id-ID`  
+Definitions: 70%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-id.apkg
+## Latin  
+(Latina) - `la-LA`  
+Definitions: 70%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-la.apkg
+## Ido  
+(Ido) - `io-EN`  
+Definitions: 68%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-io.apkg
+## Punjabi  
+(ਪੰਜਾਬੀ) - `pa-IN`  
+Definitions: 68%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pa.apkg
+## New Ithkuil  
+(Malëuţřait) - `itk`  
+Definitions: 66%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-itk.apkg
+## Finnish  
+(Suomi) - `fi-FI`  
+Definitions: 65%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fi.apkg
+## isv  
+() - ``  
+Definitions: 64%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-isv.apkg
+## Interslavic (Latin)  
+(Medžuslovjansky (latinica)) - `isvl`  
+Definitions: 64%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-isvl.apkg
+## Wu (Shanghai)  
+(上海閑話) - `wuu`  
+Definitions: 61%, Commentary: 9%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-wuu.apkg
+## Welsh  
+(Cymraeg) - `cy-GB`  
+Definitions: 58%, Commentary: 16%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-cy.apkg
+## Hawaiian  
+(ʻŌlelo Hawaiʻi) - `haw-US`  
+Definitions: 59%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-haw.apkg
+## Māori  
+(Te Reo Māori) - `mi-NZ`  
+Definitions: 59%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-mi.apkg
+## Standard Arabic  
+(اللغة العربية) - `ar-SA`  
+Definitions: 58%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ar.apkg
+## Korean  
+(한국어) - `ko-KR`  
+Definitions: 58%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ko.apkg
+## Romanian  
+(Română) - `ro-RO`  
+Definitions: 58%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ro.apkg
+## Louisiana Creole  
+(Kouri-Vini) - `lou`  
+Definitions: 57%, Commentary: 7%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-lou.apkg
+## ceb  
+() - ``  
+Definitions: 57%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ceb.apkg
+## Lithuanian  
+(Lietuvių) - `lt-LT`  
+Definitions: 57%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-lt.apkg
+## Slovene  
+(Slovenščina) - `sl-SI`  
+Definitions: 57%, Commentary: 6%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-sl.apkg
+## Swedish  
+(Svenska) - `sv-SE`  
+Definitions: 38%, Commentary: 14%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-sv.apkg
+## Thai  
+(ภาษาไทย) - `th-TH`  
+Definitions: 29%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-th.apkg
+## tl  
+() - ``  
+Definitions: 22%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tl.apkg
+## Ukrainian  
+(Українська) - `uk-UA`  
+Definitions: 19%, Commentary: 23%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-uk.apkg
+## Cantonese  
+(粤语) - `yue`  
+Definitions: 14%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-yue.apkg
+## Urdu  
+(اردو) - `ur-PK`  
+Definitions: 11%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ur.apkg
+## Hungarian  
+(magyar) - `hu-HU`  
+Definitions: 5%, Commentary: 9%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-hu.apkg
+## kay(f)bop(t)  
+() - `kbt`  
+Definitions: 4%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-kbt.apkg
+## Tokelauan  
+(Te Gagana Tokelau) - `tkl`  
+Definitions: 2%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tkl.apkg
+## Yiddish  
+(ייִדיש‎) - `yi-DE`  
+Definitions: 0%, Commentary: 0%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-yi.apkg
