@@ -7,7 +7,7 @@ The order of word introduction is based on [wasona](https://wasona.com/)'s order
 Though word definitions are all from [Linku](https://linku.la/about).  
 Includes word, definition, audio, sitelen pona, commentary, usage % and category, coined by and era, found in book (pu, ku lili, etc), and links to nimi.li, sona pona and lipamanka's semantic space.  
 
-There are languages other than English available at https://github.com/iamasink/ankideck-tokipona  
+For other languages, issues, etc. visit: https://github.com/iamasink/ankideck-tokipona  
 
 # How to install
 Download the latest file below, and open in Anki by double-clicking it, dragging it into Anki or File -> Import  
@@ -18,6 +18,7 @@ Download the latest file below, and open in Anki by double-clicking it, dragging
 
 - [ ] add extra card types
 - [ ] fetch more updated translations?
+- [ ] use sona repo instead of linku api?
 
 <!-- 
 # setup fonts
