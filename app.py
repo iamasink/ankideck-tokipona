@@ -137,7 +137,7 @@ my_model = genanki.Model(
 			"afmt": sitelenpona_a_html
 		}],
 		css=csscontent,
-		sort_field_index=2
+		sort_field_index=1
 
 )
 
