@@ -1,5 +1,6 @@
 from pathlib import Path
 import shutil
+import time
 import requests
 import genanki
 import logging
@@ -17,6 +18,7 @@ from transliterate import to_katakana
 parser = argparse.ArgumentParser("simple_example")
 parser.add_argument("-f", "--forceChange", help="force build even if there are no changes", default=False, required=False, action="store_true")
 parser.add_argument("-l", "--lang", help="language to run", default=None, required=False, metavar="LANG", type=str)
+parser.add_argument("-d", "--requestDelay", help="delay between lang requests", default=1, required=False, metavar="SECONDS", type=float)
 args = parser.parse_args()
 
 # Configure logging
@@ -35,6 +37,8 @@ FONT_NAME = "sitelenselikiwenmonoasuki"
 
 MODEL_ID = 1747075454
 DECK_ID_BASE = 1747151651209
+
+REQUEST_DELAY = args.requestDelay or 2
 
 BASE_DIR = Path(__file__).parent.parent
 
@@ -217,6 +221,8 @@ for lang in language_data:
 	logger.info("Fetching words with full info...")
 
 	try:
+		## wait a bit between requests :)
+		time.sleep(REQUEST_DELAY)
 		resp = requests.get("https://api.linku.la/v1/words?lang=" + lang)
 		logger.info(f"Requested /words endpoint, received status {resp.status_code}")
 		resp.raise_for_status()

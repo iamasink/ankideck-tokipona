@@ -73,8 +73,6 @@ jobs:
           DEFAULT_BUMP: minor
 
     
-
-      # Create Release only when changes were committed
       - name: Create Release
         run: |
           tag="${{ steps.bump.outputs.new_tag }}"
