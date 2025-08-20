@@ -51,8 +51,8 @@ def get_latest_usage(w):
 ids = []
 
 # update languages file
-LANGUAGE_FILE = Path("generated/languages.json")
-LANGUAGE_CONFIGFILE = Path("languageconfig.json")
+LANGUAGE_FILE = Path("../generated/languages.json")
+LANGUAGE_CONFIGFILE = Path("../languageconfig.json")
 language_data = {}
 language_config_data = {}
 if LANGUAGE_FILE.exists():
@@ -66,7 +66,7 @@ if LANGUAGE_CONFIGFILE.exists():
 	with LANGUAGE_CONFIGFILE.open("r", encoding="utf-8") as f:
 		language_config_data = json.load(f)
 else:
-	logger.fatal("language file doesn't exist")
+	logger.fatal("language config file doesn't exist")
 	exit()
 
 resp = requests.get("https://api.linku.la/v1/languages")
