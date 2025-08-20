@@ -409,7 +409,7 @@ for lang in language_data:
 		glyphs_html = ""
 		for lig in processed:
 			target_glyph_filename = f"tp_{lig}.png"
-			src_glyph = GLYPH_SUBDIR / target_glyph_filename
+			src_glyph = GLYPH_SUBDIR / f"{lig}.png"
 			# first ensure this exists, otherwise just skip it
 			if (os.path.isfile(src_glyph)):
 				target_glyph = BASE_DIR / "files" / target_glyph_filename
