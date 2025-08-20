@@ -227,7 +227,10 @@ for lang in language_data:
 			with DATA_FILE.open("r", encoding="utf-8") as f:
 				old_data = json.load(f)
 			# compare hash to see if changed
-			if hash_data(old_data) == hash_data(resp.text):
+			hashed_old = hash_data(old_data)
+			hashed_new = hash_data(words)
+   
+			if hashed_old == hashed_new:
 				if not FORCE_CHANGE:
 					logger.info("Data unchanged.")
 					continue
@@ -238,7 +241,7 @@ for lang in language_data:
 		# Save new data
 		with DATA_FILE.open("w", encoding="utf-8") as f:
 			logger.info("saving new data")
-			json.dump(resp.text, f, ensure_ascii=False, indent=2)
+			json.dump(words, f, ensure_ascii=False, indent=2)
 	except Exception as e:
 		logger.error(f"Failed to fetch words: {e}")
 		raise
