@@ -50,14 +50,6 @@ def get_latest_usage(w):
 
 ids = []
 
-with open('cards/word.html','r', encoding="utf-8") as f:
-	wordhtml = f.read(-1)
-with open('cards/sitelenpona.html','r', encoding="utf-8") as f:
-	sitelenponahtml = f.read(-1)
-with open('cards/stylesheet.css','r', encoding="utf-8") as f:
-	csscontent = f.read(-1)
-
-
 # update languages file
 LANGUAGE_FILE = Path("generated/languages.json")
 LANGUAGE_CONFIGFILE = Path("languageconfig.json")
@@ -100,7 +92,19 @@ for l in apilanguages:
 		}
 LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 
-# Define your model
+with open('cards/word/a.html','r', encoding="utf-8") as f:
+	word_a_html = f.read(-1)
+with open('cards/sitelenpona/a.html','r', encoding="utf-8") as f:
+	sitelenpona_a_html = f.read(-1)
+with open('cards/word/q.html','r', encoding="utf-8") as f:
+	word_q_html = f.read(-1)
+with open('cards/sitelenpona/q.html','r', encoding="utf-8") as f:
+	sitelenpona_q_html = f.read(-1)
+with open('cards/stylesheet.css','r', encoding="utf-8") as f:
+	csscontent = f.read(-1)
+
+
+
 my_model = genanki.Model(
 	MODEL_ID, 
 	"Toki Pona Model",
@@ -121,27 +125,20 @@ my_model = genanki.Model(
 		#  {"name": },
 		#  {"name": },
 		],
-		templates=[{
-		"name": "Toki Pona Word",
-		"qfmt": """
-<div class="centered word bigword">
-<strong>{{Word}}</strong><br>
-</div>
-		""",
-		"afmt": wordhtml
+		templates=[
+		{
+			"name": "Toki Pona Word",
+			"qfmt": word_q_html,
+			"afmt": word_a_html
 		},
 		{
 			"name": "Toki Pona sitelen pona",
-			"qfmt": """
-<div class="centered glyph">
-{{Glyph}}<br>
-</div>
-		""",
-		"afmt": sitelenponahtml
-		}
-		
-		],
-	css=csscontent
+			"qfmt": sitelenpona_q_html,
+			"afmt": sitelenpona_a_html
+		}],
+		css=csscontent,
+		sort_field_index=2
+
 )
 
 
