@@ -90,7 +90,7 @@ jobs:
       - name: Create Release
         if: steps.changed.outputs.files_changed == 'true'
         run: |
-          tag="v${{ steps.bump.outputs.new_tag }}"
+          tag="${{ steps.bump.outputs.new_tag }}"
           echo "Creating release $tag"
           gh release create $tag \
             ./generated/*.apkg \
