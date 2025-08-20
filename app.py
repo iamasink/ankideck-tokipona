@@ -360,7 +360,13 @@ for lang in language_data:
 				target_filename = f"tp_{wordname}-{author}.mp3"
 				abs_target = FILES_DIR / target_filename
 				# copy file
-				shutil.copy2(abs_source, abs_target)
+				
+				# check if it already exists
+				if not abs_target.exists():
+					shutil.copy2(abs_source, abs_target)
+				else:
+					logger.info(f"{target_filename} already exists, skipping copy!")
+    
 				# register in package using relative path
 				my_package.media_files.append(str(abs_target))
 				# add sound tag with correct filename
@@ -396,7 +402,14 @@ for lang in language_data:
 			if (os.path.isfile(abs_img_source)):
 				abs_target = BASE_DIR / "files" / target_filename
 				# copy file
-				shutil.copy2(abs_img_source, abs_target)
+				# shutil.copy2(abs_img_source, abs_target)
+    
+    			# check if it already exists
+				if not abs_target.exists():
+					shutil.copy2(abs_img_source, abs_target)
+				else:
+					logger.info(f"{target_filename} already exists, skipping copy!")
+    
 				my_package.media_files.append(str(abs_target) )
 				glyphs_html += f"<img src='{target_filename}'/>"
 			else:
