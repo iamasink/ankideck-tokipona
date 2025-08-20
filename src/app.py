@@ -36,6 +36,7 @@ FONT_NAME = "sitelenselikiwenmonoasuki"
 MODEL_ID = 1747075454
 DECK_ID_BASE = 1747151651209
 
+BASE_DIR = Path(__file__).parent.parent
 
 
 
@@ -51,16 +52,15 @@ def get_latest_usage(w):
 ids = []
 
 # update languages file
-LANGUAGE_FILE = Path("../generated/languages.json")
-LANGUAGE_CONFIGFILE = Path("../languageconfig.json")
+LANGUAGE_FILE = BASE_DIR / "generated" / "languages.json"
+LANGUAGE_CONFIGFILE = BASE_DIR / "languageconfig.json"
 language_data = {}
 language_config_data = {}
 if LANGUAGE_FILE.exists():
 	with LANGUAGE_FILE.open("r", encoding="utf-8") as f:
 		language_data = json.load(f)
 else:
-	logger.fatal("language file doesn't exist")
-	exit()
+	logger.warning("language file doesn't exist")
 
 if LANGUAGE_CONFIGFILE.exists():
 	with LANGUAGE_CONFIGFILE.open("r", encoding="utf-8") as f:
@@ -92,17 +92,18 @@ for l in apilanguages:
 		}
 LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 
-with open('cards/word/a.html','r', encoding="utf-8") as f:
-	word_a_html = f.read(-1)
-with open('cards/sitelenpona/a.html','r', encoding="utf-8") as f:
-	sitelenpona_a_html = f.read(-1)
-with open('cards/word/q.html','r', encoding="utf-8") as f:
-	word_q_html = f.read(-1)
-with open('cards/sitelenpona/q.html','r', encoding="utf-8") as f:
-	sitelenpona_q_html = f.read(-1)
-with open('cards/stylesheet.css','r', encoding="utf-8") as f:
-	csscontent = f.read(-1)
+CARD_DIR = BASE_DIR / "cards"
+WORD_A_HTML = CARD_DIR / "word" / "a.html"
+WORD_Q_HTML = CARD_DIR / "word" / "q.html"
+SITELEN_A_HTML = CARD_DIR / "sitelenpona" / "a.html"
+SITELEN_Q_HTML = CARD_DIR / "sitelenpona" / "q.html"
+CSS_FILE = CARD_DIR / "stylesheet.css"
 
+with WORD_A_HTML.open("r", encoding="utf-8") as f: word_a_html = f.read()
+with WORD_Q_HTML.open("r", encoding="utf-8") as f: word_q_html = f.read()
+with SITELEN_A_HTML.open("r", encoding="utf-8") as f: sitelenpona_a_html = f.read()
+with SITELEN_Q_HTML.open("r", encoding="utf-8") as f: sitelenpona_q_html = f.read()
+with CSS_FILE.open("r", encoding="utf-8") as f: csscontent = f.read()
 
 
 my_model = genanki.Model(
@@ -174,10 +175,11 @@ for lang in language_data:
 			return genanki.guid_for("iamasink toki pona " + lang, self.fields[0])
 
 
-	BASE_DIR = Path(__file__).parent 
 	DATA_FILE = BASE_DIR / "generated" /  f"cached_words-{lang}.json"
-	AUDIO_SUBDIR = Path("ijo") / "kalama"
-	GLYPH_SUBDIR = Path("ijo") / "sitelenpona" / "sitelen-seli-kiwen"
+ 
+
+	AUDIO_SUBDIR = BASE_DIR / "ijo" / "kalama"
+	GLYPH_SUBDIR = BASE_DIR / "ijo" / "sitelenpona" / "sitelen-seli-kiwen"
 	AUDIO_PEOPLE = ["kalaasi2023", "jlakuse"]
 
 	FILES_DIR = BASE_DIR / "files"
@@ -358,24 +360,23 @@ for lang in language_data:
 		# (to prevent conflicts)
 		audio_html = ""
 		for author in AUDIO_PEOPLE:
-			rel_source = AUDIO_SUBDIR / author / f"{wordname}.mp3"
-			abs_source = BASE_DIR / rel_source
-			if abs_source.exists():
+			src_audio = AUDIO_SUBDIR / author / f"{wordname}.mp3"
+			if src_audio.exists():
 				# logger.info(f"adding audio from {abs_source}")
 				# define target filename
 				target_filename = f"tp_{wordname}-{author}.mp3"
-				abs_target = FILES_DIR / target_filename
+				target_audio = FILES_DIR / target_filename
 				# copy file
 				
 				# check if it already exists
-				if not abs_target.exists():
-					shutil.copy2(abs_source, abs_target)
+				if not target_audio.exists():
+					shutil.copy2(src_audio, target_audio)
 				else:
 					# logger.info(f"{target_filename} already exists, skipping copy!")
 					pass
     
 				# register in package using relative path
-				my_package.media_files.append(str(abs_target))
+				my_package.media_files.append(str(target_audio))
 				# add sound tag with correct filename
 				audio_html += f"[sound:{target_filename}] "
 		audio = html.escape(audio_html)
@@ -398,30 +399,28 @@ for lang in language_data:
 		# logger.info("final ligatures: %s", processed)
 
 		# glyphfolder = os.path.join(""sitelenpona", FONT_NAME)
-		glyphfolder = os.path.join("ijo", "sitelenpona", "sitelen-seli-kiwen")
 
 		glyphs_html = ""
-		for p in processed:
-			target_filename = f"tp_{p}.png"
-			rel_img = os.path.join(glyphfolder, target_filename)
-			abs_img_source = os.path.join(BASE_DIR, glyphfolder, p + ".png")
+		for lig in processed:
+			target_glyph_filename = f"tp_{lig}.png"
+			src_glyph = GLYPH_SUBDIR / target_glyph_filename
 			# first ensure this exists, otherwise just skip it
-			if (os.path.isfile(abs_img_source)):
-				abs_target = BASE_DIR / "files" / target_filename
+			if (os.path.isfile(src_glyph)):
+				target_glyph = BASE_DIR / "files" / target_glyph_filename
 				# copy file
 				# shutil.copy2(abs_img_source, abs_target)
     
     			# check if it already exists
-				if not abs_target.exists():
-					shutil.copy2(abs_img_source, abs_target)
+				if not target_glyph.exists():
+					shutil.copy2(src_glyph, target_glyph)
 				else:
 					# logger.info(f"{target_filename} already exists, skipping copy!")
 					pass
     
-				my_package.media_files.append(str(abs_target) )
-				glyphs_html += f"<img src='{target_filename}'/>"
+				my_package.media_files.append(str(target_glyph) )
+				glyphs_html += f"<img src='{target_glyph_filename}'/>"
 			else:
-				logger.warning(f"file {abs_img_source} doesn't exist.. skipping!")
+				logger.warning(f"file {src_glyph} doesn't exist.. skipping!")
 
 		glyph = glyphs_html
 
@@ -431,16 +430,16 @@ for lang in language_data:
 
 		# add links
 		links = ""
-		links += f"nimi.li: <a href='https://nimi.li/{word["word"]}'>{word["word"]}</a><br/>"
+		links += f"nimi.li: <a href='https://nimi.li/{wordname}'>{wordname}</a><br/>"
 
 		for w in word["see_also"]:
 			links += f" <a href='https://nimi.li/{w}'>{w}</a>"
 
 		for r in word["resources"]:
-			logger.info(r)
+			# logger.info(r)
 			if r == "lipamanka_semantic":
 				continue # skip lipamanka as its on nimi.li
-			links += f"<br/> {r.replace("_"," ")}: <a href={word["resources"][r]}>{word["word"]}</a>"
+			links += f"<br/> {r.replace("_"," ")}: <a href={word["resources"][r]}>{wordname}</a>"
 
 
 
@@ -468,6 +467,6 @@ for lang in language_data:
 		logger.debug(f"Added note: {word}")
 
 	# Write out the .apkg file
-	output_file = f"toki-pona-deck-{lang}.apkg"
-	my_package.write_to_file("generated/" + output_file)
+	output_file = BASE_DIR / "generated" / f"toki-pona-deck-{lang}.apkg"
+	my_package.write_to_file(output_file)
 	logger.info(f"Done {lang}! Written {len(my_deck.notes)} notes to {output_file} (id {deckid})")
