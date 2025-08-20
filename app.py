@@ -11,11 +11,11 @@ import os
 import random
 
 import argparse
-from kana import toki_pona_to_katakana
+from transliterate import to_katakana
 
 # args
 parser = argparse.ArgumentParser("simple_example")
-parser.add_argument("-f", "--forceChange", help="Whether to force build even if there are no changes", default=False, required=False, action="store_true")
+parser.add_argument("-f", "--forceChange", help="force build even if there are no changes", default=False, required=False, action="store_true")
 parser.add_argument("-l", "--lang", help="language to run", default=None, required=False, metavar="LANG", type=str)
 args = parser.parse_args()
 
@@ -110,7 +110,7 @@ my_model = genanki.Model(
 	"Toki Pona Model",
 	fields=[
 		{"name": "sort_id"}, # deck sort order
-		{"name": "Word"}, 
+		{"name": "Word"},
 		{"name": "Definition"},
 		{"name": "Commentary"},
 		{"name": "Creator"},
@@ -122,6 +122,7 @@ my_model = genanki.Model(
 		{"name": "Audio"}, # can have multiple "[sound:name.mp3] [sound:name2.mp3]"
 		{"name": "Glyph"},
 		{"name": "Links"},
+		{"name": "WordAlt"},
 		#  {"name": },
 		#  {"name": },
 		],
@@ -137,7 +138,7 @@ my_model = genanki.Model(
 			"afmt": sitelenpona_a_html
 		}],
 		css=csscontent,
-		sort_field_index=1
+		sort_field_index=0
 
 )
 
@@ -300,6 +301,11 @@ for lang in language_data:
   
 		wordid = html.escape(str(wordnum))
   
+  
+		if lang == "ja":
+			wordaltscript = to_katakana(wordname)
+		else:
+			wordaltscript = ""
 
 		# logger.info(f"Processing entry for word: '{wordname}'")
 
@@ -308,7 +314,7 @@ for lang in language_data:
 			continue
 
 		# set definition and split newlines by ;
-		worddef = word["translations"][lang]["definition"].replace(";","\n")
+		worddef = word["translations"][lang]["definition"].replace("; ","\n").replace(";","\n")
 
 		if word["deprecated"]:
 			# add dewprecated warning
@@ -365,7 +371,8 @@ for lang in language_data:
 				if not abs_target.exists():
 					shutil.copy2(abs_source, abs_target)
 				else:
-					logger.info(f"{target_filename} already exists, skipping copy!")
+					# logger.info(f"{target_filename} already exists, skipping copy!")
+					pass
     
 				# register in package using relative path
 				my_package.media_files.append(str(abs_target))
@@ -408,7 +415,8 @@ for lang in language_data:
 				if not abs_target.exists():
 					shutil.copy2(abs_img_source, abs_target)
 				else:
-					logger.info(f"{target_filename} already exists, skipping copy!")
+					# logger.info(f"{target_filename} already exists, skipping copy!")
+					pass
     
 				my_package.media_files.append(str(abs_target) )
 				glyphs_html += f"<img src='{target_filename}'/>"
@@ -429,6 +437,9 @@ for lang in language_data:
 			links += f" <a href='https://nimi.li/{w}'>{w}</a>"
 
 		for r in word["resources"]:
+			logger.info(r)
+			if r == "lipamanka_semantic":
+				continue # skip lipamanka as its on nimi.li
 			links += f"<br/> {r.replace("_"," ")}: <a href={word["resources"][r]}>{word["word"]}</a>"
 
 
@@ -446,7 +457,7 @@ for lang in language_data:
 		# Create and add note
 		note = MyNote(
 			model=my_model,
-			fields=[wordid, wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links],
+			fields=[wordid, wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links, wordaltscript],
 			tags=mytags,
 			due=wordnum,
 		)
