@@ -11,12 +11,12 @@ import os
 import random
 
 import argparse
-
+from kana import toki_pona_to_katakana
 
 # args
 parser = argparse.ArgumentParser("simple_example")
 parser.add_argument("-f", "--forceChange", help="Whether to force build even if there are no changes", default=False, required=False, action="store_true")
-parser.add_argument("-e", "--englishOnly", help="only run english", default=False, required=False, action="store_true")
+parser.add_argument("-l", "--lang", help="language to run", default=None, required=False, metavar="LANG", type=str)
 args = parser.parse_args()
 
 # Configure logging
@@ -147,8 +147,8 @@ languagecount = len(language_data)
 
 
 for lang in language_data:
-	if args.englishOnly and lang != "en":
-		logger.info(f"skipping language {lang} because englishOnly is set")
+	if args.lang and lang != args.lang:
+		logger.info(f"skipping language {lang}")
 		continue
 
 	logger.info("lang: "+ lang)
