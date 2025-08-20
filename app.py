@@ -206,7 +206,7 @@ for lang in language_data:
 	my_deck = genanki.Deck(
 		# custom id per lang
 		deckid,
-		f"toki pona {endonym} ({tokname})"
+		f"toki pona ({endonym})"
 	)
 
 	my_package = genanki.Package(my_deck)
