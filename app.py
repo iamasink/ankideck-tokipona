@@ -295,6 +295,8 @@ for lang in language_data:
 		word = entry
 		wordname = word["word"]
   
+		wordid = html.escape(str(wordnum))
+  
 
 		# logger.info(f"Processing entry for word: '{wordname}'")
 
@@ -428,7 +430,7 @@ for lang in language_data:
 		# Create and add note
 		note = MyNote(
 			model=my_model,
-			fields=[wordnum, wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links],
+			fields=[wordid, wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links],
 			tags=mytags,
 			due=wordnum,
 		)
