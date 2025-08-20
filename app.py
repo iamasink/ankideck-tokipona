@@ -202,7 +202,7 @@ for lang in language_data:
 	endonym = langinfo["name"].get("endonym", "")
 	tokname = langinfo["name"].get("tok", "")
 
-	# Create your deck
+
 	my_deck = genanki.Deck(
 		# custom id per lang
 		deckid,
@@ -211,7 +211,6 @@ for lang in language_data:
 
 	my_package = genanki.Package(my_deck)
 
-	# Fetch all words and their details in a single request
 	logger.info("Fetching words with full info...")
 
 	try:
@@ -233,7 +232,7 @@ for lang in language_data:
 			if hashed_old == hashed_new:
 				if not FORCE_CHANGE:
 					logger.info("Data unchanged.")
-					continue
+					#continue
 
 		# ensure folder exist
 		DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -258,21 +257,22 @@ for lang in language_data:
 
 
 	# order of word introduction from wasona https://wasona.com
-	word_order = [
+	word_order =  [
 	"jan", "kute", "nanpa", "kalama", "akesi", "soweli", "waso", "pipi", "kasi", "moku",
-	"lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "sona", "suwi",
+	"lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "suwi",
 	"ni", "mi", "sina", "ona", "nimi", "sitelen", "toki", "ma", "tomo", "weka", "pana", "kama",
-	"awen", "tawa", "lon", "tan", "utala", "lape", "kalama", "musi", "nasa", "wile", "ken",
+	"awen", "tawa", "lon", "tan", "utala", "lape", "musi", "nasa", "wile", "ken",
 	"alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
 	"telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
 	"leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
-	"pakala", "a", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "akesi", "kala", "pan",
+	"pakala", "a", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "kala", "pan",
 	"kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
-	"lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
-	"luka", "mute", "ale", "kipisi", "nanpa", "olin", "unpa", "mama", "mije", "meli", "tonsi",
+	"lawa", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
+	"ale", "kipisi", "olin", "unpa", "mama", "mije", "meli", "tonsi",
 	"en", "kule", "walo", "pimeja", "loje", "jelo", "laso", "kin", "taso", "n", "mu",
 	"kijetesantakalu", "pu", "ku", "su", "lanpan"
-]
+	]
+
 
 	sorted_words = sorted(
 		word_list,
