@@ -102,6 +102,7 @@ my_model = genanki.Model(
 	1747075454,
 	"Toki Pona Model",
 	fields=[
+		{"name": "sort_id"}, # deck sort order
 		{"name": "Word"}, 
 		{"name": "Definition"},
 		{"name": "Commentary"},
@@ -293,6 +294,7 @@ for lang in language_data:
 		wordnum+=1
 		word = entry
 		wordname = word["word"]
+  
 
 		# logger.info(f"Processing entry for word: '{wordname}'")
 
@@ -426,7 +428,7 @@ for lang in language_data:
 		# Create and add note
 		note = MyNote(
 			model=my_model,
-			fields=[wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links],
+			fields=[wordnum, wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links],
 			tags=mytags,
 			due=wordnum,
 		)
