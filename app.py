@@ -33,6 +33,9 @@ logger.info(args)
 FORCE_CHANGE = args.forceChange
 FONT_NAME = "sitelenselikiwenmonoasuki"
 
+MODEL_ID = 1747075454
+DECK_ID_BASE = 1747151651209
+
 
 
 
@@ -99,7 +102,7 @@ LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, 
 
 # Define your model
 my_model = genanki.Model(
-	1747075454,
+	MODEL_ID, 
 	"Toki Pona Model",
 	fields=[
 		{"name": "sort_id"}, # deck sort order
@@ -197,7 +200,7 @@ for lang in language_data:
 	# logger.info(wordhtml)
 
 
-	deckid = int(1747151651209 + int(langid))
+	deckid = int(DECK_ID_BASE + int(langid))
 	ids.append(deckid)
 	endonym = langinfo["name"].get("endonym", "")
 	tokname = langinfo["name"].get("tok", "")
