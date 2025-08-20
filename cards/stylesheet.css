@@ -1,35 +1,93 @@
+/*  from nimi.li
+export const categoryColors: Record<UsageCategory, string> = {
+	core: 'bg-emerald-400 darkish:bg-emerald-600',
+	common: 'bg-sky-400 darkish:bg-sky-600',
+	uncommon: 'bg-yellow-400 darkish:bg-yellow-600',
+	obscure: 'bg-fuchsia-400 darkish:bg-fuchsia-600',
+	sandbox: 'bg-gray-400 darkish:bg-gray-600'
+};
+
+export const categoryTextColors: Record<UsageCategory, string> = {
+	core: 'text-emerald-600 darkish:text-emerald-400',
+	common: 'text-sky-600 darkish:text-sky-400',
+	uncommon: 'text-yellow-600 darkish:text-yellow-400',
+	obscure: 'text-fuchsia-600 darkish:text-fuchsia-400',
+	sandbox: 'text-gray-600 darkish:text-gray-300'
+};
+ */
+
 /* colours from nimi.li */
+body.nightMode {
+	.usagecatcore {
+		/* text-emerald-400 */
+		color: rgb(52 211 153);
+	}
+
+	.usagecatcommon {
+		/* text-sky-400 */
+		color: rgb(56 189 248);
+	}
+
+	.usagecatuncommon {
+		/* text-yellow-400 */
+		color: rgb(250 204 21);
+	}
+
+	.usagecatobscure {
+		/* text-fuchsia-400 */
+		color: rgb(232 121 249);
+	}
+
+	.usagecatsandbox {
+		/* text-gray-300 */
+		color: rgb(209 213 219);
+	}
+
+	/* unknown or unset category */
+	.usagecat {
+		/* text-gray-300 */
+		color: rgb(209 213 219);
+	}
+}
+
 .usagecatcore {
-	color: rgb(52 211 153);
-	font-weight: bolder;
+	/* text-emerald-600 */
+	color: rgb(5 150 105);
 }
 
 .usagecatcommon {
-	color: rgb(56 189 248);
-	font-weight: bolder;
+	/* text-sky-600 */
+	color: rgb(2 132 199);
 }
 
 .usagecatuncommon {
-	color: rgb(250 204 21);
-	font-weight: bolder;
+	/* text-yellow-600 */
+	color: rgb(202 138 4);
 }
 
 .usagecatobscure {
-	color: rgb(232 121 249);
-	font-weight: bolder;
+	/* text-fuchsia-600 */
+	color: rgb(192 38 211);
 }
 
 .usagecatsandbox {
-	color: rgb(209 213 219);
-	font-weight: bolder;
+	/* text-gray-600 */
+	color: rgb(75 85 99);
 }
 
 /* unknown or unset category */
 .usagecat {
-	color: rgb(209 213 219);
+	/* text-gray-600 */
+	color: rgb(75 85 99);
+}
+
+
+.usagespan {
 	font-weight: bolder;
 }
 
+
+/*  */
 .book,
 .bold {
 	font-weight: bolder;
@@ -37,18 +95,22 @@
 
 .warningbanner-obscure.warningobscure {
 	visibility: visible !important;
+	display: block;
 }
 
 .warningbanner-sandbox.warningsandbox {
 	visibility: visible !important;
+	display: block;
 }
 
 .warning {
 	visibility: collapse;
+	display: none;
 }
 
 .centered {
 	text-align: center;
+	align-content: center;
 }
 
 .card {
@@ -76,6 +138,7 @@
 .nightMode .glyph {
 	filter: invert(0);
 }
+
 .definition {
 	font-weight: bolder;
 }
@@ -83,6 +146,21 @@
 .word {
 	font-weight: bolder;
 }
+
 .bigword {
 	font-size: 28px;
+}
+
+.wordalt {
+	font-weight: bold;
+}
+
+a {
+	color: rgb(37 99 235);
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.nightMode a {
+	color: rgb(147 197 253);
 }
