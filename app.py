@@ -13,7 +13,7 @@ import random
 import argparse
 
 
-
+# args
 parser = argparse.ArgumentParser("simple_example")
 parser.add_argument("-f", "--forceChange", help="Whether to force build even if there are no changes", default=False, required=False, action="store_true")
 parser.add_argument("-e", "--englishOnly", help="only run english", default=False, required=False, action="store_true")
@@ -51,7 +51,7 @@ with open('cards/word.html','r', encoding="utf-8") as f:
 	wordhtml = f.read(-1)
 with open('cards/sitelenpona.html','r', encoding="utf-8") as f:
 	sitelenponahtml = f.read(-1)
-with open('cards/css.css','r', encoding="utf-8") as f:
+with open('cards/stylesheet.css','r', encoding="utf-8") as f:
 	csscontent = f.read(-1)
 
 
