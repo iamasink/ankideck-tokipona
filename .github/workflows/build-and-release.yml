@@ -37,7 +37,7 @@ jobs:
       #   run: python svg2png.py
 
       - name: Build APKG
-        run: python app.py -f #force build
+        run: python src/app.py -f #force build
 
 
       # - name: git add
