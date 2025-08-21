@@ -126,6 +126,7 @@ my_model = genanki.Model(
 		{"name": "Usage Category"},
 		{"name": "Audio"}, # can have multiple "[sound:name.mp3] [sound:name2.mp3]"
 		{"name": "Glyph"},
+		{"name": "Glyph Etymology"},
 		{"name": "Links"},
 		{"name": "WordAlt"},
 		#  {"name": },
@@ -334,10 +335,12 @@ for lang in language_data:
 
 
 		commentary = html.escape(word["translations"][lang]["commentary"])
+		glyph_etymology = html.escape(word["translations"][lang]["sp_etymology"])
 		
 		creator = html.escape(", ".join((word["creator"])))
 		coined_era = html.escape(word["coined_era"])
 		coined_year = html.escape(word["coined_year"])
+  
 
 		origbook = word["book"]
 		if (not origbook or origbook == "none"):
@@ -406,7 +409,7 @@ for lang in language_data:
 
 		# glyphfolder = os.path.join(""sitelenpona", FONT_NAME)
 
-		glyphs_html = ""
+		glyphs_dict = {}
 		for lig in processed:
 			target_glyph_filename = f"tp_{lig}.png"
 			src_glyph = GLYPH_SUBDIR / f"{lig}.png"
@@ -424,13 +427,17 @@ for lang in language_data:
 					pass
     
 				my_package.media_files.append(str(target_glyph) )
-				glyphs_html += f"<img src='{target_glyph_filename}'/>"
+				glyphs_dict[target_glyph_filename] = True
+    
+				# glyphs_dict.append(f"<img src='{target_glyph_filename}'/>")
 			else:
 				logger.warning(f"file {src_glyph} doesn't exist.. skipping!")
 
-		glyph = glyphs_html
 
-		# logger.info(glyph)
+		# join using dict
+		glyph = "".join(f"<img src='{fn}'/>" for fn in glyphs_dict.keys())
+
+		logger.info(glyph)
 
 
 
@@ -457,12 +464,12 @@ for lang in language_data:
 			tag_prefix + "book_" + origbook.replace(" ", "-"),
 			tag_prefix + "usage_" + usage_category.replace(" ", "-")
 		]
-		
+
 
 		# Create and add note
 		note = MyNote(
 			model=my_model,
-			fields=[wordid, wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, links, wordaltscript],
+			fields=[wordid, wordname, definition, commentary, creator, coined_era, coined_year, book, usage, usage_category, audio, glyph, glyph_etymology, links, wordaltscript],
 			tags=mytags,
 			due=wordnum,
 		)

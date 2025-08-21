@@ -1,32 +1,34 @@
 <div class="centered">
 	<div class="content">
 		{{FrontSide}}
-
+		<div class="glyphetymology">{{Glyph Etymology}}</div>
 		<hr id="answer">
 		{{Audio}}
 		<div class="warningbanner">
 			<span class="warning warningbanner-obscure warning{{Usage Category}}">This word is <span class="bold usagecatobscure">obscure</span>, so most speakers will not understand it.</span>
 			<span class="warning warningbanner-sandbox warning{{Usage Category}}">This word is in the <b>sandbox</b>, so almost no speakers will understand it.</span>
 		</div>
-		<div class="word">{{Word}}</div>
+
+		<div class="word bigword">{{Word}}</div>
 		{{#WordAlt}}<div class="wordalt">{{WordAlt}}</div>{{/WordAlt}}
 		<br />
 		<div class="definition">{{Definition}}</div>
-		{{#Commentary}}<p>Commentary:</p>
+		{{#Commentary}}<h1 class="commentary-header">commentary:</h1>
 
 		<div class="comment">{{Commentary}}</div>
 		{{/Commentary}}
 
 		<hr>
 
-		<p>Usage: <span class="usagespan usagecat{{Usage Category}}">{{Usage Category}}・{{Usage}}%</span></p>
 
-		<p>Coined by <em>{{Creator}}</em>{{#Coined Era}}, {{Coined Era}}{{/Coined Era}}{{#Coined Year}}, {{Coined Year}}{{/Coined Year}}</p>
-		<p>Found in <span class="book">{{Book}}</span></p>
+		<p>usage: <span class="usagespan usagecat{{Usage Category}}">{{Usage Category}}・{{Usage}}%</span></p>
+
+		<p>coined by <em>{{Creator}}</em>{{#Coined Era}}, {{Coined Era}}{{/Coined Era}}{{#Coined Year}}, {{Coined Year}}{{/Coined Year}}</p>
+		<p>found in <span class="book">{{Book}}</span></p>
 
 		<hr />
 
-		<p>See also:
+		<p>see also:
 		<div class="links">
 			{{Links}}
 		</div>
