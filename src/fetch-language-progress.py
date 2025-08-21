@@ -73,5 +73,5 @@ with open('README.template.md', 'r', encoding='utf-8') as file:
             locale = info.get("locale", "")
             defs = stats["definitions"]
             comm = stats["commentary"]
-            f.write(f"{note}\n## {name}  \n({endonym}) - `{locale}`  \nDefinitions: {defs}%, Commentary: {comm}%  \nhttps://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-{lang_id}.apkg")
+            f.write(f"## {name}  \n({endonym}) - `{locale}`  \nDefinitions: {defs}%, Commentary: {comm}%  \nhttps://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-{lang_id}.apkg")
 
