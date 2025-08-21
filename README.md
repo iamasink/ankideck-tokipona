@@ -3,12 +3,21 @@
 Anki decks based on [sona Linku](https://linku.la/about) for all languages.  
 
 # Description
-A new deck using [sitelen seli kiwen](https://www.kreativekorp.com/software/fonts/sitelenselikiwen/) for clean sitelen pona glyphs.  
-The order of word introduction is based on [wasona](https://wasona.com/)'s order, so it's not alphabetical!  
-Though word definitions are all from [Linku](https://linku.la/about).  
-Includes word, definition, audio, sitelen pona, commentary, usage % and category, coined by and era, found in book (pu, ku lili, etc), and links to nimi.li, sona pona and wasona lessons.  
+<!-- begin ankiweb shared deck description -->
+A new deck using [sitelen seli kiwen](https://www.kreativekorp.com/software/fonts/sitelenselikiwen/) for clean **sitelen pona** glyphs.  
+Using modern definitions from [Linku](https://linku.la/about).  
 
-For other languages, issues, etc. visit: https://github.com/iamasink/ankideck-tokipona  
+The order of word introduction is based on [wasona](https://wasona.com/)'s order, so it's not alphabetical.  
+If you're just starting out learning toki pona, check out the wasona lessons!!  
+
+Includes word, definition + commentary, audio, sitelen pona and multiple tags.  
+*with extra info about:* usage, coined by, coined year, book info.  
+*plus links to further reading for each word:* [nimi.li](https://nimi.li) dictionary, [sona pona](https://sona.pona.la/wiki/Main_Page) wiki and [wasona](https://wasona.com/) lessons.  
+
+Other languages are available on the [github repo](https://github.com/iamasink/ankideck-tokipona) https://github.com/iamasink/ankideck-tokipona.  
+Including French, Dutch, Polish, Turkish, Chinese (Simplified and Traditional), Spanish, Korean and many more partially translated.  
+
+Report any issues to https://github.com/iamasink/ankideck-tokipona/issues
 
 # Credits
  - [linku](https://linku.la/about) - word data, audio recordings, etc.
@@ -16,6 +25,7 @@ For other languages, issues, etc. visit: https://github.com/iamasink/ankideck-to
  - [wasona](https://wasona.com) - word order
  - [nimi.li](https://nimi.li) - style inspiration
 
+<!-- --- -->
 
 # How to install
 Download the latest file below, and open in Anki by double-clicking it, dragging it into Anki or File -> Import  
