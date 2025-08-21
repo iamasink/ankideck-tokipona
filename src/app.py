@@ -175,17 +175,23 @@ WASONA_WORDS = {
 	"24":["lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja",],
 	"25":["wan", "tu", "luka", "mute", "ale", "kipisi",],
 	"26":[ "olin",  "unpa",  "mama",  "mije",  "meli",  "tonsi",  "en",],
-	"27":["kule", "walo", "pimeja", "loje", "jelo", "laso", "kin",],
+	# "27":["kule", "walo", "pimeja", "loje", "jelo", "laso", "kin",],
+	"27":["kule", "pimeja", "walo", "loje", "jelo", "laso", "kin",], # move pimeja before walo as walo's sp_etymology references pimeja
 	"28":["taso", "n", "mu", "kijetesantakalu", "pu", "ku",],
 }
 
+# only applies to matched words from linku words
 CATEGORIES = {
 	"particle": {"a", "ala", "anu", "e", "en", "la", "li", "nanpa", "o", "pi", "seme", "taso", "kin","te","to"},
 	"preposition": {"kepeken","lon","sama","tan","tawa"},
 	"interjection": {"a","n","kulijo","wa"},
 	"number": {"ala","wan","tu","san","po","luka","mute"},
 	"pronoun": {"mi","sina","ona"},
-	"preverb": {"wile","ken","kama","awen","alasa",		"sona","lukin"}
+	"preverb": {"wile","ken","kama","awen","alasa",		"sona","lukin"},
+ 
+	# kinda different from the others, but still a useful tag so idk
+	# https://sona.pona.la/wiki/Colors 						# https://sona.pona.la/wiki/Nonstandard_color_words
+	"color": {"pimeja", "walo", "loje", "jelo", "laso", 	"kapesi", "nalanja", "peta", "pulaso", "kulaso", "sulaso", "unu", "masenta"}
 }
 
 
