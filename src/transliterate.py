@@ -7,7 +7,7 @@ def to_katakana(word):
 
 # https://sona.pona.la/wiki/sitelen_Ilakana_and_sitelen_Katakana
 	CV_MAP = {
-	"k": {"a":"カ","i":"キ","u":"ク","e":"ケ","o":"コ"},
+	"k": {"a":"カ","i":"キ","u":"ク","e":"ケ","o":"コ"}, 
 	"s": {"a":"サ","i":"シ","u":"ス","e":"セ","o":"ソ"},
 	"t": {"a":"タ","i":"？","u":"トゥ","e":"テ","o":"ト"},
 	"n": {"a":"ナ","i":"ニ","u":"ヌ","e":"ネ","o":"ノ"},
@@ -22,8 +22,8 @@ def to_katakana(word):
 	word = word.strip().lower()
 	out = []
 	i = 0
-	len = len(word)
-	while i < len:
+	wordlen = len(word)
+	while i < wordlen:
 		char = word[i]
 	
 		if char == " ":
@@ -32,7 +32,7 @@ def to_katakana(word):
 			continue
 
 		# n
-		if char == "n" and (i + 1 == len or word[i + 1] not in "aiueo"):
+		if char == "n" and (i + 1 == wordlen or word[i + 1] not in "aiueo"):
 			out.append("ン")
 			i += 1
 			continue
@@ -57,3 +57,6 @@ def to_katakana(word):
 	
 	return "".join(out)
 
+
+
+print(to_katakana("jelo jasima nimisin minisat"))
