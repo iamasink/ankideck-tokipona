@@ -5,7 +5,6 @@ import requests
 import genanki
 import logging
 import html
-import re
 import json
 import hashlib
 import os
@@ -88,6 +87,7 @@ for l in apilanguages:
 LANGUAGE_FILE.write_text(json.dumps(language_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 for l in apilanguages:
 	if not l in language_config_data:
+		# for new languages
 		# create a random number id
 		id = random.randint(100,999)
 		language_config_data[l] = {
@@ -97,16 +97,16 @@ for l in apilanguages:
 LANGUAGE_CONFIGFILE.write_text(json.dumps(language_config_data, sort_keys=True, ensure_ascii=False, indent='\t'), encoding="utf-8")
 
 CARD_DIR = BASE_DIR / "cards"
-WORD_A_HTML = CARD_DIR / "word" / "a.html"
-WORD_Q_HTML = CARD_DIR / "word" / "q.html"
-SITELEN_A_HTML = CARD_DIR / "sitelenpona" / "a.html"
-SITELEN_Q_HTML = CARD_DIR / "sitelenpona" / "q.html"
+WORD_A_HTML_FILE = CARD_DIR / "word" / "a.html"
+WORD_Q_HTML_FILE = CARD_DIR / "word" / "q.html"
+SITELEN_A_HTML_FILE = CARD_DIR / "sitelenpona" / "a.html"
+SITELEN_Q_HTML_FILE = CARD_DIR / "sitelenpona" / "q.html"
 CSS_FILE = CARD_DIR / "stylesheet.css"
 
-with WORD_A_HTML.open("r", encoding="utf-8") as f: word_a_html = f.read()
-with WORD_Q_HTML.open("r", encoding="utf-8") as f: word_q_html = f.read()
-with SITELEN_A_HTML.open("r", encoding="utf-8") as f: sitelenpona_a_html = f.read()
-with SITELEN_Q_HTML.open("r", encoding="utf-8") as f: sitelenpona_q_html = f.read()
+with WORD_A_HTML_FILE.open("r", encoding="utf-8") as f: word_a_html = f.read()
+with WORD_Q_HTML_FILE.open("r", encoding="utf-8") as f: word_q_html = f.read()
+with SITELEN_A_HTML_FILE.open("r", encoding="utf-8") as f: sitelenpona_a_html = f.read()
+with SITELEN_Q_HTML_FILE.open("r", encoding="utf-8") as f: sitelenpona_q_html = f.read()
 with CSS_FILE.open("r", encoding="utf-8") as f: csscontent = f.read()
 
 
@@ -114,8 +114,8 @@ my_model = genanki.Model(
 	MODEL_ID, 
 	"Toki Pona Model",
 	fields=[
-		{"name": "sort_id"}, # deck sort order
-		{"name": "Word"},
+		{"name": "sort_id"}, 	# deck sort order
+		{"name": "Word"},		
 		{"name": "Definition"},
 		{"name": "Commentary"},
 		{"name": "Creator"},
@@ -124,13 +124,11 @@ my_model = genanki.Model(
 		{"name": "Book"},
 		{"name": "Usage"},
 		{"name": "Usage Category"},
-		{"name": "Audio"}, # can have multiple "[sound:name.mp3] [sound:name2.mp3]"
+		{"name": "Audio"},		 # can have multiple "[sound:name.mp3] [sound:name2.mp3]"
 		{"name": "Glyph"},
 		{"name": "Glyph Etymology"},
 		{"name": "Links"},
-		{"name": "WordAlt"},
-		#  {"name": },
-		#  {"name": },
+		{"name": "WordAlt"}, 	 # the word in other scripts, (eg. katakana for lang=ja)
 		],
 		templates=[
 		{
@@ -180,24 +178,6 @@ WASONA_WORDS = {
 	"27":["kule", "walo", "pimeja", "loje", "jelo", "laso", "kin",],
 	"28":["taso", "n", "mu", "kijetesantakalu", "pu", "ku",],
 }
-
-	# order of word introduction from wasona https://wasona.com
-	# word_order =  [
-	# "jan", "kute", "nanpa", "kalama", "akesi", 
- 	# "soweli", "waso", "pipi", "kasi", "moku",
-	# "lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "suwi",
-	# "ni", "mi", "sina", "ona", "nimi", "sitelen", "toki", "ma", "tomo", "weka", "pana", "kama",
-	# "awen", "tawa", "lon", "tan", "utala", "lape", "musi", "nasa", "wile", "ken",
-	# "alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
-	# "telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
-	# "leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
-	# "pakala", "a", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "kala", "pan",
-	# "kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
-	# "lawa", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
-	# "ale", "kipisi", "olin", "unpa", "mama", "mije", "meli", "tonsi",
-	# "en", "kule", "walo", "pimeja", "loje", "jelo", "laso", "kin", "taso", "n", "mu",
-	# "kijetesantakalu", "pu", "ku", "su", "lanpan"
-	# ]
 
 CATEGORIES = {
 	"particle": {"a", "ala", "anu", "e", "en", "la", "li", "nanpa", "o", "pi", "seme", "taso", "kin","te","to"},
@@ -342,11 +322,7 @@ for lang in language_data:
 		)
 	)
 
-	# logger.info(sorted_words)
-	# for w in sorted_words:
-		# logger.info(w["word"])
 
-	# Loop through entries and add cards
 	wordnum = 0
 
 	for entry in sorted_words:
