@@ -57,6 +57,3 @@ def to_katakana(word):
 	
 	return "".join(out)
 
-
-
-print(to_katakana("jelo jasima nimisin minisat"))
