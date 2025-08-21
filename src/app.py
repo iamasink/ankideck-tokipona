@@ -149,6 +149,73 @@ my_model = genanki.Model(
 )
 
 
+WASONA_LANGS = ["en", "de", "pl", "ru", "he"]
+# order of word introduction from wasona https://wasona.com
+WASONA_WORDS = {
+	# "1":["mi", "ken", "jan", "kute", "nanpa", "kalama", "akesi",],
+	"3":["soweli", "waso", "pipi", "kasi", "moku", "lukin", "sona",],
+	"4":["suli", "lili", "pona", "ike", "wawa", "sona", "suwi",],
+	"5":["lukin", "moku", "sona", "suli", "pona", "waso",],
+	"6":["ni", "mi", "sina", "ona",],
+	"7":["nimi", "jan", "sitelen", "toki", "ma", "tomo",],
+	"8":["weka", "pana", "kama", "awen", "tawa", "lon", "tan",],
+	"9":["utala", "lape", "kalama", "musi", "nasa",
+	"kama", "awen",
+	"wile", "ken", "alasa",],
+	"11":["ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo",],
+	"12": ["o",],
+	"13":["kon", "telo", "ko", "kiwen", "seli", "lete", "sewi",],
+	"14": ["ala",],
+	"15":["kepeken", "sama", "ante", "pali", "leko", "tawa", "lon", "tan", "kepeken", "sama",],
+	"16": ["kulupu", "nasin", "esun", "mani", "moli", "mute",],
+	"17":["musi", "seme", "anu",],
+	"18":["pilin", "jaki", "monsuta", "pakala", "toki", "pona", "sona", "wawa", "lon", "pipi", "a", "ken",],
+	"20":["tenpo", "sike", "mun", "suno", "sin", "poka", "la",],
+	"21":["akesi", "kala", "pan", "kili", "soko", "misikeke", "namako",],
+	"22":["pi",],
+	"23":["selo", "insa", "monsi", "sinpin", "anpa",],
+	"24":["lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja",],
+	"25":["wan", "tu", "luka", "mute", "ale", "kipisi",],
+	"26":[ "olin",  "unpa",  "mama",  "mije",  "meli",  "tonsi",  "en",],
+	"27":["kule", "walo", "pimeja", "loje", "jelo", "laso", "kin",],
+	"28":["taso", "n", "mu", "kijetesantakalu", "pu", "ku",],
+}
+
+	# order of word introduction from wasona https://wasona.com
+	# word_order =  [
+	# "jan", "kute", "nanpa", "kalama", "akesi", 
+ 	# "soweli", "waso", "pipi", "kasi", "moku",
+	# "lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "suwi",
+	# "ni", "mi", "sina", "ona", "nimi", "sitelen", "toki", "ma", "tomo", "weka", "pana", "kama",
+	# "awen", "tawa", "lon", "tan", "utala", "lape", "musi", "nasa", "wile", "ken",
+	# "alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
+	# "telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
+	# "leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
+	# "pakala", "a", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "kala", "pan",
+	# "kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
+	# "lawa", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
+	# "ale", "kipisi", "olin", "unpa", "mama", "mije", "meli", "tonsi",
+	# "en", "kule", "walo", "pimeja", "loje", "jelo", "laso", "kin", "taso", "n", "mu",
+	# "kijetesantakalu", "pu", "ku", "su", "lanpan"
+	# ]
+
+CATEGORIES = {
+	"particle": {"a", "ala", "anu", "e", "en", "la", "li", "nanpa", "o", "pi", "seme", "taso", "kin","te","to"},
+	"preposition": {"kepeken","lon","sama","tan","tawa"},
+	"interjection": {"a","n","kulijo","wa"},
+	"number": {"ala","wan","tu","san","po","luka","mute"},
+	"pronoun": {"mi","sina","ona"},
+	"preverb": {"wile","ken","kama","awen","alasa",		"sona","lukin"}
+}
+
+
+WORD_ORDER = []
+for lesson in sorted(WASONA_WORDS, key=int):
+	for w in WASONA_WORDS[lesson]:
+		if w not in WORD_ORDER:
+			WORD_ORDER.append(w)
+    
+    
 
 languagecount = len(language_data)
 
@@ -256,80 +323,20 @@ for lang in language_data:
 		raise
 
 
-	# # sort words by nimi pu -> nimi ku suli -> nimi ku lili -> no book
-	# book_priority = {
-	# "nimi pu": 0,
-	# "nimi ku suli": 1,
-	# "nimi ku lili": 2,
-	# }
 	# get a list of word-dicts
 	word_list = list(words.values())
 
 
-	# order of word introduction from wasona https://wasona.com
-	# word_order =  [
-	# "jan", "kute", "nanpa", "kalama", "akesi", 
- 	# "soweli", "waso", "pipi", "kasi", "moku",
-	# "lukin", "sona", "li", "e", "suli", "lili", "pona", "ike", "wawa", "suwi",
-	# "ni", "mi", "sina", "ona", "nimi", "sitelen", "toki", "ma", "tomo", "weka", "pana", "kama",
-	# "awen", "tawa", "lon", "tan", "utala", "lape", "musi", "nasa", "wile", "ken",
-	# "alasa", "ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo", "ijo", "o", "kon",
-	# "telo", "ko", "kiwen", "seli", "lete", "sewi", "ala", "kepeken", "sama", "ante", "pali",
-	# "leko", "kulupu", "nasin", "esun", "mani", "moli", "mute", "seme", "anu", "pilin", "jaki", "monsuta",
-	# "pakala", "a", "tenpo", "sike", "mun", "suno", "sin", "poka", "la", "kala", "pan",
-	# "kili", "soko", "misikeke", "namako", "pi", "selo", "insa", "monsi", "sinpin", "anpa",
-	# "lawa", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja", "wan", "tu",
-	# "ale", "kipisi", "olin", "unpa", "mama", "mije", "meli", "tonsi",
-	# "en", "kule", "walo", "pimeja", "loje", "jelo", "laso", "kin", "taso", "n", "mu",
-	# "kijetesantakalu", "pu", "ku", "su", "lanpan"
-	# ]
- 
-	wasona_langs = ["en", "de", "pl", "ru", "he"]
-	wasona_words = {
-		# "1":["mi", "ken", "jan", "kute", "nanpa", "kalama", "akesi",],
-		"3":["soweli", "waso", "pipi", "kasi", "moku", "lukin", "sona",],
-		"4":["suli", "lili", "pona", "ike", "wawa", "sona", "suwi",],
-		"5":["lukin", "moku", "sona", "suli", "pona", "waso",],
-		"6":["ni", "mi", "sina", "ona",],
-		"7":["nimi", "jan", "sitelen", "toki", "ma", "tomo",],
-		"8":["weka", "pana", "kama", "awen", "tawa", "lon", "tan",],
-		"9":["utala", "lape", "kalama", "musi", "nasa",
-		"kama", "awen",
-		"wile", "ken", "alasa",],
-		"11":["ilo", "lipu", "poki", "supa", "lupa", "len", "open", "pini", "jo",],
-		"12": ["o",],
-		"13":["kon", "telo", "ko", "kiwen", "seli", "lete", "sewi",],
-		"14": ["ala",],
-		"15":["kepeken", "sama", "ante", "pali", "leko", "tawa", "lon", "tan", "kepeken", "sama",],
-		"16": ["kulupu", "nasin", "esun", "mani", "moli", "mute",],
-		"17":["musi", "seme", "anu",],
-		"18":["pilin", "jaki", "monsuta", "pakala", "toki", "pona", "sona", "wawa", "lon", "pipi", "a", "ken",],
-		"20":["tenpo", "sike", "mun", "suno", "sin", "poka", "la",],
-		"21":["akesi", "kala", "pan", "kili", "soko", "misikeke", "namako",],
-		"22":["pi",],
-		"23":["selo", "insa", "monsi", "sinpin", "anpa",],
-		"24":["lawa", "kute", "nena", "uta", "sijelo", "luka", "noka", "palisa", "linja",],
-		"25":["wan", "tu", "luka", "mute", "ale", "kipisi",],
-		"26":[ "olin",  "unpa",  "mama",  "mije",  "meli",  "tonsi",  "en",],
-		"27":["kule", "walo", "pimeja", "loje", "jelo", "laso", "kin",],
-		"28":["taso", "n", "mu", "kijetesantakalu", "pu", "ku",],
-	}
- 
- 
-	word_order = []
-	for lesson in sorted(wasona_words, key=int):
-		for w in wasona_words[lesson]:
-			if w not in word_order:  # dedupe
-				word_order.append(w)
+
 
 
 	sorted_words = sorted(
 		word_list,
 		key=lambda w: (
 			# sort by word order list
-			word_order.index(w["word"]) if w["word"] in word_order else len(word_order),
+			WORD_ORDER.index(w["word"]) if w["word"] in WORD_ORDER else len(WORD_ORDER),
 			# then sort by usage
-			-get_latest_usage(w) if w["word"] not in word_order else 0,
+			-get_latest_usage(w) if w["word"] not in WORD_ORDER else 0,
 			# then alphabetically
 			w.get("word","")
 		)
@@ -496,23 +503,28 @@ for lang in language_data:
 
 
 
-
 		# add tags
 		tag_prefix = "TP::"
 		mytags = [
-			tag_prefix + "book_" + origbook.replace(" ", "-"),
-			tag_prefix + "usage_" + usage_category.replace(" ", "-")
+			tag_prefix + "book::" + origbook.replace(" ", "-"),
+			tag_prefix + "usage::" + usage_category.replace(" ", "-"),
+			tag_prefix + "era::" + coined_era.replace(" ", "-")
 		]
+
+
+		for cat, words in CATEGORIES.items():
+			if wordname in words:
+				mytags.append(f"TP::category::{cat}")
   
 		word_lessons = []
 		lesson_tag = None
-		for lesson_num, lesson_words in wasona_words.items():
+		for lesson_num, lesson_words in WASONA_WORDS.items():
 			if wordname in lesson_words:
-				lesson_tag = f"{tag_prefix}lesson_{str(lesson_num).zfill(2)}"
+				lesson_tag = f"{tag_prefix}lesson::{str(lesson_num).zfill(2)}"
 				mytags.append(lesson_tag)
 				word_lessons.append(lesson_num)
 
-		wasona_lang = lang if lang in wasona_langs else "en"
+		wasona_lang = lang if lang in WASONA_LANGS else "en"
 		if len(word_lessons) > 0:
 			if len(word_lessons) > 1:
 				links += "<br/> relevant wasona lessons: "
