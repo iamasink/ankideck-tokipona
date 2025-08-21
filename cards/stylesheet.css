@@ -104,6 +104,7 @@ body.nightMode {
 }
 
 .warning {
+	/* hide by default */
 	visibility: collapse;
 	display: none;
 }
@@ -131,6 +132,19 @@ body.nightMode {
 	color: rgb(168, 168, 168);
 }
 
+h1 {
+	font-size: 1.1em;
+	margin-bottom: 0;
+}
+
+.glyphetymology {
+	color: rgb(54, 55, 56);
+}
+
+.nightMode .glyphetymology {
+	color: rgb(168, 168, 168);
+}
+
 .glyph {
 	filter: invert(1);
 }
@@ -152,13 +166,17 @@ body.nightMode {
 }
 
 .wordalt {
-	font-weight: bold;
+	font-weight: normal;
 }
 
 a {
 	color: rgb(37 99 235);
 	font-weight: 500;
 	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 0;
 }
 
 .nightMode a {
