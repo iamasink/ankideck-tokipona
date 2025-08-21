@@ -350,8 +350,8 @@ for lang in language_data:
 			# logger.info("skipping word, its in category" + word["usage_category"] + "which isn't enabled.")
 			continue
 
-		# set definition and split newlines by ;
-		worddef = word["translations"][lang]["definition"].replace("; ","\n").replace(";","\n")
+		# set definition and split newlines by ; and |
+		worddef = word["translations"][lang]["definition"].replace("; ","\n").replace(";","\n").replace("| ","\n").replace("|","")
 
 		if word["deprecated"]:
 			# add dewprecated warning
