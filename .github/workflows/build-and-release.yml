@@ -37,7 +37,7 @@ jobs:
       #   run: python svg2png.py
 
       - name: Build APKG
-        run: python src/app.py --requestDelay 10
+        run: python src/app.py --requestDelay 1
 
 
       - name: update readme
