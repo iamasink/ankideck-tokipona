@@ -148,7 +148,7 @@ my_model = genanki.Model(
 
 )
 
-
+# supported wasona langs https://wasona.com/translate/
 WASONA_LANGS = ["en", "de", "pl", "ru", "he"]
 # order of word introduction from wasona https://wasona.com
 WASONA_WORDS = {
@@ -527,9 +527,9 @@ for lang in language_data:
 		wasona_lang = lang if lang in WASONA_LANGS else "en"
 		if len(word_lessons) > 0:
 			if len(word_lessons) > 1:
-				links += "<br/> relevant wasona lessons: "
+				links += "<br/>wasona lessons: "
 			else:
-				links += "<br/> relevant wasona lesson: "
+				links += "<br/>wasona lesson: "
 
 			lesson_links = "<br/>\n".join(f"<a href='https://wasona.com/{wasona_lang}/{str(ln).zfill(2)}'>lesson {ln}</a>" for ln in word_lessons)
 			links += lesson_links
