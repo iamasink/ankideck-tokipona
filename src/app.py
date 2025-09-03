@@ -465,7 +465,7 @@ for lang in language_data:
 		# join using dict
 		glyph = "".join(f"<img src='{fn}'/>" for fn in glyphs_dict.keys())
 
-		logger.info(glyph)
+		# logger.info(glyph)
 
 
 
