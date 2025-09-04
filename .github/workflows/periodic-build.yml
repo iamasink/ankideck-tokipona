@@ -61,7 +61,7 @@ jobs:
         id: changed
         uses: tj-actions/verify-changed-files@v20
         with:
-          files: generated/*
+          files: generated/worddata/*
 
       - name: Commit changes
         if: steps.changed.outputs.files_changed == 'true'
@@ -85,7 +85,7 @@ jobs:
         uses: anothrNick/github-tag-action@v1
         id: bump
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # if you don't want to set write permissions use a PAT token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG_PREFIX: "v"
           DEFAULT_BUMP: patch
 
@@ -98,7 +98,7 @@ jobs:
           tag="${{ steps.bump.outputs.new_tag }}"
           echo "Creating release $tag"
           gh release create $tag \
-            ./generated/*.apkg \
+            ./generated/apkg/*.apkg \
             --title "Release $tag" \
             --generate-notes
         env:

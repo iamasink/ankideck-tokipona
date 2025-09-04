@@ -1,6 +1,7 @@
 from pathlib import Path
 import shutil
 import time
+import tomllib
 import requests
 import genanki
 import logging
@@ -17,7 +18,6 @@ from transliterate import to_katakana
 parser = argparse.ArgumentParser("simple_example")
 parser.add_argument("-f", "--forceChange", help="force build even if there are no changes", default=False, required=False, action="store_true")
 parser.add_argument("-l", "--lang", help="language to run", default=None, required=False, metavar="LANG", type=str)
-parser.add_argument("-d", "--requestDelay", help="delay between lang requests", default=1, required=False, metavar="SECONDS", type=float)
 args = parser.parse_args()
 
 # Configure logging
@@ -37,15 +37,13 @@ FONT_NAME = "sitelenselikiwenmonoasuki"
 MODEL_ID = 1747075454
 DECK_ID_BASE = 1747151651209
 
-REQUEST_DELAY = args.requestDelay or 2
-
 BASE_DIR = Path(__file__).parent.parent
 
 
 
 
 def get_latest_usage(w):
-	usage_data = w.get("usage", {})
+	usage_data = metadata[w]["usage"]
 	if not usage_data:
 		return 0
 	latest_date = max(usage_data.keys())
@@ -55,8 +53,17 @@ def get_latest_usage(w):
 ids = []
 
 # update languages file
+GENERATED_DIR = BASE_DIR / "generated"
+WORDSDATA_DIR = GENERATED_DIR / "worddata"
+APKG_DIR = GENERATED_DIR / "apkg"
+
 LANGUAGE_FILE = BASE_DIR / "generated" / "languages.json"
 LANGUAGE_CONFIGFILE = BASE_DIR / "languageconfig.json"
+
+GENERATED_DIR.mkdir(parents=True, exist_ok=True)
+WORDSDATA_DIR.mkdir(parents=True, exist_ok=True)
+APKG_DIR.mkdir(parents=True, exist_ok=True)
+
 language_data = {}
 language_config_data = {}
 if LANGUAGE_FILE.exists():
@@ -200,10 +207,21 @@ for lesson in sorted(WASONA_WORDS, key=int):
 	for w in WASONA_WORDS[lesson]:
 		if w not in WORD_ORDER:
 			WORD_ORDER.append(w)
-    
-    
 
 languagecount = len(language_data)
+
+METADATA_DIR = BASE_DIR / "sona" / "words" / "metadata"
+metadatafiles = os.listdir(METADATA_DIR)
+word_list = []
+metadata = {}
+for word in metadatafiles:
+	word_name = word.replace(".toml","")
+	word_list.append(word_name)
+	with open (METADATA_DIR / word, "rb") as f :
+		data = tomllib.load(f)
+		metadata[word_name] = data
+print("word list is ", word_list)
+print("metadata  is ", metadata)
 
 
 for lang in language_data:
@@ -233,12 +251,14 @@ for lang in language_data:
 			return genanki.guid_for("iamasink toki pona " + lang, self.fields[0])
 
 
-	DATA_FILE = BASE_DIR / "generated" /  f"cached_words-{lang}.json"
+	DATA_FILE = WORDSDATA_DIR / f"worddata-{lang}.json"
  
 
 	AUDIO_SUBDIR = BASE_DIR / "ijo" / "kalama"
 	GLYPH_SUBDIR = BASE_DIR / "ijo" / "sitelenpona" / "sitelen-seli-kiwen"
 	AUDIO_PEOPLE = ["kalaasi2023", "jlakuse"]
+ 
+	SONA_DIR = BASE_DIR / "sona"
 
 	FILES_DIR = BASE_DIR / "files"
 	# ensure dir exists
@@ -274,43 +294,59 @@ for lang in language_data:
 
 	logger.info("Fetching words with full info...")
 
-	try:
-		## wait a bit between requests :)
-		time.sleep(REQUEST_DELAY)
-		resp = requests.get("https://api.linku.la/v1/words?lang=" + lang)
-		logger.info(f"Requested /words endpoint, received status {resp.status_code}")
-		resp.raise_for_status()
-		words = resp.json()
-		logger.info(f"Got {len(words)} entries.")
-		def hash_data(data):
-			return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
-		# Load old data hash
-		if DATA_FILE.exists():
-			with DATA_FILE.open("r", encoding="utf-8") as f:
-				old_data = json.load(f)
-			# compare hash to see if changed
-			hashed_old = hash_data(old_data)
-			hashed_new = hash_data(words)
-   
-			if hashed_old == hashed_new:
-				if not FORCE_CHANGE:
-					logger.info("Data unchanged.")
-					#continue
+	# metadata = sona/words/metadata/[word].toml
+	# commentary = sona/words/translations/[lang]/commentary.toml -> [word:]
+	# definitions = sona/words/translations/[lang]/definitions.toml -> [word:]
+	# etymology = sona/words/translations/[lang]/etymology.toml -> [word:]
+	# sp_etymology = sona/words/translations/[lang]/sp_etymology.toml -> [word:]
+ 
+	lang_dir = SONA_DIR / "words" / "translations" / lang
+ 
+	lang_commentary_dir = lang_dir/"commentary.toml"
+	with open (lang_commentary_dir, "rb") as f :
+		lang_commentary = tomllib.load(f)
+	lang_definitions_dir = lang_dir/"definitions.toml"
+	with open (lang_definitions_dir, "rb") as f :
+		lang_definitions = tomllib.load(f)
+	lang_etymology_dir = lang_dir/"etymology.toml"
+	with open (lang_etymology_dir, "rb") as f :
+		lang_etymology = tomllib.load(f)
+	lang_sp_etymology_dir = lang_dir/"sp_etymology.toml"
+	with open (lang_sp_etymology_dir, "rb") as f :
+		lang_sp_etymology = tomllib.load(f)
 
-		# ensure folder exist
-		DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+ 
+	alldata = {
+		"word_list": word_list,
+		"commentary": lang_commentary,
+		"definitions": lang_definitions,
+		"etymology": lang_etymology,
+		"sp_etymology": lang_sp_etymology,
+	}
+	# print("alldata", alldata)
+ 
 
-		# Save new data
-		with DATA_FILE.open("w", encoding="utf-8") as f:
-			logger.info("saving new data")
-			json.dump(words, f, ensure_ascii=False, indent=2)
-	except Exception as e:
-		logger.error(f"Failed to fetch words: {e}")
-		raise
+	def hash_data(data):
+		return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
+	# Load old data hash
+	if DATA_FILE.exists():
+		with DATA_FILE.open("r", encoding="utf-8") as f:
+			old_data = json.load(f)
+		# compare hash to see if changed
+		hashed_old = hash_data(old_data)
+		hashed_new = hash_data(alldata)
+		if hashed_old == hashed_new:
+			if not FORCE_CHANGE:
+				logger.info("Data unchanged.")
+				continue
 
+	# ensure folder exist
+	DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-	# get a list of word-dicts
-	word_list = list(words.values())
+	# Save new data
+	with DATA_FILE.open("w", encoding="utf-8") as f:
+		logger.info("saving new data")
+		json.dump(alldata, f, ensure_ascii=False, indent=2)
 
 
 
@@ -320,11 +356,11 @@ for lang in language_data:
 		word_list,
 		key=lambda w: (
 			# sort by word order list
-			WORD_ORDER.index(w["word"]) if w["word"] in WORD_ORDER else len(WORD_ORDER),
+			WORD_ORDER.index(w) if w in WORD_ORDER else len(WORD_ORDER),
 			# then sort by usage
-			-get_latest_usage(w) if w["word"] not in WORD_ORDER else 0,
+			-get_latest_usage(w) if w not in WORD_ORDER else 0,
 			# then alphabetically
-			w.get("word","")
+			w
 		)
 	)
 
@@ -334,9 +370,11 @@ for lang in language_data:
 	for entry in sorted_words:
 		wordnum+=1
 		word = entry
-		wordname = word["word"]
+		wordname = word
   
 		wordid = html.escape(str(wordnum))
+  
+		wordmetadata = metadata[wordname]
   
   
 		if lang == "ja":
@@ -346,14 +384,16 @@ for lang in language_data:
 
 		# logger.info(f"Processing entry for word: '{wordname}'")
 
-		if word["usage_category"] not in ENABLED_CATEGORIES:
+		if metadata[wordname]["usage_category"] not in ENABLED_CATEGORIES:
 			# logger.info("skipping word, its in category" + word["usage_category"] + "which isn't enabled.")
 			continue
 
 		# set definition and split newlines by ; and |
-		worddef = word["translations"][lang]["definition"].replace("; ","\n").replace(";","\n").replace("| ","\n").replace("|","")
+		# worddef = word["translations"][lang]["definition"].replace("; ","\n").replace(";","\n").replace("| ","\n").replace("|","")
+		worddef = lang_definitions[word].replace("; ","\n").replace(";","\n").replace("| ","\n").replace("|","")
+  
 
-		if word["deprecated"]:
+		if wordmetadata["deprecated"]:
 			# add dewprecated warning
 			# replace newline chars with <br/> + newline
 			definition = html.escape("(This word is deprecated by its creator, and its use is discouraged.)\n" + worddef).replace("\n", "<br/>\n")
@@ -362,25 +402,25 @@ for lang in language_data:
 			definition = html.escape(worddef).replace("\n", "<br/>\n")
 
 
-		commentary = html.escape(word["translations"][lang]["commentary"])
-		glyph_etymology = html.escape(word["translations"][lang]["sp_etymology"])
+		commentary = html.escape(lang_commentary[word])
+		glyph_etymology = html.escape(lang_sp_etymology[word])
 		
-		creator = html.escape(", ".join((word["creator"])))
-		coined_era = html.escape(word["coined_era"])
-		coined_year = html.escape(word["coined_year"])
+		creator = html.escape(", ".join((wordmetadata["creator"])))
+		coined_era = html.escape(wordmetadata["coined_era"])
+		coined_year = html.escape(wordmetadata["coined_year"])
   
 
-		origbook = word["book"]
+		origbook = wordmetadata["book"]
 		if (not origbook or origbook == "none"):
 			book = "no book"
 		else:
-			book = html.escape(word["book"])
+			book = html.escape(wordmetadata["book"])
 
-		usage_data = word["usage"]
+		usage_data = wordmetadata["usage"]
 		latest_date = max(usage_data.keys())
 		latest_usage = get_latest_usage(word)
 		usage = html.escape(str(get_latest_usage(word)))
-		usage_category = html.escape(word["usage_category"])
+		usage_category = html.escape(wordmetadata["usage_category"])
 
 
 		# Audio (relative path)
@@ -411,7 +451,7 @@ for lang in language_data:
 				else:
 					# logger.info(f"{target_filename} already exists, skipping copy!")
 					pass
-    
+	
 				# register in package using relative path
 				my_package.media_files.append(str(target_audio))
 				# add sound tag with correct filename
@@ -421,7 +461,7 @@ for lang in language_data:
 
 
 
-		ligatures = list(word["representations"]["ligatures"])
+		ligatures = list(wordmetadata["representations"]["ligatures"])
 		# logger.info(ligatures)
 
 		processed = []
@@ -446,17 +486,17 @@ for lang in language_data:
 				target_glyph = BASE_DIR / "files" / target_glyph_filename
 				# copy file
 				# shutil.copy2(abs_img_source, abs_target)
-    
-    			# check if it already exists
+	
+				# check if it already exists
 				if not target_glyph.exists():
 					shutil.copy2(src_glyph, target_glyph)
 				else:
 					# logger.info(f"{target_filename} already exists, skipping copy!")
 					pass
-    
+	
 				my_package.media_files.append(str(target_glyph) )
 				glyphs_dict[target_glyph_filename] = True
-    
+	
 				# glyphs_dict.append(f"<img src='{target_glyph_filename}'/>")
 			else:
 				logger.warning(f"file {src_glyph} doesn't exist.. skipping!")
@@ -473,14 +513,14 @@ for lang in language_data:
 		links = ""
 		links += f"nimi.li: <a href='https://nimi.li/{wordname}'>{wordname}</a><br/>"
 
-		for w in word["see_also"]:
+		for w in wordmetadata["see_also"]:
 			links += f" <a href='https://nimi.li/{w}'>{w}</a>"
 
-		for r in word["resources"]:
+		for r in wordmetadata["resources"]:
 			# logger.info(r)
 			if r == "lipamanka_semantic":
 				continue # skip lipamanka as its on nimi.li
-			links += f"<br/> {r.replace("_"," ")}: <a href={word["resources"][r]}>{wordname}</a>"
+			links += f"<br/> {r.replace("_"," ")}: <a href={wordmetadata["resources"][r]}>{wordname}</a>"
 
 
 
@@ -530,6 +570,6 @@ for lang in language_data:
 		logger.debug(f"Added note: {word}")
 
 	# Write out the .apkg file
-	output_file = BASE_DIR / "generated" / f"toki-pona-deck-{lang}.apkg"
+	output_file = APKG_DIR / f"toki-pona-deck-{lang}.apkg"
 	my_package.write_to_file(output_file)
 	logger.info(f"Done {lang}! Written {len(my_deck.notes)} notes to {output_file} (id {deckid})")

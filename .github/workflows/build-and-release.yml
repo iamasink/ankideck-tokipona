@@ -81,7 +81,7 @@ jobs:
           tag="${{ steps.bump.outputs.new_tag }}"
           echo "Creating release $tag"
           gh release create $tag \
-            ./generated/*.apkg \
+            ./generated/apkg/*.apkg \
             --title "Release $tag" \
             --generate-notes
         env:

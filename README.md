@@ -36,7 +36,7 @@ Download the latest file below, and open in Anki by double-clicking it, dragging
 
 - [ ] add extra card types?
 - [ ] fetch more updated translations?
-- [ ] use sona repo instead of linku api?
+- [x] use sona repo instead of linku api?
 
 <!-- 
 # setup fonts
