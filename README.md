@@ -36,7 +36,7 @@ Download the latest file below, and open in Anki by double-clicking it, dragging
 
 - [ ] add extra card types?
 - [ ] fetch more updated translations?
-- [x] use sona repo instead of linku api?
+- [ ] use sona repo instead of linku api?
 
 <!-- 
 # setup fonts
@@ -54,35 +54,35 @@ https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona
   
 ## French  
 (Français) - `fr-FR`  
-Definitions: 99%, Commentary: 100%  
+Definitions: 99%, Commentary: 98%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fr.apkg  
 ## Dutch  
 (Nederlands) - `nl-NL`  
-Definitions: 99%, Commentary: 100%  
+Definitions: 99%, Commentary: 98%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nl.apkg  
 ## Polish  
 (Polski) - `pl-PL`  
-Definitions: 99%, Commentary: 100%  
+Definitions: 99%, Commentary: 98%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pl.apkg  
 ## Turkish  
 (Türkçe) - `tr-TR`  
-Definitions: 99%, Commentary: 100%  
+Definitions: 99%, Commentary: 98%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-tr.apkg  
 ## Chinese (Simplified)  
 (中文（简体）) - `zh-CN`  
-Definitions: 99%, Commentary: 62%  
+Definitions: 99%, Commentary: 60%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-zh-CN.apkg  
 ## Chinese (Traditional)  
 (中文（繁體）) - `zh-TW`  
-Definitions: 99%, Commentary: 62%  
+Definitions: 99%, Commentary: 60%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-zh-TW.apkg  
 ## Spanish  
 (Español) - `es-ES`  
-Definitions: 99%, Commentary: 40%  
+Definitions: 99%, Commentary: 39%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-es.apkg  
 ## Czech  
 (Čeština) - `cs-CZ`  
-Definitions: 97%, Commentary: 49%  
+Definitions: 97%, Commentary: 47%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-cs.apkg  
 ## Korean  
 (한국어) - `ko-KR`  
@@ -90,7 +90,7 @@ Definitions: 99%, Commentary: 6%
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ko.apkg  
 ## Catalan  
 (català) - `ca-ES`  
-Definitions: 97%, Commentary: 20%  
+Definitions: 97%, Commentary: 19%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-ca.apkg  
 ## Italian  
 (Italiano) - `it-IT`  
@@ -106,11 +106,11 @@ Definitions: 90%, Commentary: 6%
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-de.apkg  
 ## Portuguese  
 (Português) - `pt-BR`  
-Definitions: 80%, Commentary: 42%  
+Definitions: 80%, Commentary: 40%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pt-BR.apkg  
 ## Hebrew  
 (עברית) - `he-IL`  
-Definitions: 75%, Commentary: 49%  
+Definitions: 75%, Commentary: 47%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-he.apkg  
 ## Greek  
 (Ελληνικά) - `el-GR`  
@@ -186,7 +186,7 @@ Definitions: 63%, Commentary: 6%
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-isvl.apkg  
 ## Wu (Shanghai)  
 (上海閑話) - `wuu`  
-Definitions: 60%, Commentary: 9%  
+Definitions: 60%, Commentary: 7%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-wuu.apkg  
 ## Standard Arabic  
 (اللغة العربية) - `ar-SA`  
@@ -226,11 +226,11 @@ Definitions: 56%, Commentary: 6%
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-sl.apkg  
 ## Swedish  
 (Svenska) - `sv-SE`  
-Definitions: 38%, Commentary: 14%  
+Definitions: 38%, Commentary: 12%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-sv.apkg  
 ## Ukrainian  
 (Українська) - `uk-UA`  
-Definitions: 31%, Commentary: 23%  
+Definitions: 31%, Commentary: 21%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-uk.apkg  
 ## Thai  
 (ภาษาไทย) - `th-TH`  

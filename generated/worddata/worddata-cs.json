@@ -1,0 +1,2095 @@
+{
+  "word_list": [
+    "kulijo",
+    "jan",
+    "mute",
+    "melome",
+    "telo",
+    "te",
+    "poka",
+    "a",
+    "tan",
+    "li",
+    "mani",
+    "lili",
+    "wekama",
+    "ala",
+    "sijelo",
+    "wasoweli",
+    "kijetesantakalu",
+    "kon",
+    "taso",
+    "supa",
+    "kipisi",
+    "sona",
+    "nena",
+    "alasa",
+    "jasima",
+    "nasin",
+    "pini",
+    "mije",
+    "mijomi",
+    "kokosila",
+    "jonke",
+    "lete",
+    "ilo",
+    "musi",
+    "wile",
+    "wan",
+    "kule",
+    "taki",
+    "lupa",
+    "meli",
+    "waso",
+    "meso",
+    "insa",
+    "pona",
+    "lipu",
+    "mulapisu",
+    "kama",
+    "ojuta",
+    "la",
+    "teje",
+    "toki",
+    "po",
+    "akesi",
+    "pika",
+    "n",
+    "suli",
+    "omekapo",
+    "konwe",
+    "en",
+    "monsi",
+    "mi",
+    "seme",
+    "ijo",
+    "nanpa",
+    "jelo",
+    "linja",
+    "san",
+    "ko",
+    "lon",
+    "kiwen",
+    "penpo",
+    "nasa",
+    "pakala",
+    "kili",
+    "lanpan",
+    "lape",
+    "ku",
+    "misikeke",
+    "jaki",
+    "moli",
+    "nimi",
+    "ken",
+    "majuna",
+    "leko",
+    "kepeken",
+    "ante",
+    "sin",
+    "olin",
+    "unu",
+    "su",
+    "oko",
+    "epiku",
+    "walo",
+    "len",
+    "isipin",
+    "soto",
+    "tenpo",
+    "pakola",
+    "anu",
+    "wa",
+    "laso",
+    "namako",
+    "utala",
+    "apeja",
+    "suwi",
+    "mun",
+    "moku",
+    "pimeja",
+    "open",
+    "tawa",
+    "ale",
+    "puwa",
+    "usawi",
+    "uta",
+    "wuwojiti",
+    "sinpin",
+    "luka",
+    "wawa",
+    "pake",
+    "weka",
+    "sama",
+    "misa",
+    "ma",
+    "unpa",
+    "kalama",
+    "nimisin",
+    "mu",
+    "selo",
+    "monsuta",
+    "e",
+    "kasi",
+    "anpa",
+    "sike",
+    "palisa",
+    "mama",
+    "pipi",
+    "sewi",
+    "oke",
+    "pan",
+    "yupekosi",
+    "to",
+    "pilin",
+    "lawa",
+    "kulupu",
+    "linluwi",
+    "esun",
+    "poki",
+    "kin",
+    "seli",
+    "jami",
+    "tu",
+    "suno",
+    "ni",
+    "ali",
+    "sitelen",
+    "sutopatikuna",
+    "kiki",
+    "pi",
+    "nja",
+    "powe",
+    "kute",
+    "owe",
+    "tonsi",
+    "soweli",
+    "ona",
+    "awen",
+    "pana",
+    "o",
+    "kamalawala",
+    "noka",
+    "sina",
+    "lukin",
+    "loje",
+    "soko",
+    "pu",
+    "kapesi",
+    "pali",
+    "kala",
+    "ike",
+    "jo",
+    "tomo"
+  ],
+  "commentary": {
+    "a": "Běžně používané (před i po pu), \"a\" a \"kin\" jsou odlišná slova, každé se svým vlastním významem. V pu jsou považovány za synonyma.",
+    "akesi": "akesi znamenávalo \"neroztomilé zvíře\" a je tak definováno v pu, ale tahle definice se přestala používat a později byla odstraněna v poznámkách k pu, které byli zveřejněny s ku.",
+    "ala": "",
+    "alasa": "V některých komunitách je užití slova \"alasa\" jako předsloveso s významem \"pokoušet se\" stejně nebo ještě více běžné než slovo \"lukin\". V pu, pouze \"lukin\"/\"oko\" má tento význam.",
+    "ale": "\"ali\" je alternativa k \"ale\", která byla zavedená v anketě v roce 2002, aby se nepletlo se slovem \"ala\". Nicméně používání \"ale\" radši než \"ali\" zůstává častější.\nVětšina mluvčích uvádí, že nachápou význam \"hojné, vydatné\" alespoň mimo kontext.\n\"20, 120\" byli ne-pu významy, které byli předem používány v komunitě spolu s \"100\"; dnes jsou prakticky neslýchané.",
+    "ali": "\"ali\" je alternativa k \"ale\" vytvořená anketou v roce 2002, aby se předešlo záměně s \"ala\". Nicméně, používání \"ale\" nad \"ali\" je častější minimálně od vzniku pu.\nObecně nepovažováno za slovo samo o sobě.",
+    "anpa": "Běžně používáno (před i po pu). \"anpa\" má význam \"místo, které je dole\". V pu má ale tento význam slovo \"noka\".",
+    "ante": "",
+    "anu": "Užití slova \"anu\" jako obsahové slovo s významem \"vybrat\" zůstává kontroverzní.",
+    "apeja": "Podle jan Sonja \"apeja\" se nikdy neobjevilo v jakémkoli před-pu toki pona slovníku od ní a nikdy ho nepropagovala. Místo toho to mohl být \"jenom experimentální nápad na fóru\".",
+    "awen": "",
+    "e": "",
+    "en": "There are various analyses of the syntactic role of \"en\". Originally intended to be used as \"and\", it was changed (via poll in 2002) to just be used with \"head nouns\". One of the more recent analyses (including 2021's April Fools) treats \"en\" as a subject marker.",
+    "epiku": "",
+    "esun": "Podle jan Sonja \"esun [jí] řekl řidič taxi, který mluvil jazykem z akanské rodiny v západní Africe.",
+    "ijo": "",
+    "ike": "",
+    "ilo": "",
+    "insa": "",
+    "isipin": "",
+    "jaki": "",
+    "jami": "Často používáno jako \"stimulant\".",
+    "jan": "There are two sides to the concept, \"sentient entity\" and \"homo sapiens\", which matters for whether to use the word in edge cases (i.e. aliens, humans turned into werewolves, etc). Which sense is more central to the word remains controversial.",
+    "jasima": "",
+    "jelo": "Někteří rozšířili \"jelo\", aby zahrnovalo bledě zelenou, ale je to nečasté.",
+    "jo": "",
+    "jonke": "Coined in reference to the Untitled Goose Game fandom.",
+    "kala": "",
+    "kalama": "",
+    "kama": "",
+    "kamalawala": "The word is from a story called \"jan pi Kamalawala\". A character's name is described as \"nimi Jan pi Kama e Lawa Ala\", and a shortened version given as \"nimi Kamalawala\". jan Kipo is responsible for it becoming a word instead of just a name.",
+    "kapesi": "",
+    "kasi": "",
+    "ken": "",
+    "kepeken": "Jestli by \"kepeken\" mělo být používáno s nebo bez \"e\" v přísudkové pozici (znamenajíc \"používat\") zůstává kontroverzní.",
+    "kijetesantakalu": "Vzniklo jako aprílový vtip v roce 2009.",
+    "kiki": "The word is loaned from the 2001 Vilanyur S Ramachandran & Edward Hubbard version of Wolfgang Köhler's 1912 psycholinguistic experiment. The experiment studied sound symbolism on the words \"bouba\" and \"kiki\".",
+    "kili": "V roce 2021 po ku, metaforické definice pro kili byly navrženy. To zahrnuje mimo jiné \"potomek\" a \"výsledný produkt\". Tyto definice jsou středně populární. Ještě není jasné, jestli to tak zůstane dlouhodobě.",
+    "kin": "Běžně použáváno (před i po pu). \"a\" a \"kin\" jsou rozdílná slova s rozdílnými významy. V pu jsou považovány za synonyma.\nPodstoupilo významnými změnami v používání v roce 2002 společně s \"en\" a (dnes zastaralém) \"kan\".",
+    "kipisi": "",
+    "kiwen": "Coined in a poll in 2002.",
+    "ko": "The \"clinging form\" definition was elaborated to mean \"a shape or mass that sticks or clings; a clot, a thick or viscous lump, a clump that can be reshaped\".",
+    "kokosila": "V esperantu \"krokodili\" znamená \"mluvit mezi esperantisty v jazyce mimo esperanta\" a je to zavedená část esperantské kultury.",
+    "kon": "",
+    "konwe": "Conway refers to John Horton Conway, creator of the cellular automaton Game of Life.\nkonwe's intended meaning extends beyond just \"living\" and \"life.\" It can be used to describe rocks or rivers or other nonliving things",
+    "ku": "For ways to buy a copy of the book, visit the official Toki Pona website.",
+    "kule": "in addition to its pu-definitions, kule is sometimes used to talk about more general kinds of categories, like type, kind, flavour, gender, etc.",
+    "kulijo": "",
+    "kulupu": "",
+    "kute": "",
+    "la": "",
+    "lanpan": "",
+    "lape": "",
+    "laso": "",
+    "lawa": "",
+    "leko": "",
+    "len": "",
+    "lete": "",
+    "li": "",
+    "lili": "",
+    "linja": "",
+    "linluwi": "",
+    "lipu": "",
+    "loje": "",
+    "lon": "",
+    "luka": "",
+    "lukin": "In common usage (both before and after pu), \"lukin\" and \"oko\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"oko\" at all, preferring \"lukin\" in all circumstances. The usage of \"alasa\" as a preverb meaning \"try to\" is more common than \"lukin\". In pu, only \"lukin\" has this meaning. A very common beginner mistake is treating \"lukin\" as if it means \"appearance\", due to the mistakenly equating the \"visual\" meaning as in \"pona lukin (visually good)\" to mean \"looks good\".",
+    "lupa": "",
+    "ma": "",
+    "majuna": "",
+    "mama": "",
+    "mani": "",
+    "meli": "",
+    "melome": "",
+    "meso": "",
+    "mi": "",
+    "mije": "",
+    "mijomi": "",
+    "misa": "",
+    "misikeke": "The word was used privately by jan Sonja up until November 2019, when she mentioned it in the ma pona pi toki pona discord server as a word she was experimenting with. It is believed the word was originally coined in 2007-2009 alongside pan, esun, apeja, monsuta, and pu, but this cannot be proven.",
+    "moku": "",
+    "moli": "",
+    "monsi": "",
+    "monsuta": "",
+    "mu": "",
+    "mulapisu": "",
+    "mun": "",
+    "musi": "",
+    "mute": "",
+    "n": "",
+    "namako": "In common usage (both before and after pu), \"sin\" and \"namako\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"namako\" at all, preferring \"sin\" in all circumstances.",
+    "nanpa": "",
+    "nasa": "",
+    "nasin": "",
+    "nena": "",
+    "ni": "",
+    "nimi": "",
+    "nimisin": "Mostly used in conversations in English. Likely was popularised by the :nimisin: emote in ma pona, which was originally used to notify Atawan (maintainer of \"nimi ale\") about newly coined words. In common speech, the meaning got extended to include most or all non-pu words, regardless if they were coined recently or not.",
+    "nja": "",
+    "noka": "In a 2002 poll, \"jalan\" was proposed to replace \"noka\". However, it failed to get enough votes. In pu, \"noka\" has the meaning of \"place that is down\". In common usage (both before and after pu), \"anpa\" has that meaning instead. noka had speculative and/or joking use for numbers, comparable to luka: ten, twenty, negative five.",
+    "o": "",
+    "ojuta": "",
+    "oke": "",
+    "oko": "In common usage (both before and after pu), \"lukin\" and \"oko\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"oko\" at all, preferring \"lukin\" in all circumstances, though some speakers do the opposite and use \"oko\" exclusively instead.",
+    "olin": "V češtině \"milovat\" může znamenat \"mít moc rád\", ale v toki pona \"olin\" takhle nefunguje. Indikuje citové pouto nebo vazbu, nikoliv preference",
+    "omekapo": "Coined by jan Maliku in reference to the message \"o moku e kala pona\", which jan Sonja wrote on their copy of Toki Pona: The Language of Good during a Texas meetup.",
+    "ona": "Coined in a poll in 2002. Replaced \"iki\", which was deemed too similar to \"ike\". Other options in the poll included \"ipi\", as well as \"i\" in a previous poll.",
+    "open": "Some proficient speakers use open as a preverb that means \"start to,\" that goes along with the complimentary pini preverb \"to stop\"",
+    "owe": "",
+    "pakala": "",
+    "pake": "",
+    "pakola": "",
+    "pali": "",
+    "palisa": "",
+    "pan": "",
+    "pana": "",
+    "penpo": "Coined in reference to ma pona pi toki pona's \"tenpo pi toki pona taso\" event, shortening it to \"tenpo penpo\".",
+    "pi": "Užití slova \"pi\" pro přídavná jména přivlastňovácí je dnes velmi nepodporováno. Slovo by mělo být užíváno pouze pro přeskupování slov ve frázích.",
+    "pika": "",
+    "pilin": "",
+    "pimeja": "",
+    "pini": "Někteří zkušení mluvčí používají pini jako předsloveso, které znamená \"přestat\", doplňujíc slovo open jako předsloveso \"začít\"",
+    "pipi": "",
+    "po": "",
+    "poka": "",
+    "poki": "poki je občas používáno jako \"kategorie\" nebo jako vyjádření pro typy věcí. Jeden příklad jsou role nebo skupiny v kontextu discord chatů",
+    "pona": "",
+    "powe": "",
+    "pu": "For ways to buy a copy of the book, visit the official Toki Pona website.",
+    "puwa": "",
+    "sama": "",
+    "san": "More popular than the synonymous (and older) tuli.\nsan was also part of a set of 10 digit words created by jan Lenoka: lenke, jatu, ini, san, se, nun, loku, take, patu, kajo (0 through 9). All of these coinages except for san lack notability to be included in the main dictionary. They can be found in the sandbox.",
+    "seli": "V pu jsou definice slova \"seli\" popsána jako přídavná jména. Poznámky k pu v ku upřesňují, že tyto definice mají být podstatá jména.",
+    "selo": "",
+    "seme": "",
+    "sewi": "",
+    "sijelo": "",
+    "sike": "",
+    "sin": "In common usage (both before and after pu), \"sin\" and \"namako\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"namako\" at all, preferring \"sin\" in all circumstances.",
+    "sina": "",
+    "sinpin": "",
+    "sitelen": "",
+    "soko": "",
+    "sona": "",
+    "soto": "",
+    "soweli": "",
+    "su": "Toto slovo bylo původně vytvořeno v ku jako vyhrazené slovo pro budoucí použití jan Sonjy. Bylo nově definováno při vydání první su knihy, což dělá jeho postavení jako ku slovo diskutabilní.",
+    "suli": "",
+    "suno": "",
+    "supa": "",
+    "sutopatikuna": "Coined by Alexandre Baudry in 2009 in response to jan Sonja coining \"kijetesantakalu\" as part of 2009's April Fools.",
+    "suwi": "",
+    "taki": "",
+    "tan": "",
+    "taso": "Some proficient speakers use taso as a connector between sentences (X taso Y), similar to \"X, but Y,\" as though taso behaved like la grammatically.",
+    "tawa": "",
+    "te": "May be paired with \"to\", or used on its own. It is unclear how accepted either approach is among te / to users.",
+    "teje": "",
+    "telo": "",
+    "tenpo": "",
+    "to": "Může být spojeno s \"te\" nebo použito samostatně. Není jasné, jak přijatelný je každý přístup mezi uživateli slov te / to.",
+    "toki": "",
+    "tomo": "",
+    "tonsi": "* - Širší význam, o něco méně často přijatý.\nV komunitě široce považováno za zásadní přídavek do toki pona. Občas nazýváno \"čestným pu slovem\" pro zdůraznění jeho postavení, nebo rovnou přirovnáváno k pu slovu.",
+    "tu": "",
+    "unpa": "Také definováno jako \"mít manželský vztah s\" v pu; odstraněno kvůli možnému zmatku.",
+    "unu": "",
+    "usawi": "Původně, usawi také zahrnovalo \"technologie tak složitá, že ji je nemožné rozlišit od magie\" ve svém významu, ale tento význam byl označenen jeho tvůrcem za zastaralý.",
+    "uta": "Tečka v sitelen pona slova \"uta\" je k rozeznání luka-uta od moku.",
+    "utala": "",
+    "wa": "Občas analyzováno jako varianta slova \"a\".",
+    "walo": "",
+    "wan": "",
+    "waso": "",
+    "wasoweli": "First used as the name for a species in a mod for Caves of Qud created by akesi kon Nalasuni. Later appeared in ku as exclusively part of a translation for \"penguin\".",
+    "wawa": "",
+    "weka": "",
+    "wekama": "",
+    "wile": "",
+    "wuwojiti": "Může být bráno ne jako slovo v toki pona, ale jako mimotechnickou pomůcku k zapamatování \"zakázaných\" slabik. Občas prodlouženo na wuwojitinmanna, aby zahrnovalo zakázané po sobě jdoucí nazální souhlásky.",
+    "yupekosi": "Coined as a random keystroke. It is presumed jan Sonja used \"y\" by mistake, but then made it part of the joke by adding \"nobody knows how to pronounce the y\"."
+  },
+  "definitions": {
+    "a": "(citoslovce) á, ó, ha, eh, em, oj; (částice) [umístěno za něco pro zdůraznění nebo přidání emoce]",
+    "akesi": "plaz, obojživelník, šupinatý tvor, plazící se tvor",
+    "ala": "nikoliv, nic, ne; (částice) [tvoří zápor slova nebo fráze]; (částice) [tvoří ano-ne otázku]; (číslovka) nula",
+    "alasa": "lovit, sbírat, hledat, pokoušet se; (předsloveso) pokoušet se",
+    "ale": "vše, každý, všechno, celek, vesmír; (číslovka) sto",
+    "ali": "[alternativa výslovnosti slova ale]",
+    "anpa": "spodek, dolní strana; pod; poražený, skromný, pokorný",
+    "ante": "jiný, změněný; upravit, změnit; ostatní; rozdíl",
+    "anu": "(částice) [odděluje několik možností, nahrazuje jinou částici], nebo, či",
+    "apeja": "vina, stud, hanba, nemilost; obvinit, odhalit, zostudit, uvést do rozpaků",
+    "awen": "zůstat, zachovat, čekat, zastavit; chránit; pokračovat; (předsl.) pokračovat",
+    "e": "(částice) [značí začátek přímého předmětu]",
+    "en": "(částice) [odděluje více podmětů]",
+    "epiku": "impozantní, super, cool, hustý, epický",
+    "esun": "obchod, výměna, koupit, prodat; trh, veletrh, obchod, bazar, místo byznysu",
+    "ijo": "věc, předmět, entita, bytost, hmota, jev",
+    "ike": "záporná vlastnost, např. špatný, nepříjemný, škodlivý, nepotřebný",
+    "ilo": "nástroj, nářadí, přístroj, zařízení",
+    "insa": "vnitřek, střed, mezi, prostředek, vnitřní",
+    "isipin": "myslet, přemýšlet, zvažovat, soudit",
+    "jaki": "nechutný, nečistý, nehygienický, toxický, odporný, shnilý",
+    "jami": "chutný; vyvolávající pozitivní smyslové vjemy",
+    "jan": "člověk, osoba, někdo",
+    "jasima": "odrážet, zrcadlit; zrcadlo, duplikovat",
+    "jelo": "žlutá, jantarová, zlatá, bledě zelená, žlutavě oranžová",
+    "jo": "mít, držet, nést, vlastnit, obsahovat",
+    "jonke": "kvák, husí zvuk, husa",
+    "kala": "ryba, vodní tvor, mořský tvor, plovoucí tvor",
+    "kalama": "vydávat zvuk; zvuk, např. zpěv, hřmění, buben, potlesk, smích, pípání",
+    "kama": "arriving, coming, future, summoned; (preverb) to become, manage to, succeed in",
+    "kamalawala": "anarchie, povstání, vzpoura, revolta",
+    "kapesi": "hnědá, šedá, béžová",
+    "kasi": "rostlina, květina, strom; bylina, list",
+    "ken": "může, smí, schopnost, oprávnění; možnost, možná; povolit, umožnit; (předsloveso) moct",
+    "kepeken": "(předložka) pomocí (něčeho)",
+    "kijetesantakalu": "mýval, kynkažu; jakýkoli medvídkovitý či lasicovitý tvor",
+    "kiki": "špičatý, ostrý; úhel, bod; trojúhelníkovité",
+    "kili": "ovoce, zelenina, houba",
+    "kin": "(částice) [po frázi nebo na začátku věty] také, navíc",
+    "kipisi": "rozdělit, rozříznout, nakrájet; kus, část; ostrý, špičatý",
+    "kiwen": "tvrdý předmět, např. kov, kámen, dřevo",
+    "ko": "polotuhá hmota, např. pasta, prášek, sliz, písek, půda, jíl; měkký, tvarovatelný, lepkavý",
+    "kokosila": "používat jazyk jiný než Toki Pona v prostředí, kde se očekává komunikace v Toki Pona",
+    "kon": "vzduch, dech, vítr; podstata, duch, duše, přízrak; neviditelná síla",
+    "konwe": "životnost, život, samostatnost; autonomní bytost, žijící věc, organismus; živý; obživit",
+    "ku": "interagovat s knihou Toki Pona Dictionary (2021) od Sonjy Lang",
+    "kule": "barva, pigment; kategorie, žánr, příchuť; barevný, rozmanitý",
+    "kulijo": "(cistoslovce) [neformální vyjádření ocenění nebo uznání]; cool, fajn, OK",
+    "kulupu": "skupina, komunita, společnost, firma, národ, sbírka, tým, dav",
+    "kute": "ucho, slyšící orgán; slyšet, poslouchat, dávat pozor, podrobnit se",
+    "la": "(částice) [označuje předcházející tvrzení jako kontext k následujícímu]",
+    "lanpan": "vzít, zmocnit se (něčeho), ukrást",
+    "lape": "spánek, odpočinek, pauza od aktivity nebo práce",
+    "laso": "tyrkysová, modrá, zelená, azurová, indigo, bledě zelená",
+    "lawa": "hlava, mysl; mozek; ovládat, vést, navádět; vláda, vedoucí; pravidlo, zákon",
+    "leko": "čtverec, krychle, blok, hranatý předmět např. cihly, schody",
+    "len": "látka, oblečení, tkanina, textil; pokrytý, skrytý, tajný, soukromý",
+    "lete": "studený, chladný, zmrzlý; mrznout, chladit; syrový, tepelně neupravený",
+    "li": "(částice) [značí začátek oznamovacího přísudku]",
+    "lili": "malý, nízký, krátký, mladý; málo; kus, část",
+    "linja": "dlouhá a ohebná věc, např. lano, nit, vlas, kožešina, čára, vlákno",
+    "linluwi": "propojené věci, které jsou silnější kvůli jejich vazbám, např. sít, internet, spojení; tkát, plést, prokládat",
+    "lipu": "plochý a ohebný předmět, např. papír, karta, list; psaný text nebo dokument, např. kniha, webová stránka, hliněná destička",
+    "loje": "červená, purpurová, šarlatová, růžová, rezavá, červenooranžová",
+    "lon": "přítomnost, existence, skutečnost, pravda; (předložka) nácházející se u, v, během, v kontextu",
+    "luka": "ruka, paže, hmatová končetina, uchopovací končetina; uchopit, interagovat s, cítit dotykem; (číslovka) pět",
+    "lukin": "vidět, dívat se, prohlížet si, číst, sledovat; vizuální; oko, vidící orgán; (předsl.) zkusit",
+    "lupa": "díra, jáma, jeskyně, dveře, okno, portál",
+    "ma": "země, půda; země (stát), území, svět; venku",
+    "majuna": "starý, pradávný, odvěký",
+    "mama": "rodič, předek; tvůrce, původník; správce, udržovatel, opatrovník",
+    "mani": "peníze, měna; hodnotná věc, např. zlato, investice, dobytek",
+    "meli": "woman, female, feminine person, wife, girlfriend",
+    "melome": "lesbický, žena+žena",
+    "meso": "střed, střední, průměrný; ani jedno či druhé, ani takový či makový",
+    "mi": "já, my, moje, naše",
+    "mije": "man, male, masculine person, husband, boyfriend",
+    "mijomi": "gay, muž+muž",
+    "misa": "krysa, myš, veverka, králík, hlodavec",
+    "misikeke": "lékařská věc nebo praxe, např. předpis, meditace, cvičení, obvazy, terapie",
+    "moku": "jíst, pít, konzumovat, polykat, trávit; jídlo, jedlý předmět",
+    "moli": "smrt, mrtvý, zemřít, umírající; zabít, vražda",
+    "monsi": "záda, vzadu, za",
+    "monsuta": "strach, nervozita, hrůza; strašidelný, děsivý; děsivá věc, např. predátor, hrozba, nebezpečí",
+    "mu": "(zvířecí zvuky či dorozumívání, onomatopoie)",
+    "mulapisu": "pizza",
+    "mun": "měsíc, noční nebeské těleso, hvězda, nebeské těleso",
+    "musi": "zábava, hra,  umění, zábavný, zajímavý, komický, hloupý",
+    "mute": "mnoho, spousta, velmi; množství; (číslovka) dvacet",
+    "n": "(citoslovce) hm, eh, mm, er, emm [náznak přemýšlení nebo pauzy]",
+    "namako": "koření, ornament, ozdoba; dodatek, navíc",
+    "nanpa": "číslo; (částice) [řadová číslovka] n-tý",
+    "nasa": "zvláštní, neobvyklý, hloupý, nenormální, nečekaný; opilý, opojený",
+    "nasin": "způsob, postup, tradice; pěšina, silnice, cesta",
+    "nena": "výčnělek, např. hrbol, tlačítko, kopec, hora, nos",
+    "ni": "to, toto, tohle, tamto, támhleto",
+    "nimi": "jméno, slovo",
+    "nimisin": "slovo neuvedené v pu; nové slovo; žertovné slovo",
+    "nja": "mňau, kočičí zvuk",
+    "noka": "noha, chodidlo, pohybový orgán, kořeny",
+    "o": "(částice) [značí konec vokativu (pátého pádu; toho, co je voláno)], [značí začátek imperativu (rozkazu, přání, pokynu)], mělo by",
+    "ojuta": "adaptace anglického memu \"ligma\", (doslova) \"o uta\" (olízni)",
+    "oke": "(uznání, souhlas, pokynutí)",
+    "oko": "vidět, dívat se, prohlížet si, číst, sledovat; vizuální; oko, vidící orgán; (předsl.) zkusit",
+    "olin": "mít silné citové pouto s, např. náklonnost, vděčnost, soucit, respekt; platonické, romantické nebo rodinné vztahy",
+    "omekapo": "na shledanou, sbohem, uvidíme se později, (doslova) \"o moku e kala pona\" (sněz dobrou rybu)",
+    "ona": "(zájmeno třetí osoby) on, ona, ono, oni, ony",
+    "open": "začít, otevřít, zapnout; začátek",
+    "owe": "totalitistický, orwellovský; vztahující se k Velkému bratrovi z knihy Devatenáct set osmdesát čtyři",
+    "pakala": "poškozený, rozbitý, zkažený, ublížený, pokažený; chyba",
+    "pake": "přestat, zastavit; zablokovat, přerušit; zabránit",
+    "pakola": "[překlep slova pakala]",
+    "pali": "práce, aktivita; vytvářet, stavět, navrhovat; vynaložit úsilí, začít jednat",
+    "palisa": "dlouhá a pevná věc, např. větev, tyč, prut, hůl, páteř, stěžeň",
+    "pan": "obiloviny, škrobovité potraviny, pečivo, např. rýže, čirok, chléb, nudle, těsto, kaše, indžera",
+    "pana": "dát, poslat, vyslat, vydat, poskytnout, položit",
+    "penpo": "(ekvivalent k \"(pi) toki pona taso\")",
+    "pi": "(částice) [seskupuje následující slova do jednoho modifikátoru pro předchozí slovo]",
+    "pika": "elektrický, elektronický, vodivý, mechanický, online; elektřina, blesk, hrom, síť",
+    "pilin": "zkušenost, např. emoce, pocit, dotyk; srdce (fyzické nebo citové)",
+    "pimeja": "tmavé, neosvětlené; tmavá barva, např. černá, fialová, hnědá",
+    "pini": "končit, přestat, předejít; zavřít, vypnout; ukončený, minulý; okraj, konec, závěr",
+    "pipi": "hmyz, brouk, pavouk, drobný tvor",
+    "po": "(číslovka) čtyři",
+    "poka": "bok, strana; vedle, poblíž, blízkost",
+    "poki": "nádoba, např. taška, mísa, krabice, hrnek, skříň, šuplík, složka",
+    "pona": "kladná vlastnost, např. dobrý, příjemný, užitečný, přátelský, klidný",
+    "powe": "neskutečný, nepradivý, lživý; podvést, obelhat",
+    "pu": "interagovat s knihou Toki Pona: The Language of Good od Sonjy Lang",
+    "puwa": "nadýchaný, načechraný, hebký, měkoučký (něco co lze zmáčknout a vrátí se do původního tvaru)",
+    "sama": "stejný, podobný; (přídavné jméno) vrstevník, společník, navzájem; (předložka) podobný jako, stejný jako",
+    "san": "tři",
+    "seli": "oheň; topné těleso, chemická reakce, zdroj tepla",
+    "selo": "vnější vrstva, např. kůže, slupka, skořápka, kůra; vnější tvar, vnější forma, hranice",
+    "seme": "co? který? jaký?",
+    "sewi": "výše, nad, nejvyšší část, něco na vrchu; vznešený, božský, svatý, nadpřirozený",
+    "sijelo": "tělo, tvar, fyzický stav, trup, forma",
+    "sike": "kulatý předmět; míč, kruh, kolo, koule; roční",
+    "sin": "nový, čerstvý; dodatečný, další",
+    "sina": "ty, vy",
+    "sinpin": "čelit, stát před, předek, stěna",
+    "sitelen": "obrázek, snímek, podobizna, symbol, znak, písmo",
+    "soko": "houba",
+    "sona": "vědět, umět, znát; (předsl.) vědět jak",
+    "soto": "levý, levá strana",
+    "soweli": "zvíře, šelma, suchozemský savec",
+    "su": "interagovat s knihou z kolekce knih ilustrovaných příběhů od Sonjy Lang, která začala Čarodějem ze země Oz",
+    "suli": "velký, těžký, dlouhý, vysoký; důležitý, dospělý",
+    "suno": "slunce; světlo, jas, záře, svit; světelný zdroj",
+    "supa": "plochý vodorovný povrch, obzvlášť pro odkládání věcí, např. postel, podlaha, stůl, talíř, plošina, jeviště",
+    "sutopatikuna": "ptakopysk",
+    "suwi": "sladký, vonný; roztomilý, rozkošný, nevinný",
+    "taki": "lepkavý, magnetický; přitahovat, přilepit, připnout",
+    "tan": "(předložka) z, kvůli; příčina, původ",
+    "taso": "ale, avšak; pouze, jedině",
+    "tawa": "pohyb, např. chůze, třes, let, cestování; (předložka) pro, k, z pohledu, [dativ]",
+    "te": "(částice ukončující citaci)",
+    "teje": "pravý, pravá strana",
+    "telo": "voda, tekutina, kapalina, mokrá látka; nápoj",
+    "tenpo": "čas, událost, situace, okamžik, období, doba trvání",
+    "to": "(částice) [ukončuje citaci]",
+    "toki": "komunikovat, říct, myslet; rozhovor, příběh; jazyk (např. čeština, angličtina)",
+    "tomo": "vnitřní, domácí, pod střechou; budova, domov, dům, místnost",
+    "tonsi": "nebinární, genderově diverzivní | ALT trans (osoba), opak cis",
+    "tu": "(číslovka) dva; oddělit, rozdělit, rozpůlit",
+    "unpa": "sex, mít sex s",
+    "unu": "fialový, nachový",
+    "usawi": "kouzla, čáry, magie, očarovat; nadpřirozený, nepochopitelný",
+    "uta": "ústa, rty, chřtán, konzumační otvor",
+    "utala": "bojovat, soutěžit, bitva; soutěž, výzva; zápasit, úsilovat",
+    "wa": "(citoslovce) [vyjádření údivu či úžasu]",
+    "walo": "světlý, bílý, bledý, světle šedý, krémový",
+    "wan": "(číslovka) jedna; jediný; sjednotit, kombinovat, spojit, zamíchat",
+    "waso": "pták, létající či okřídlené zvíře",
+    "wasoweli": "zvíře odpovídající jak definici waso, tak i soweli",
+    "wawa": "síla, energie; sebevědomý, intenzivní, rázný; úžasný, působivý",
+    "weka": "chybějící, pryč, daleké; odstanit, zbavit se",
+    "wekama": "odejít a vrátit, být dočasně pryč",
+    "wile": "chtít, touha, prosba, potřeba; (předsl.) chtít",
+    "wuwojiti": "používat jednu ze \"zakázaných\" slabik wu, wo, ji, či ti; porušovat zásady fonotaktiky Toki Pona",
+    "yupekosi": "upravit dílo k horšímu (jako třeba George Lucas)"
+  },
+  "etymology": {
+    "a": [
+      {
+        "language": "onomatopoie"
+      }
+    ],
+    "akesi": [
+      {
+        "definition": "ještěrka",
+        "language": "Nizozemština"
+      }
+    ],
+    "ala": [
+      {
+        "definition": "ne",
+        "language": "Gruzínština"
+      }
+    ],
+    "alasa": [
+      {
+        "definition": "lov, (doslova) na lovu",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "ale": [
+      {
+        "definition": "vše",
+        "language": "Nizozemština"
+      }
+    ],
+    "ali": [
+      {
+        "definition": "vše",
+        "language": "Nizozemština"
+      }
+    ],
+    "anpa": [
+      {
+        "definition": "pod",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "ante": [
+      {
+        "definition": "other, different",
+        "language": "Nizozemština"
+      }
+    ],
+    "anu": [
+      {
+        "definition": "nebo",
+        "language": "Gruzínština"
+      }
+    ],
+    "apeja": [
+      {
+        "definition": "hanba, ostuda, nečestnost",
+        "language": "Finština"
+      }
+    ],
+    "awen": [
+      {
+        "definition": "keep, care for, hold (in a particular state)",
+        "language": "Nizozemština"
+      }
+    ],
+    "e": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "en": [
+      {
+        "definition": "a",
+        "language": "Nizozemština"
+      }
+    ],
+    "epiku": [
+      {
+        "definition": "epické",
+        "language": "Francouzština"
+      }
+    ],
+    "esun": [
+      {
+        "language": "Akanština",
+        "definition": "at market"
+      }
+    ],
+    "ijo": [
+      {
+        "definition": "něco",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(relative pronoun root)",
+        "language": "Romance"
+      }
+    ],
+    "ike": [
+      {
+        "definition": "špatný, zlý, hříšný",
+        "language": "Finština"
+      }
+    ],
+    "ilo": [
+      {
+        "definition": "nástroj",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(agent suffix)",
+        "language": "Němčina"
+      }
+    ],
+    "insa": [
+      {
+        "definition": "inside, center, stomach",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "vnitřek",
+        "language": "Angličtina"
+      }
+    ],
+    "isipin": [
+      {
+        "definition": "myslet",
+        "language": "Tagalština"
+      }
+    ],
+    "jaki": [
+      {
+        "definition": "fuj",
+        "language": "Angličtina"
+      }
+    ],
+    "jami": [
+      {
+        "definition": "mňam",
+        "language": "Angličtina"
+      }
+    ],
+    "jan": [
+      {
+        "definition": "osoba",
+        "language": "Kantonština"
+      }
+    ],
+    "jasima": [
+      {
+        "definition": "to reflect, reverberate",
+        "language": "Turečtina"
+      }
+    ],
+    "jelo": [
+      {
+        "definition": "žlutá",
+        "language": "Angličtina"
+      }
+    ],
+    "jo": [
+      {
+        "definition": "mít",
+        "language": "Mandarínština"
+      }
+    ],
+    "jonke": [
+      {
+        "definition": "hjönk",
+        "language": "onomatopoie"
+      }
+    ],
+    "kala": [
+      {
+        "definition": "ryba",
+        "language": "Finština"
+      }
+    ],
+    "kalama": [
+      {
+        "definition": "zvuk (lidského hlasu)",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "kama": [
+      {
+        "definition": "událost, přijít, přijet, stát se, proměnit se v, přivolat",
+        "language": "Tok Pisin"
+      }
+    ],
+    "kamalawala": [
+      {
+        "definition": "'příchod žádné vlády', začátek anarchie",
+        "language": "toki pona"
+      }
+    ],
+    "kapesi": [
+      {
+        "definition": "hnědá, kávová",
+        "language": "Kantonština"
+      },
+      {
+        "definition": "hnědá, kávová",
+        "language": "Mandarínština"
+      }
+    ],
+    "kasi": [
+      {
+        "definition": "rostlina",
+        "language": "Finština"
+      }
+    ],
+    "ken": [
+      {
+        "definition": "can",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "can",
+        "language": "Angličtina"
+      }
+    ],
+    "kepeken": [
+      {
+        "definition": "použít",
+        "language": "Nizozemština"
+      }
+    ],
+    "kijetesantakalu": [
+      {
+        "definition": "kynkažu",
+        "language": "Finština"
+      }
+    ],
+    "kiki": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "kili": [
+      {
+        "definition": "ovoce",
+        "language": "Gruzínština"
+      }
+    ],
+    "kin": [
+      {
+        "definition": "také, ještě, stále",
+        "language": "Finština"
+      }
+    ],
+    "kipisi": [
+      {
+        "definition": "to cut (intransitive)",
+        "language": "Inuktitutština"
+      }
+    ],
+    "kiwen": [
+      {
+        "definition": "kámen (pád genitiv)",
+        "language": "Finština"
+      }
+    ],
+    "ko": [
+      {
+        "definition": "krém, pasta",
+        "language": "Kantonština"
+      }
+    ],
+    "kokosila": [
+      {
+        "definition": "mluvit mezi esperantisty jiným jazykem než esperantem",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "krokodýl",
+        "language": "Esperanto"
+      }
+    ],
+    "kon": [
+      {
+        "definition": "vzduch, atmosféra, názor",
+        "language": "Mandarínština"
+      }
+    ],
+    "konwe": [
+      {
+        "definition": "John Conway, tvůrce Hry života",
+        "language": "Angličtina"
+      },
+      {
+        "definition": "kon wile",
+        "language": "toki pona"
+      }
+    ],
+    "ku": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "kule": [
+      {
+        "definition": "barva",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "kulijo": [
+      {
+        "definition": "coolio",
+        "language": "Angličtina"
+      }
+    ],
+    "kulupu": [
+      {
+        "definition": "skupina",
+        "language": "Tongan"
+      },
+      {
+        "definition": "skupina",
+        "language": "Angličtina"
+      }
+    ],
+    "kute": [
+      {
+        "definition": "poslouchat",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "la": [
+      {
+        "definition": "(určitý člen)",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(určitý člen ženského rodu jednotného čísla)",
+        "language": "Romance"
+      },
+      {
+        "definition": "(proximal & topical suffix)",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "lanpan": [
+      {
+        "definition": "take, seize, grasp, receive",
+        "language": "Řečtina"
+      }
+    ],
+    "lape": [
+      {
+        "definition": "spát",
+        "language": "Nizozemština"
+      }
+    ],
+    "laso": [
+      {
+        "definition": "modrá, nezkušený",
+        "language": "Velština"
+      },
+      {
+        "definition": "zelená, modrá",
+        "language": "Proto-Brythonic"
+      }
+    ],
+    "lawa": [
+      {
+        "definition": "hlava",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "leko": [
+      {
+        "definition": "Lego",
+        "language": "Angličtina"
+      },
+      {
+        "definition": "hraj dobře",
+        "language": "Dánština"
+      },
+      {
+        "definition": "blok, sekce",
+        "language": "Finština"
+      }
+    ],
+    "len": [
+      {
+        "definition": "oblečení",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "lete": [
+      {
+        "definition": "studené",
+        "language": "Akadská francouzština"
+      },
+      {
+        "definition": "studené",
+        "language": "Starofrancouzština"
+      }
+    ],
+    "li": [
+      {
+        "definition": "on",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "on",
+        "language": "Latina"
+      },
+      {
+        "definition": "on",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "on",
+        "language": "Angličtina"
+      }
+    ],
+    "lili": [
+      {
+        "definition": "malé",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "malé",
+        "language": "Ramoaaina"
+      }
+    ],
+    "linja": [
+      {
+        "definition": "čára",
+        "language": "Finština"
+      },
+      {
+        "definition": "čára",
+        "language": "Starošvédština"
+      }
+    ],
+    "linluwi": [
+      {
+        "definition": "internet",
+        "language": "Velština"
+      }
+    ],
+    "lipu": [
+      {
+        "definition": "vlajka, banner, lístek",
+        "language": "Finština"
+      }
+    ],
+    "loje": [
+      {
+        "definition": "red (inflected)",
+        "language": "Nizozemština"
+      }
+    ],
+    "lon": [
+      {
+        "definition": "at, in, on, (spacial particle)",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "along",
+        "language": "Angličtina"
+      }
+    ],
+    "luka": [
+      {
+        "definition": "ruka",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "lukin": [
+      {
+        "definition": "vidět, dívat se na",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "dívat se",
+        "language": "Angličtina"
+      },
+      {
+        "definition": "him",
+        "language": "Angličtina"
+      }
+    ],
+    "lupa": [
+      {
+        "definition": "smyčka",
+        "language": "Lojban"
+      },
+      {
+        "definition": "smyčka",
+        "language": "Mandarínština"
+      },
+      {
+        "definition": "smyčka",
+        "language": "Angličtina"
+      },
+      {
+        "definition": "smyčka",
+        "language": "Hindština"
+      },
+      {
+        "definition": "smyčka",
+        "language": "Arabština"
+      }
+    ],
+    "ma": [
+      {
+        "definition": "země, půda",
+        "language": "Finština"
+      }
+    ],
+    "majuna": [
+      {
+        "definition": "starý (ne mladý)",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "špatný",
+        "language": "Latina"
+      },
+      {
+        "definition": "mladý",
+        "language": "Němčina"
+      },
+      {
+        "definition": "mladý",
+        "language": "Francouzština"
+      }
+    ],
+    "mama": [
+      {
+        "definition": "otec",
+        "language": "Gruzínština"
+      }
+    ],
+    "mani": [
+      {
+        "definition": "peníze",
+        "language": "Angličtina"
+      },
+      {
+        "definition": "dobytek",
+        "language": "Proto-Germanic"
+      },
+      {
+        "definition": "skot",
+        "language": "Latina"
+      }
+    ],
+    "meli": [
+      {
+        "definition": "žena, manželka, ženský",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "krásné",
+        "language": "Tolai"
+      },
+      {
+        "definition": "Marie",
+        "language": "Angličtina"
+      }
+    ],
+    "melome": [
+      {
+        "definition": "ženy milující ženy",
+        "language": "toki pona"
+      }
+    ],
+    "meso": [
+      {
+        "definition": "střed",
+        "language": "Řečtina"
+      }
+    ],
+    "mi": [
+      {
+        "definition": "já",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(1st person singular oblique)",
+        "language": "Romance"
+      }
+    ],
+    "mije": [
+      {
+        "definition": "muž, manžel",
+        "language": "Finština"
+      }
+    ],
+    "mijomi": [
+      {
+        "definition": "muži milující muže",
+        "language": "toki pona"
+      }
+    ],
+    "misa": [
+      {
+        "definition": "mouse (diminutive)",
+        "language": "Ukrajinština"
+      }
+    ],
+    "misikeke": [
+      {
+        "definition": "lék, droga",
+        "language": "Odžibvejština"
+      }
+    ],
+    "moku": [
+      {
+        "definition": "mlaskání",
+        "language": "Japonština"
+      }
+    ],
+    "moli": [
+      {
+        "definition": "zemřít",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "monsi": [
+      {
+        "definition": "moje prdel (vulgární)",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "monsuta": [
+      {
+        "definition": "monstrum",
+        "language": "Japonština"
+      },
+      {
+        "definition": "monstrum",
+        "language": "Angličtina"
+      }
+    ],
+    "mu": [
+      {
+        "language": "onomatopoie"
+      }
+    ],
+    "mulapisu": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "mun": [
+      {
+        "definition": "měsíc",
+        "language": "Angličtina"
+      }
+    ],
+    "musi": [
+      {
+        "definition": "bavit",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "bavit",
+        "language": "Francouzština"
+      }
+    ],
+    "mute": [
+      {
+        "definition": "hodně",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "hodně",
+        "language": "Latina"
+      }
+    ],
+    "n": [
+      {
+        "language": "onomatopoie"
+      }
+    ],
+    "namako": [
+      {
+        "definition": "sůl",
+        "language": "Hindština"
+      },
+      {
+        "definition": "sůl",
+        "language": "Perština"
+      }
+    ],
+    "nanpa": [
+      {
+        "definition": "číslo",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "číslo",
+        "language": "Angličtina"
+      }
+    ],
+    "nasa": [
+      {
+        "definition": "dunderhead",
+        "language": "Tok Pisin"
+      }
+    ],
+    "nasin": [
+      {
+        "definition": "cesta, způsob",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "nena": [
+      {
+        "definition": "nos",
+        "language": "Finština"
+      }
+    ],
+    "ni": [
+      {
+        "definition": "toto",
+        "language": "Kantonština"
+      },
+      {
+        "definition": "(continuation of a state/action)",
+        "language": "Tai"
+      }
+    ],
+    "nimi": [
+      {
+        "definition": "jméno",
+        "language": "Finština"
+      }
+    ],
+    "nimisin": [
+      {
+        "definition": "nové slovo",
+        "language": "toki pona"
+      }
+    ],
+    "nja": [
+      {
+        "definition": "mňau (onomatopoie)",
+        "language": "Japonština"
+      }
+    ],
+    "noka": [
+      {
+        "definition": "chodidlo, noha",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "o": [
+      {
+        "definition": "(vokativní přípona)",
+        "language": "Gruzínština"
+      }
+    ],
+    "ojuta": [
+      {
+        "definition": "'liž mi koule' (stejné jako anglické 'ligma balls')",
+        "language": "toki pona"
+      }
+    ],
+    "oke": [
+      {
+        "definition": "OK",
+        "language": "Angličtina"
+      }
+    ],
+    "oko": [
+      {
+        "definition": "oko",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "olin": [
+      {
+        "definition": "miluji",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "omekapo": [
+      {
+        "definition": "'sněz dobrou rybu', přát někomu štěstí",
+        "language": "toki pona"
+      }
+    ],
+    "ona": [
+      {
+        "definition": "ona",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "open": [
+      {
+        "definition": "otevřít",
+        "language": "Angličtina"
+      }
+    ],
+    "owe": [
+      {
+        "definition": "George Orwell, autor 1984",
+        "language": "Angličtina"
+      }
+    ],
+    "pakala": [
+      {
+        "definition": "nehoda",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "zkazit",
+        "language": "Angličtina"
+      }
+    ],
+    "pake": [
+      {
+        "definition": "block",
+        "language": "Angličtina"
+      }
+    ],
+    "pakola": [
+      {
+        "definition": "rozbitý, poškozený, ublížený, zničený",
+        "language": "toki pona"
+      }
+    ],
+    "pali": [
+      {
+        "definition": "dělat, vyrábět",
+        "language": "Esperanto"
+      }
+    ],
+    "palisa": [
+      {
+        "definition": "bat, rod, cane",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "pan": [
+      {
+        "definition": "chléb",
+        "language": "Romance"
+      },
+      {
+        "definition": "chléb",
+        "language": "Japonština"
+      },
+      {
+        "definition": "chléb",
+        "language": "Portugalština"
+      }
+    ],
+    "pana": [
+      {
+        "definition": "put, set, place",
+        "language": "Finština"
+      },
+      {
+        "definition": "dávat si navzájem",
+        "language": "Svahilština"
+      }
+    ],
+    "penpo": [
+      {
+        "definition": "only toki pona",
+        "language": "toki pona"
+      }
+    ],
+    "pi": [
+      {
+        "definition": "of",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "patřit",
+        "language": "Angličtina"
+      }
+    ],
+    "pika": [
+      {
+        "definition": "Pikachū, elektrický Pokémon",
+        "language": "Japonština"
+      }
+    ],
+    "pilin": [
+      {
+        "definition": "pocit",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "him",
+        "language": "Angličtina"
+      },
+      {
+        "definition": "him",
+        "language": "Angličtina"
+      }
+    ],
+    "pimeja": [
+      {
+        "definition": "tmavý",
+        "language": "Finština"
+      }
+    ],
+    "pini": [
+      {
+        "definition": "dokončené, hotové",
+        "language": "Akadská francouzština"
+      },
+      {
+        "definition": "dokončit (dokonavý vid)",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "končit",
+        "language": "Angličtina"
+      }
+    ],
+    "pipi": [
+      {
+        "definition": "brouk",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "po": [
+      {
+        "definition": "(číslovka) čtyři",
+        "language": "Angličtina"
+      }
+    ],
+    "poka": [
+      {
+        "definition": "strana, bok (genitiv)",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "poki": [
+      {
+        "definition": "box, female genitalia (vulgar)",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "krabice",
+        "language": "Angličtina"
+      }
+    ],
+    "pona": [
+      {
+        "definition": "dobrý",
+        "language": "Esperanto"
+      }
+    ],
+    "powe": [
+      {
+        "definition": "nepravda",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "pu": [
+      {
+        "definition": "nezpracované dřevo, upřímný, poctivý, přirozená kvalita, jednoduchý",
+        "language": "Mandarínština"
+      },
+      {
+        "definition": "kniha",
+        "language": "Angličtina"
+      }
+    ],
+    "puwa": [
+      {
+        "definition": "nadýchané věci (onomatopoie)",
+        "language": "Japonština"
+      }
+    ],
+    "sama": [
+      {
+        "definition": "stejné",
+        "language": "Finština"
+      },
+      {
+        "definition": "stejný, podobný",
+        "language": "Proto-Germanic"
+      },
+      {
+        "definition": "stejné",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "stejné",
+        "language": "Angličtina"
+      }
+    ],
+    "san": [
+      {
+        "definition": "tři",
+        "language": "Japonština"
+      },
+      {
+        "definition": "tři",
+        "language": "Kantonština"
+      },
+      {
+        "definition": "tři",
+        "language": "Kantonština"
+      }
+    ],
+    "seli": [
+      {
+        "definition": "horké",
+        "language": "Gruzínština"
+      }
+    ],
+    "selo": [
+      {
+        "definition": "kůže, slupka",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "peel, husk, shell",
+        "language": "Němčina"
+      }
+    ],
+    "seme": [
+      {
+        "definition": "co, něco",
+        "language": "Mandarínština"
+      }
+    ],
+    "sewi": [
+      {
+        "definition": "vzhůru",
+        "language": "Gruzínština"
+      }
+    ],
+    "sijelo": [
+      {
+        "definition": "tělo",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "sike": [
+      {
+        "definition": "kruh",
+        "language": "Angličtina"
+      }
+    ],
+    "sin": [
+      {
+        "definition": "nový, čerstvý",
+        "language": "Mandarínština"
+      }
+    ],
+    "sina": [
+      {
+        "definition": "ty, vy",
+        "language": "Finština"
+      }
+    ],
+    "sinpin": [
+      {
+        "definition": "vpřed",
+        "language": "Kantonština"
+      }
+    ],
+    "sitelen": [
+      {
+        "definition": "malovat",
+        "language": "Nizozemština"
+      }
+    ],
+    "soko": [
+      {
+        "definition": "houba",
+        "language": "Gruzínština"
+      }
+    ],
+    "sona": [
+      {
+        "definition": "vědomosti",
+        "language": "Gruzínština"
+      }
+    ],
+    "soto": [
+      {
+        "definition": "levá strana",
+        "language": "Svahilština"
+      }
+    ],
+    "soweli": [
+      {
+        "definition": "šelma, plný života, vášnivý",
+        "language": "Gruzínština"
+      }
+    ],
+    "su": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "suli": [
+      {
+        "definition": "velký, objemný",
+        "language": "Finština"
+      }
+    ],
+    "suno": [
+      {
+        "definition": "slunce",
+        "language": "Esperanto"
+      }
+    ],
+    "supa": [
+      {
+        "definition": "povrch",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "povrch",
+        "language": "Akadská francouzština"
+      },
+      {
+        "definition": "povrch",
+        "language": "Angličtina"
+      }
+    ],
+    "sutopatikuna": [
+      {
+        "definition": "ptakopysk, (doslova) podivný zobák",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "suwi": [
+      {
+        "definition": "sladký",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "sladký",
+        "language": "Angličtina"
+      }
+    ],
+    "taki": [
+      {
+        "definition": "zvuk kontaktu dvou magnetů (onomatopoie)",
+        "language": "Korejština"
+      }
+    ],
+    "tan": [
+      {
+        "definition": "z, od",
+        "language": "Kantonština"
+      }
+    ],
+    "taso": [
+      {
+        "definition": "pouze, jenom, ale, nicméně",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "to je vše",
+        "language": "Angličtina"
+      }
+    ],
+    "tawa": [
+      {
+        "definition": "směrem k",
+        "language": "Angličtina"
+      }
+    ],
+    "te": [
+      {
+        "definition": "(quotative)",
+        "language": "Japonština"
+      }
+    ],
+    "teje": [
+      {
+        "definition": "pravá strana",
+        "language": "Velština"
+      }
+    ],
+    "telo": [
+      {
+        "definition": "(nějaká) voda",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "tenpo": [
+      {
+        "definition": "čas",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "čas",
+        "language": "Latina"
+      }
+    ],
+    "to": [
+      {
+        "definition": "(quotative)",
+        "language": "Japonština"
+      }
+    ],
+    "toki": [
+      {
+        "definition": "mluvit",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "mluvit",
+        "language": "Angličtina"
+      }
+    ],
+    "tomo": [
+      {
+        "definition": "dům",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "dům",
+        "language": "Polština"
+      },
+      {
+        "definition": "dům",
+        "language": "Latina"
+      },
+      {
+        "definition": "dům",
+        "language": "Starověká řečtina"
+      }
+    ],
+    "tonsi": [
+      {
+        "definition": "soudruh (stejná vůle/účel), LGBT+",
+        "language": "Mandarínština"
+      }
+    ],
+    "tu": [
+      {
+        "definition": "dva",
+        "language": "Angličtina"
+      },
+      {
+        "definition": "dva",
+        "language": "Esperanto"
+      }
+    ],
+    "unpa": [
+      {
+        "language": "onomatopoie"
+      }
+    ],
+    "unu": [
+      {
+        "definition": "fialový, nachový",
+        "language": "Malajsko-Indonéština"
+      }
+    ],
+    "usawi": [
+      {
+        "definition": "čarodějnictví, kouzelnictví",
+        "language": "Svahilština"
+      }
+    ],
+    "uta": [
+      {
+        "definition": "ústa",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "utala": [
+      {
+        "definition": "udeřit, zasáhnout, mlátit",
+        "language": "Srbochorvatština"
+      }
+    ],
+    "wa": [
+      {
+        "language": "onomatopoie"
+      }
+    ],
+    "walo": [
+      {
+        "definition": "bílá",
+        "language": "Finština"
+      }
+    ],
+    "wan": [
+      {
+        "definition": "jedna",
+        "language": "Angličtina"
+      }
+    ],
+    "waso": [
+      {
+        "definition": "pták",
+        "language": "Akadská francouzština"
+      }
+    ],
+    "wasoweli": [
+      {
+        "definition": "pták, létající tvor",
+        "language": "toki pona"
+      },
+      {
+        "definition": "suchozemské zvíře, načechraný tvor",
+        "language": "toki pona"
+      }
+    ],
+    "wawa": [
+      {
+        "definition": "silný, tlustý",
+        "language": "Finština"
+      }
+    ],
+    "weka": [
+      {
+        "definition": "pryč",
+        "language": "Nizozemština"
+      }
+    ],
+    "wekama": [
+      {
+        "definition": "'odepřijít', odejít a přijít zpět",
+        "language": "toki pona"
+      }
+    ],
+    "wile": [
+      {
+        "definition": "chtít, toužit",
+        "language": "Nizozemština"
+      }
+    ],
+    "wuwojiti": [
+      {
+        "definition": "(zvuk)",
+        "language": "toki pona"
+      },
+      {
+        "definition": "(zvuk)",
+        "language": "toki pona"
+      },
+      {
+        "definition": "(zvuk)",
+        "language": "toki pona"
+      },
+      {
+        "definition": "(zvuk)",
+        "language": "toki pona"
+      }
+    ],
+    "yupekosi": [
+      {
+        "language": "a priori"
+      }
+    ]
+  },
+  "sp_etymology": {
+    "a": "exclamation radical + Latin lowercase letter A; radical from exclamation point (!), without the full stop at the bottom. compare o",
+    "akesi": "animal radical; pictogram of a lizard. radical represents eyes",
+    "ala": "X mark, a crosslinguistic symbol for negation",
+    "alasa": "piktogram luku a šípu",
+    "ale": "symbol nekonečna (∞)",
+    "ali": "symbol nekonečna (∞)",
+    "anpa": "location radical + \"container\"; the latter perhaps from a truncated square for a general object (compare sinpin) or a container (compare poki). for the radical, see also how dots are used in blissymbols; compare blissymbol \"below\"",
+    "ante": "perhaps alteration from sama, or a combination of sama and ala. perhaps an ideogram representing a diversion of two lines",
+    "anu": "možná z matematického symbolu \"nebo\" (∨)",
+    "apeja": "",
+    "awen": "motion radical; legs facing against each other, implying standing",
+    "e": "",
+    "en": "from plus sign (+); compare blissymbol “and”.",
+    "epiku": "pona with emitters; [alternate] rotated ni",
+    "esun": "not from a currency symbol (sonja confirmed; said “i think that one is from Mikmaq” but couldn't find a mikmaq symbol similar to it).",
+    "ijo": "kruh pro obecný předmět",
+    "ike": "pictogram of a frowning mouth. compare pona",
+    "ilo": "možná piktogram kladiva",
+    "insa": "location radical + “container”; compare blissymbol “in”",
+    "isipin": "",
+    "jaki": "čmáranice",
+    "jami": "",
+    "jan": "head radical; pictogram of a person showing the shoulders",
+    "jasima": "",
+    "jelo": "color radical + suno",
+    "jo": "perhaps a pictogram of a person pointing at themself or holding something",
+    "jonke": "",
+    "kala": "piktogram ryby",
+    "kalama": "“mouth” (or dotless uta) with emitters",
+    "kama": "motion radical; legs facing to the left. compare tawa and blissymbol “walk”",
+    "kamalawala": "circle-A, an anarchy symbol",
+    "kapesi": "",
+    "kasi": "pictogram of a sprout",
+    "ken": "perhaps from Latin letter K",
+    "kepeken": "hand modifier + ilo",
+    "kijetesantakalu": "obrázek mývala s ocasem",
+    "kiki": "",
+    "kili": "pictogram of a fruit, perhaps an apple",
+    "kin": "",
+    "kipisi": "",
+    "kiwen": "piktogram kamene nebo drahokamu",
+    "ko": "pictogram of splashed goo",
+    "kokosila": "",
+    "kon": "ideogram; wavy lines to indicate the fluidity of gas. compare telo",
+    "konwe": "pictogram of a glider in Conway's Game of Life, a machine which moves across the game board.",
+    "ku": "pictogram of the front cover of “Toki Pona Dictionary”, depicting a jacket with a toki pona patch.",
+    "kule": "color radical; perhaps the horizontal line indicates the sense of “the concept itself”. or perhaps a pictogram of light passing through a prism (color radical)",
+    "kulijo": "",
+    "kulupu": "pictogram of a group consisting of three members represented by circles",
+    "kute": "pictogram of an ear. compare blissymbol “ear”",
+    "la": "perhaps related to blissymbol “later” and “ago”, or perhaps a parenthesis",
+    "lanpan": "",
+    "lape": "piktogram ležící osoby",
+    "laso": "color radical + kasi",
+    "lawa": "head radical; perhaps the horizontal line for the same reason as in kule. alternatively perhaps a pictogram of a person wearing a cap",
+    "leko": "",
+    "len": "perhaps a pictogram of a piece of fabric",
+    "lete": "piktogram sněhové vločky",
+    "li": "",
+    "lili": "ideogram showing smaller size compared to suli",
+    "linja": "piktogram nitě",
+    "linluwi": "",
+    "lipu": "pictogram of a sheet of paper. compare blissymbol “paper”",
+    "loje": "color radical + “mouth”",
+    "lon": "location radical above a line. compare blissymbol “over”",
+    "luka": "piktogram ruky",
+    "lukin": "pictogram of an eye. compare blissymbol “eye”",
+    "lupa": "pictogram of a concave surface. compare nena",
+    "ma": "perhaps from modern astronomical symbol “earth” (⊕)",
+    "majuna": "",
+    "mama": "head radical; perhaps the smaller circle representing the child",
+    "mani": "a pictogram of a large domestic animal, such as a cow (sonja confirmed)",
+    "meli": "head radical with long hair",
+    "melome": "",
+    "meso": "",
+    "mi": "perhaps a hand pointing towards the speaker. compare sina and ona",
+    "mije": "head radical with perhaps wide shoulders. compare jan",
+    "mijomi": "",
+    "misa": "",
+    "misikeke": "",
+    "moku": "hand modifier + “mouth”",
+    "moli": "head radical; a dead person, represented by the crossed eyes",
+    "monsi": "location radical + rotate “container”. compare sinpin",
+    "monsuta": "visual representation of shaking as seen in cartoons",
+    "mu": "piktogram savce",
+    "mulapisu": "",
+    "mun": "pictogram of a crescent moon. compare blissymbol “moon”",
+    "musi": "perhaps a pictogram of a smile with rosy cheeks or a lyre",
+    "mute": "ideogram consisting of three tally marks. compare wan and tu",
+    "n": "exclamation radical with the lowercase letter “n”",
+    "namako": "",
+    "nanpa": "from number sign (#). compare blissymbol “number”",
+    "nasa": "perhaps spiral representing “dizziness”, as can be commonly seen in Japanese manga and anime",
+    "nasin": "ideogram consisting of an arrow along a vertical line",
+    "nena": "pictogram of a convex surface. compare lupa",
+    "ni": "šipka",
+    "nimi": "perhaps a pictogram of a nametag or sitelen pona cartouche",
+    "nimisin": "",
+    "nja": "",
+    "noka": "pictogram of a foot with an ankle",
+    "o": "exclamation radical + Latin lowercase letter O. compare a",
+    "ojuta": "",
+    "oke": "",
+    "oko": "oko ze strany",
+    "olin": "two heart symbols (♡), perhaps to distinguish from pilin. [alternate] pilin with emitters",
+    "omekapo": "",
+    "ona": "perhaps a hand pointing sideways. compare mi and sina",
+    "open": "perhaps a pictogram of an opened container",
+    "owe": "lukin (or an eye) with emitters",
+    "pakala": "pictogram of a cracked object",
+    "pake": "",
+    "pakola": "",
+    "pali": "hand modifier + ijo",
+    "palisa": "piktogram tyče",
+    "pan": "možná piktogram obilné rostliny",
+    "pana": "luka with emitters",
+    "penpo": "toki-pona with omnidirectional emitters",
+    "pi": "perhaps from tilted blissymbol “by”",
+    "pika": "",
+    "pilin": "from heart symbol (♡). compare blissymbol “feeling”",
+    "pimeja": "color radical; perhaps the cross representing the absence of light",
+    "pini": "perhaps a blocking wall",
+    "pipi": "animal radical; pictogram of a bug",
+    "po": "arabská číslice 4",
+    "poka": "location radical + “container”",
+    "poki": "pictogram of a container",
+    "pona": "piktogram usmívajících úst. porovnejte s ike",
+    "powe": "",
+    "pu": "pictogram of the cover of the book “Toki Pona: The Language of Good”. alternatively a semantic compound glyph of lipu and toki pona",
+    "puwa": "",
+    "sama": "from equal sign (=). compare blissymbol “same”",
+    "san": "",
+    "seli": "perhaps a pictogram of a lit campfire or a simplified pictogram of a fire",
+    "selo": "",
+    "seme": "from question mark (?). compare blissymbol “what”",
+    "sewi": "z arabského ١ّللَه‎ “allah”",
+    "sijelo": "perhaps a pictogram of a torso",
+    "sike": "two circles, perhaps to distinguish from ijo. alternatively outline of a thick empty circle",
+    "sin": "",
+    "sina": "perhaps a hand pointing towards the listener. compare mi and ona",
+    "sinpin": "location radical + rotate “container”. compare monsi",
+    "sitelen": "perhaps a representation of symbols on a piece of paper (lipu)",
+    "soko": "pictogram of a mushroom",
+    "sona": "lipu with emitters",
+    "soto": "",
+    "soweli": "animal radical; pictogram of a mammal",
+    "su": "pictogram of the front cover of The Wizard of Oz illustrated story book, depicting the yellow brick road from the story",
+    "suli": "ideogram showing bigger size compared to lili",
+    "suno": "piktogram Slunce",
+    "supa": "pictogram of a table. compare blissymbol “table”",
+    "sutopatikuna": "",
+    "suwi": "perhaps a pictogram of a smiling face",
+    "taki": "",
+    "tan": "a leaping arrow pointing from right to left, implying derivation or cause",
+    "taso": "from blissymbol “but”",
+    "tawa": "motion radical; legs facing to the right. compare kama and blissymbol “walk”",
+    "te": "",
+    "teje": "",
+    "telo": "pictogram of wave. compare blissymbol “water”",
+    "tenpo": "pictogram of a clock. compare blissymbol “time”",
+    "to": "",
+    "toki": "emitters + ijo or a general circle",
+    "tomo": "pictogram of a house. compare blissymbol “house”",
+    "tonsi": "",
+    "tu": "two tally marks. compare mute and wan",
+    "unpa": "perhaps a derivation of heart symbol (especially visible from the original drawing of the character), or a knot pattern implying intercourse, or perhaps a pictogram of a genitalia",
+    "unu": "",
+    "usawi": "nasa with emitters",
+    "uta": "“mouth” with a dot below",
+    "utala": "možná ze symbolu zkřížených mečů (⚔️)",
+    "wa": "",
+    "walo": "color radical; perhaps the reverse of pimeja, the color radical cutting of the cross instead of vice versa",
+    "wan": "one tally mark or Indo-Arabic numeral 1, perhaps to make it more distinct",
+    "waso": "animal radical; pictogram of a bird",
+    "wasoweli": "",
+    "wawa": "perhaps a pictogram of a person with raised arms, to signify strength",
+    "weka": "“poof lines”; indicating the movement of something disappearing",
+    "wekama": "",
+    "wile": "možná z latinského písmene W",
+    "wuwojiti": "",
+    "yupekosi": ""
+  }
+}

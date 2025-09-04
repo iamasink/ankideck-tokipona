@@ -1,0 +1,2095 @@
+{
+  "word_list": [
+    "kulijo",
+    "jan",
+    "mute",
+    "melome",
+    "telo",
+    "te",
+    "poka",
+    "a",
+    "tan",
+    "li",
+    "mani",
+    "lili",
+    "wekama",
+    "ala",
+    "sijelo",
+    "wasoweli",
+    "kijetesantakalu",
+    "kon",
+    "taso",
+    "supa",
+    "kipisi",
+    "sona",
+    "nena",
+    "alasa",
+    "jasima",
+    "nasin",
+    "pini",
+    "mije",
+    "mijomi",
+    "kokosila",
+    "jonke",
+    "lete",
+    "ilo",
+    "musi",
+    "wile",
+    "wan",
+    "kule",
+    "taki",
+    "lupa",
+    "meli",
+    "waso",
+    "meso",
+    "insa",
+    "pona",
+    "lipu",
+    "mulapisu",
+    "kama",
+    "ojuta",
+    "la",
+    "teje",
+    "toki",
+    "po",
+    "akesi",
+    "pika",
+    "n",
+    "suli",
+    "omekapo",
+    "konwe",
+    "en",
+    "monsi",
+    "mi",
+    "seme",
+    "ijo",
+    "nanpa",
+    "jelo",
+    "linja",
+    "san",
+    "ko",
+    "lon",
+    "kiwen",
+    "penpo",
+    "nasa",
+    "pakala",
+    "kili",
+    "lanpan",
+    "lape",
+    "ku",
+    "misikeke",
+    "jaki",
+    "moli",
+    "nimi",
+    "ken",
+    "majuna",
+    "leko",
+    "kepeken",
+    "ante",
+    "sin",
+    "olin",
+    "unu",
+    "su",
+    "oko",
+    "epiku",
+    "walo",
+    "len",
+    "isipin",
+    "soto",
+    "tenpo",
+    "pakola",
+    "anu",
+    "wa",
+    "laso",
+    "namako",
+    "utala",
+    "apeja",
+    "suwi",
+    "mun",
+    "moku",
+    "pimeja",
+    "open",
+    "tawa",
+    "ale",
+    "puwa",
+    "usawi",
+    "uta",
+    "wuwojiti",
+    "sinpin",
+    "luka",
+    "wawa",
+    "pake",
+    "weka",
+    "sama",
+    "misa",
+    "ma",
+    "unpa",
+    "kalama",
+    "nimisin",
+    "mu",
+    "selo",
+    "monsuta",
+    "e",
+    "kasi",
+    "anpa",
+    "sike",
+    "palisa",
+    "mama",
+    "pipi",
+    "sewi",
+    "oke",
+    "pan",
+    "yupekosi",
+    "to",
+    "pilin",
+    "lawa",
+    "kulupu",
+    "linluwi",
+    "esun",
+    "poki",
+    "kin",
+    "seli",
+    "jami",
+    "tu",
+    "suno",
+    "ni",
+    "ali",
+    "sitelen",
+    "sutopatikuna",
+    "kiki",
+    "pi",
+    "nja",
+    "powe",
+    "kute",
+    "owe",
+    "tonsi",
+    "soweli",
+    "ona",
+    "awen",
+    "pana",
+    "o",
+    "kamalawala",
+    "noka",
+    "sina",
+    "lukin",
+    "loje",
+    "soko",
+    "pu",
+    "kapesi",
+    "pali",
+    "kala",
+    "ike",
+    "jo",
+    "tomo"
+  ],
+  "commentary": {
+    "a": "In common usage (both before and after pu), \"a\" and \"kin\" are separate words, each with their own meaning. In pu, they are considered synonyms.",
+    "akesi": "akesi used to mean \"non-cute animal,\" and is defined this way in pu, but this definition has fallen out of use and was later removed in the pu annotations published with ku.",
+    "ala": "",
+    "alasa": "In some communities, the usage of \"alasa\" as a preverb meaning \"try to\" is equally or even more common than \"lukin\". In pu, only \"lukin\"/\"oko\" has this meaning.",
+    "ale": "\"ali\" is an alternative to \"ale\", coined in a poll in 2002 in order to avoid confusion with \"ala\". However, the usage of \"ale\" over \"ali\" remains more common.\nThe majority of speakers report not understanding the \"abundant, bountiful, plentiful\" meaning, at least out of context.\n\"20, 120\" were non-pu meanings previously in use in the community alongside 100; they are virtually unheard of nowadays.",
+    "ali": "\"ali\" is an alternative to \"ale\", coined in a poll in 2002 in order to avoid confusion with \"ala\". However, the usage of \"ale\" over \"ali\" has been more common since at least the release of pu. Generally not considered a word in its own right.",
+    "anpa": "In common usage (both before and after pu), \"anpa\" has the meaning of \"place that is down\". In pu, \"noka\" has that meaning instead.",
+    "ante": "",
+    "anu": "The usage of \"anu\" as a content word meaning \"choose\" remains controversial.",
+    "apeja": "According to jan Sonja, \"apeja\" never appeared in any pre-pu toki pona dictionary made by her and never promoted by her, instead it may have been \"just an experimental idea in a forum post\".",
+    "awen": "",
+    "e": "",
+    "en": "There are various analyses of the syntactic role of \"en\". Originally intended to be used as \"and\", it was changed (via poll in 2002) to just be used with \"head nouns\". One of the more recent analyses (including 2021's April Fools) treats \"en\" as a subject marker.",
+    "epiku": "",
+    "esun": "According to jan Sonja, \"esun was told [to her] by a taxi driver who spoke a language from the Akan family in West Africa\".",
+    "ijo": "",
+    "ike": "",
+    "ilo": "",
+    "insa": "",
+    "isipin": "",
+    "jaki": "",
+    "jami": "Often used for \"stim\".",
+    "jan": "There are two sides to the concept, \"sentient entity\" and \"homo sapiens\", which matters for whether to use the word in edge cases (i.e. aliens, humans turned into werewolves, etc). Which sense is more central to the word remains controversial.",
+    "jasima": "",
+    "jelo": "Some extend \"jelo\" to include lime green, but this usage is uncommon.",
+    "jo": "",
+    "jonke": "Coined in reference to the Untitled Goose Game fandom.",
+    "kala": "",
+    "kalama": "",
+    "kama": "",
+    "kamalawala": "The word is from a story called \"jan pi Kamalawala\". A character's name is described as \"nimi Jan pi Kama e Lawa Ala\", and a shortened version given as \"nimi Kamalawala\". jan Kipo is responsible for it becoming a word instead of just a name.",
+    "kapesi": "",
+    "kasi": "",
+    "ken": "",
+    "kepeken": "Whether \"kepeken\" should be used with or without \"e\" in a predicative position (meaning \"to use\") remains controversial.",
+    "kijetesantakalu": "Coined as an April Fools joke in 2009.",
+    "kiki": "The word is loaned from the 2001 Vilanyur S Ramachandran & Edward Hubbard version of Wolfgang Köhler's 1912 psycholinguistic experiment. The experiment studied sound symbolism on the words \"bouba\" and \"kiki\".",
+    "kili": "In post-ku 2021, metaphorical definitions for kili have been suggested, including but not limited to \"offspring\" and \"product\", and are moderately popular. It is not yet clear whether this will remain in use long-term.",
+    "kin": "In common usage (both before and after pu), \"a\" and \"kin\" are separate words, each with their own meaning. In pu, they are considered synonyms.\nUnderwent significant changes in usage in 2002, alongside \"en\" and (now obsolete) \"kan\".",
+    "kipisi": "",
+    "kiwen": "Coined in a poll in 2002.",
+    "ko": "The \"clinging form\" definition was elaborated to mean \"a shape or mass that sticks or clings; a clot, a thick or viscous lump, a clump that can be reshaped\".",
+    "kokosila": "In Esperanto, \"krokodili\" means \"to speak among Esperantists in a language besides Esperanto,\" and is an established bit of Esperanto culture.",
+    "kon": "",
+    "konwe": "Conway refers to John Horton Conway, creator of the cellular automaton Game of Life.\nkonwe's intended meaning extends beyond just \"living\" and \"life.\" It can be used to describe rocks or rivers or other nonliving things",
+    "ku": "For ways to buy a copy of the book, visit the official Toki Pona website.",
+    "kule": "in addition to its pu-definitions, kule is sometimes used to talk about more general kinds of categories, like type, kind, flavour, gender, etc.",
+    "kulijo": "",
+    "kulupu": "",
+    "kute": "",
+    "la": "",
+    "lanpan": "",
+    "lape": "",
+    "laso": "",
+    "lawa": "",
+    "leko": "",
+    "len": "",
+    "lete": "",
+    "li": "",
+    "lili": "",
+    "linja": "",
+    "linluwi": "",
+    "lipu": "",
+    "loje": "",
+    "lon": "",
+    "luka": "",
+    "lukin": "In common usage (both before and after pu), \"lukin\" and \"oko\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"oko\" at all, preferring \"lukin\" in all circumstances. The usage of \"alasa\" as a preverb meaning \"try to\" is more common than \"lukin\". In pu, only \"lukin\" has this meaning. A very common beginner mistake is treating \"lukin\" as if it means \"appearance\", due to the mistakenly equating the \"visual\" meaning as in \"pona lukin (visually good)\" to mean \"looks good\".",
+    "lupa": "",
+    "ma": "",
+    "majuna": "",
+    "mama": "",
+    "mani": "",
+    "meli": "",
+    "melome": "",
+    "meso": "",
+    "mi": "",
+    "mije": "",
+    "mijomi": "",
+    "misa": "",
+    "misikeke": "The word was used privately by jan Sonja up until November 2019, when she mentioned it in the ma pona pi toki pona discord server as a word she was experimenting with. It is believed the word was originally coined in 2007-2009 alongside pan, esun, apeja, monsuta, and pu, but this cannot be proven.",
+    "moku": "",
+    "moli": "",
+    "monsi": "",
+    "monsuta": "",
+    "mu": "",
+    "mulapisu": "",
+    "mun": "",
+    "musi": "",
+    "mute": "",
+    "n": "",
+    "namako": "In common usage (both before and after pu), \"sin\" and \"namako\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"namako\" at all, preferring \"sin\" in all circumstances.",
+    "nanpa": "",
+    "nasa": "",
+    "nasin": "",
+    "nena": "",
+    "ni": "",
+    "nimi": "",
+    "nimisin": "Mostly used in conversations in English. Likely was popularised by the :nimisin: emote in ma pona, which was originally used to notify Atawan (maintainer of \"nimi ale\") about newly coined words. In common speech, the meaning got extended to include most or all non-pu words, regardless if they were coined recently or not.",
+    "nja": "",
+    "noka": "In a 2002 poll, \"jalan\" was proposed to replace \"noka\". However, it failed to get enough votes. In pu, \"noka\" has the meaning of \"place that is down\". In common usage (both before and after pu), \"anpa\" has that meaning instead. noka had speculative and/or joking use for numbers, comparable to luka: ten, twenty, negative five.",
+    "o": "",
+    "ojuta": "",
+    "oke": "",
+    "oko": "In common usage (both before and after pu), \"lukin\" and \"oko\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"oko\" at all, preferring \"lukin\" in all circumstances, though some speakers do the opposite and use \"oko\" exclusively instead.",
+    "olin": "In english, \"love\" can be used to mean \"like a lot\", but in toki pona, \"olin\" doesn't work that way. It indicates an emotional connection or bond, not preference",
+    "omekapo": "Coined by jan Maliku in reference to the message \"o moku e kala pona\", which jan Sonja wrote on their copy of Toki Pona: The Language of Good during a Texas meetup.",
+    "ona": "Coined in a poll in 2002. Replaced \"iki\", which was deemed too similar to \"ike\". Other options in the poll included \"ipi\", as well as \"i\" in a previous poll.",
+    "open": "Some proficient speakers use open as a preverb that means \"start to,\" that goes along with the complimentary pini preverb \"to stop\"",
+    "owe": "",
+    "pakala": "",
+    "pake": "",
+    "pakola": "",
+    "pali": "",
+    "palisa": "",
+    "pan": "",
+    "pana": "",
+    "penpo": "Coined in reference to ma pona pi toki pona's \"tenpo pi toki pona taso\" event, shortening it to \"tenpo penpo\".",
+    "pi": "The usage of \"pi\" to mean \"of\" (marking a possessor) is heavily discouraged nowadays, preferring it to only be used for regrouping within phrases.",
+    "pika": "",
+    "pilin": "",
+    "pimeja": "",
+    "pini": "Some proficient speakers use pini as a preverb that means \"to stop,\" that goes along with the complimentary open preverb \"start to\"",
+    "pipi": "",
+    "po": "",
+    "poka": "",
+    "poki": "poki is sometimes used as \"category\" or to express types of things. One example is roles or groups, in discord chat contexts",
+    "pona": "",
+    "powe": "",
+    "pu": "For ways to buy a copy of the book, visit the official Toki Pona website.",
+    "puwa": "",
+    "sama": "",
+    "san": "More popular than the synonymous (and older) tuli.\nsan was also part of a set of 10 digit words created by jan Lenoka: lenke, jatu, ini, san, se, nun, loku, take, patu, kajo (0 through 9). All of these coinages except for san lack notability to be included in the main dictionary. They can be found in the sandbox.",
+    "seli": "In pu, definitions of seli are described as adjectives. ku's pu corrections clarify that these refer to nouns instead.",
+    "selo": "",
+    "seme": "",
+    "sewi": "",
+    "sijelo": "",
+    "sike": "",
+    "sin": "In common usage (both before and after pu), \"sin\" and \"namako\" are separate words, each with their own meaning. In pu, they are considered synonyms. Those who consider them synonyms typically don't use \"namako\" at all, preferring \"sin\" in all circumstances.",
+    "sina": "",
+    "sinpin": "",
+    "sitelen": "",
+    "soko": "",
+    "sona": "",
+    "soto": "",
+    "soweli": "",
+    "su": "This word was originally coined in ku as a reserved word for jan Sonja's future use. It was redefined upon the release of the first su book, making its status as a ku word debatable.",
+    "suli": "",
+    "suno": "",
+    "supa": "",
+    "sutopatikuna": "Coined by Alexandre Baudry in 2009 in response to jan Sonja coining \"kijetesantakalu\" as part of 2009's April Fools.",
+    "suwi": "",
+    "taki": "",
+    "tan": "",
+    "taso": "Some proficient speakers use taso as a connector between sentences (X taso Y), similar to \"X, but Y,\" as though taso behaved like la grammatically.",
+    "tawa": "",
+    "te": "May be paired with \"to\", or used on its own. It is unclear how accepted either approach is among te / to users.",
+    "teje": "",
+    "telo": "",
+    "tenpo": "",
+    "to": "May be paired with \"te\", or used on its own. It is unclear how accepted either approach is among te / to users.",
+    "toki": "",
+    "tomo": "",
+    "tonsi": "Widely regarded in the community to be a crucial addition to toki pona. Occasionally referred to as an \"honorary pu word\" to highlight its status, or equated to a pu word outright.",
+    "tu": "",
+    "unpa": "Also defined as \"have marital relations with\" in pu; removed due to potential confusion.",
+    "unu": "",
+    "usawi": "Originally, usawi also included \"technology so complex it's impossible to tell apart from magic\" in its meaning, but this meaning has been deprecated by the creator.",
+    "uta": "The dot in the \"uta\" sitelen pona is to distinguish luka-uta from moku.",
+    "utala": "",
+    "wa": "Sometimes analyzed as a variety of \"a\".",
+    "walo": "",
+    "wan": "",
+    "waso": "",
+    "wasoweli": "First used as the name for a species in a mod for Caves of Qud created by akesi kon Nalasuni. Later appeared in ku as exclusively part of a translation for \"penguin\".",
+    "wawa": "",
+    "weka": "",
+    "wekama": "",
+    "wile": "",
+    "wuwojiti": "May be seen not as a word in toki pona, but as a kind of memorisation tool in English to refer to the \"banned\" syllables. Occasionally extended to wuwojitinmanna to include the illegal consecutive nasal consonants.",
+    "yupekosi": "Coined as a random keystroke. It is presumed jan Sonja used \"y\" by mistake, but then made it part of the joke by adding \"nobody knows how to pronounce the y\"."
+  },
+  "definitions": {
+    "a": "(enfasi, emozione o conferma)",
+    "akesi": "animale non carino, rettile, anfibio",
+    "ala": "no, non, zero; [~ ala ~] (usato per domande si-no); nulla",
+    "alasa": "caccia, foraggio, ricerca, tentativo; (preverbo) provare, tentare",
+    "ale": "tutto, tutti, ogni, interezza, universo; (numero) cento",
+    "ali": "[forma alternativa di ale]",
+    "anpa": "giù, sotto, fondo; sconfitto, umile",
+    "ante": "diverso, differente, alterato; modificare, cambiare; altro; differenza",
+    "anu": "o | ALT scegliere, decidere",
+    "apeja": "colpa, vergogna, rifiuto, stigma, disgrazia; accusare, individuare, esporre, disonorare, imbarazzare",
+    "awen": "duraturo, mantenuto, protetto, sicuro, che aspetta, che resta; (pv.) continuare a, mantenere",
+    "e": "(davanti all'oggetto diretto)",
+    "en": "(tra più soggetti) | ALT (coordina i modificatori in una frase con pi o gli oggetti di una preposizione)",
+    "epiku": "epico, figo, fantastico, sorprendente",
+    "esun": "mercato, negozio, fiera, bazar, transazione commerciale",
+    "ijo": "cosa, oggetto, entità, essere, materia, fenomeno",
+    "ike": "cattivo, negativo; non essenziale, irrilevante | ALT complicato, complesso",
+    "ilo": "strumento, attrezzo, macchina, dispositivo",
+    "insa": "centro, contenuto, dentro, tra; organo interno, stomaco",
+    "isipin": "pensare, immaginare, credere, ricordare, richiamare; un pensiero, un'idea",
+    "jaki": "disgustoso, osceno, nauseabondo, tossico, sporco, insalubre",
+    "jami": "gustoso; suscitare o stimolare un'esperienza sensoriale positiva",
+    "jan": "essere umano, persona, qualcuno",
+    "jasima": "riflettere, risuonare, rispecchiare, essere all'estremità opposta/polare di",
+    "jelo": "giallo, giallastro",
+    "jo": "avere, portare, contenere, tenere",
+    "jonke": "oca, verso dell'oca",
+    "kala": "pesce, animale marino, creatura marina",
+    "kalama": "produrre un suono; recitare, pronunciare ad alta voce",
+    "kama": "arrivare; in arrivo, futuro, evocato; (preverbo) diventare, riuscire",
+    "kamalawala": "anarchia, insurrezione, rivolta, ribellione",
+    "kapesi": "marrone, grigio",
+    "kasi": "pianta, vegetazione; erba, foglia",
+    "ken": "potere, abilità, permesso; possibilità, forse; permettere; (preverbo) potere",
+    "kepeken": "usare, con, per mezzo di",
+    "kijetesantakalu": "qualsiasi animale della famiglia Procyonidae, come procioni, coatis, kinkajous, olingos, ringtail e cacomistles | ALT qualsiasi animale della superfamiglia Musteloidea, compresi procioni, donnole, lontre, puzzole e panda rossi",
+    "kiki": "appuntito, tagliente, angolo, punta, triangolare",
+    "kili": "frutto, verdura, fungo",
+    "kin": "{vedi a} | ALT infatti, pure, anche, come pure",
+    "kipisi": "dividere, tagliare, affettare, recidere; affilato",
+    "kiwen": "oggetto duro, metallo, roccia, pietra",
+    "ko": "semi-solido, per esempio impasto, polvere, melma, sabbia, terra, argilla; duttile, appiccicoso",
+    "kokosila": "parlare una lingua non Toki Pona in un ambiente in cui il Toki Pona è più appropriato",
+    "kon": "aria, respiro; essenza, spirito; realtà nascosta, agente invisibile",
+    "konwe": "animazione, vita, autonomia; essere autonomo, cosa vivente, organismo; vivo, animato, dinamico; animare, portare alla vita",
+    "ku": "interagire con il libro Toki Pona Dictionary (2021) di Sonja Lang",
+    "kule": "colore, pigmento; categoria, genere, sapore; colorato, vario",
+    "kulijo": "[interiezione] espressione casuale di apprezzamento o riconoscimento; figo, bene, ok",
+    "kulupu": "comunità, società, gruppo, nazione, tribù",
+    "kute": "orecchio, organo dell'udito; sentire, ascoltare, fare attenzione a, obbedire",
+    "la": "(particella) [segna ciò che precede come contesto di ciò che segue]",
+    "lanpan": "prendere, impadronirsi, catturare, ricevere, ottenere",
+    "lape": "dormire, riposare",
+    "laso": "blu, verde",
+    "lawa": "testa, mente; controllare, dirigere, guidare, condurre, possedere, pianificare, regolare, governare",
+    "leko": "quadrato, cubo, blocco o simili, come mattoni e scalini",
+    "len": "panno, vestiti, tessuto; coperto, nascosto, segreto, privato",
+    "lete": "freddo, fresco; non cotto, crudo",
+    "li": "(tra qualsiasi soggetto tranne mi da solo o sina da solo e il suo verbo; anche per introdurre un nuovo verbo per lo stesso soggetto)",
+    "lili": "poco, piccolo, breve; pochi; un po'; giovane",
+    "linja": "cosa lunga e flessibile; corda, capelli, corda, filo, filato | ALT linea, connessione",
+    "linluwi": "rete, internet, connessione; tessere, intrecciare, interconnettere",
+    "lipu": "oggetto piatto e pieghevole, per esempio carta, foglia, foglio; testo scritto, documento, per esempio libro, sito web, tavoletta d'argilla",
+    "loje": "rosso, rossastro",
+    "lon": "presente, esistente, reale, vero; (preposizione) situato, in, durante, nel contesto di",
+    "luka": "mano, braccio, arto tattile, arto prensile; prendere, interagire con, percepire con il tatto; (numero) cinque",
+    "lukin": "vedere, guardare, visualizzare, esaminare, leggere; visivo; occhio, organo della vista; (preverbo) provare",
+    "lupa": "porta, foro, orifizio, finestra",
+    "ma": "terra; all'aperto, mondo; paese, territorio; suolo",
+    "majuna": "vecchio, invecchiato, antico",
+    "mama": "genitore, antenato; creatore; custode, sostenitore",
+    "mani": "denaro, contanti, risparmi, ricchezza; grande animale domestico",
+    "meli": "woman, female, feminine person, wife, girlfriend",
+    "melome": "saffico, lesbica",
+    "meso": "mezzo, medio, mediocre; né l'uno né l'altro, né pienamente è né non è",
+    "mi": "Io, me, noi",
+    "mije": "man, male, masculine person, husband, boyfriend",
+    "mijomi": "gay",
+    "misa": "Glires o Eulipotyphla; ratto, topo, scoiattolo, coniglio, roditore; {~ suli} capibara",
+    "misikeke": "medicina, medico",
+    "moku": "mangiare, bere, consumare, ingoiare, ingerire",
+    "moli": "morto, morente",
+    "monsi": "indietro, dietro, posteriore",
+    "monsuta": "paura, timore; mostro, predatore; minaccia, pericolo",
+    "mu": "(rumore o comunicazione animale) | ALT (vocalizzazione non verbale)",
+    "mulapisu": "pizza",
+    "mun": "luna, corpo celeste, stella | ALT bagliore, luce incandescente, luce nel buio",
+    "musi": "artistico, divertente, frivolo, giocoso, ricreativo",
+    "mute": "molti, tanto, di più, assai, parecchi, moltissimo; quantità | ALT tre (o più), 20",
+    "n": "(indica pensiero, riflessione, riconoscimento, accordo o borbottio)",
+    "namako": "{vedi sin} | ALT abbellimento, spezia; extra, supplementare",
+    "nanpa": "(numero ordinale); numeri",
+    "nasa": "insolito, strano; sciocco; ubriaco, intossicato",
+    "nasin": "metodo, modo, dottrina, tradizione; percorso, strada, via",
+    "nena": "bozzo, pulsante, collina, montagna, naso, protuberanza",
+    "ni": "che, questo",
+    "nimi": "nome, parola",
+    "nimisin": "qualunque parola che non fa parte del pu; qualunque neologismo; qualunque parola meme",
+    "nja": "miagolio, verso felino",
+    "noka": "piede, gamba, organo di locomozione; fondo, parte inferiore",
+    "o": "Ehi! O! (vocativo, imperativo o ottativo)",
+    "ojuta": "adattamento del meme inglese \"ligma\", letteralmente \"o uta\" (lecca)",
+    "oke": "(riconoscimento o accettazione)",
+    "oko": "vedere, guardare, visualizzare, esaminare, leggere; visivo; occhio, organo della vista; (preverbo) provare",
+    "olin": "avere un grande legame emotivo con, per esempio affetto, apprezzamento, compassione, rispetto; relazioni platoniche, romantiche o familiari",
+    "omekapo": "addio, alla prossima, letteralmente \"o moku e kala pona\" (mangia del buon pesce)",
+    "ona": "lui, lei, esso, loro",
+    "open": "iniziare, cominciare; aprire; accendere",
+    "owe": "Orwelliano, totalitario, di o relativo al Grande Fratello (da 1984), antonimo di kamalawala",
+    "pakala": "danneggiato, rotto, rovinato, ferito, incasinato; errore",
+    "pake": "fermare, cessare, fermarsi; bloccare la strada, interrompere; impedire",
+    "pakola": "[ortografia errata di pakala]",
+    "pali": "lavoro, attività; creare, costruire, progettare; impegnarsi",
+    "palisa": "cosa lunga e dura; ramo, asta, bastone",
+    "pan": "cereale, grano; orzo, mais, avena, riso, frumento; pane, pasta",
+    "pana": "dare, inviare, emettere, fornire, mettere, rilasciare",
+    "penpo": "(equivalente a \"(pi) toki pona taso\")",
+    "pi": "(particella) [raggruppa le parole seguenti in un singolo modificatore per la parola precedente]",
+    "pika": "elettrico, elettronico, conduttivo, meccanico, online; elettricità, fulmine, tuono, rete",
+    "pilin": "esperire per esempio un'emozione, una sensazione, un tocco; cuore (fisico o emotivo)",
+    "pimeja": "nero, scuro, non illuminato",
+    "pini": "tempo fa, completato, finito, terminato, passato",
+    "pipi": "cimice, insetto, formica, ragno",
+    "po": "quattro",
+    "poka": "fianco, lato; vicino a, accanto a, nelle vicinanze | ALT insieme a (comitativo), di fianco a",
+    "poki": "contenitore, borsa, ciotola, scatola, tazza, armadio, cassetto, recipiente",
+    "pona": "buono, positivo, utile; amichevole, pacifico; semplice",
+    "powe": "irreale, falso, non veritiero; fingere; ingannare, raggirare",
+    "pu": "interagire con il libro Toki Pona: The Language of Good di Sonja Lang",
+    "puwa": "soffice, morbido, gommoso (qualcosa che può essere compresso e che cercherà di tornare alla sua forma originale)",
+    "sama": "stesso, simile; (aggettivo) pari, l'un l'altro; (preposizione) come, similmente a",
+    "san": "tre",
+    "seli": "fuoco; elemento di combustione, reazione chimica, fonte di calore",
+    "selo": "strato esteriore, per esempio pelle, buccia, guscio, corteccia; forma esteriore, contorno, confine",
+    "seme": "Cosa? Quale?",
+    "sewi": "area al di sopra, parte più alta, qualcosa di elevato; soggezione, divino, sacro, soprannaturale",
+    "sijelo": "corpo, forma, stato fisico, torso, sostanza, forma",
+    "sike": "cosa rotonda o circolare; palla, cerchio, ciclo, sfera, ruota; di un anno",
+    "sin": "nuovo, fresco; aggiuntivo, un altro, extra",
+    "sina": "tu, voi",
+    "sinpin": "faccia, davanti, anteriore, muro",
+    "sitelen": "immagine, figura, rappresentazione, simbolo, marchio, scrittura",
+    "soko": "fungo, funghi",
+    "sona": "conoscere, essere esperto, essere saggio, avere informazioni su; (pv.) sapere come",
+    "soto": "sinistra, lato sinistro, babordo",
+    "soweli": "animale, bestia, mammifero terrestre",
+    "su": "interagire con un libro facente parte della serie di libri di racconti illustrati il cui primo elemento è The Wonderful Wizard of Oz, prodotto da Sonja Lang",
+    "suli": "grande, pesante, grosso, lungo, alto; importante; adulto",
+    "suno": "sole; luce, luminosità, bagliore, radiosità, splendore; fonte di luce",
+    "supa": "superficie orizzontale, cosa su cui mettere o appoggiare qualcosa",
+    "sutopatikuna": "ornitorinco",
+    "suwi": "dolce, fragrante; carino, innocente, adorabile",
+    "taki": "appiccicoso, magnetico; legare, attrarre, attaccare, agganciare",
+    "tan": "(preposizione) da, a causa di, perché; causa, origine",
+    "taso": "ma, tuttavia, solo",
+    "tawa": "andare a, verso; per; dalla prospettiva di; muoversi | ALT (pv.) stando",
+    "te": "(particella che introduce una citazione)",
+    "teje": "destra, lato destro, dritta",
+    "telo": "acqua, liquido, fluido, sostanza umida; bevande",
+    "tenpo": "tempo, durata, momento, occasione, periodo, situazione",
+    "to": "(particella che chiude una citazione)",
+    "toki": "comunicare, dire, parlare, conversare, usare il linguaggio, pensare; ciao",
+    "tomo": "spazio interno; edificio, casa, abitazione, stanza",
+    "tonsi": "non-binario, genere non conforme | ALT trans, non-cisgender",
+    "tu": "due | ALT separare, tagliare",
+    "unpa": "avere rapporti sessuali con",
+    "unu": "viola",
+    "usawi": "magia, stregoneria; incantare; magico, soprannaturale, occulto, incomprensibile",
+    "uta": "bocca, labbra, gola, orefizio per l'alimentazione",
+    "utala": "combattere, sfidare, competere contro, lottare contro",
+    "wa": "[interiezione] indica soggezione o stupore",
+    "walo": "bianco, biancastro; chiaro, pallido",
+    "wan": "unico, unito; uno",
+    "waso": "uccello, creatura volante, animale alato",
+    "wasoweli": "animale con qualità sia di waso che di soweli",
+    "wawa": "forte, potente; fiducioso, sicuro; energico, intenso",
+    "weka": "assente, lontano, ignorato",
+    "wekama": "lasciare e ritornare, essere temporaneamente assente con l'aspettativa di ritornare",
+    "wile": "deve, bisogno, richiedere, dovrebbe, vuole, desidera",
+    "wuwojiti": "usare una o più delle sillabe non permesse wu, wo, ji, ti; infrangere le regole fonotattiche del toki pona",
+    "yupekosi": "comportarsi come George Lucas e rivedere i propri vecchi lavori creativi e in realtà renderli peggiori"
+  },
+  "etymology": {
+    "a": [
+      {
+        "language": "onomatopea"
+      }
+    ],
+    "akesi": [
+      {
+        "definition": "lucertola",
+        "language": "olandese"
+      }
+    ],
+    "ala": [
+      {
+        "definition": "no",
+        "language": "georgiano"
+      }
+    ],
+    "alasa": [
+      {
+        "definition": "cacciare, (letteralmente) alla caccia",
+        "language": "Acadian French"
+      }
+    ],
+    "ale": [
+      {
+        "definition": "tutto",
+        "language": "olandese"
+      }
+    ],
+    "ali": [
+      {
+        "definition": "tutto",
+        "language": "olandese"
+      }
+    ],
+    "anpa": [
+      {
+        "definition": "sotto",
+        "language": "Acadian French"
+      }
+    ],
+    "ante": [
+      {
+        "definition": "altro, diverso",
+        "language": "olandese"
+      }
+    ],
+    "anu": [
+      {
+        "definition": "o, oppure",
+        "language": "georgiano"
+      }
+    ],
+    "apeja": [
+      {
+        "definition": "vergogna, imbarazzo, disgrazia, disonore",
+        "language": "finlandese"
+      }
+    ],
+    "awen": [
+      {
+        "definition": "keep, care for, hold (in a particular state)",
+        "language": "olandese"
+      }
+    ],
+    "e": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "en": [
+      {
+        "definition": "e, ed",
+        "language": "olandese"
+      }
+    ],
+    "epiku": [
+      {
+        "definition": "epico",
+        "language": "francese"
+      }
+    ],
+    "esun": [
+      {
+        "language": "akan",
+        "definition": "al mercato"
+      }
+    ],
+    "ijo": [
+      {
+        "definition": "something",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(relative pronoun root)",
+        "language": "Romance"
+      }
+    ],
+    "ike": [
+      {
+        "definition": "bad, mean, wicked",
+        "language": "finlandese"
+      }
+    ],
+    "ilo": [
+      {
+        "definition": "tool",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(agent suffix)",
+        "language": "German"
+      }
+    ],
+    "insa": [
+      {
+        "definition": "inside, center, stomach",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "inside",
+        "language": "inglese"
+      }
+    ],
+    "isipin": [
+      {
+        "definition": "to think",
+        "language": "Tagalog"
+      }
+    ],
+    "jaki": [
+      {
+        "definition": "yucky",
+        "language": "inglese"
+      }
+    ],
+    "jami": [
+      {
+        "definition": "yummy",
+        "language": "inglese"
+      }
+    ],
+    "jan": [
+      {
+        "definition": "person",
+        "language": "Cantonese"
+      }
+    ],
+    "jasima": [
+      {
+        "definition": "to reflect, reverberate",
+        "language": "turco"
+      }
+    ],
+    "jelo": [
+      {
+        "definition": "yellow",
+        "language": "inglese"
+      }
+    ],
+    "jo": [
+      {
+        "definition": "have",
+        "language": "mandarino"
+      }
+    ],
+    "jonke": [
+      {
+        "definition": "hjönk",
+        "language": "onomatopea"
+      }
+    ],
+    "kala": [
+      {
+        "definition": "fish",
+        "language": "finlandese"
+      }
+    ],
+    "kalama": [
+      {
+        "definition": "noise (of the human voice)",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "kama": [
+      {
+        "definition": "event, arrive, happen, become, bring about, summon",
+        "language": "Tok Pisin"
+      }
+    ],
+    "kamalawala": [
+      {
+        "definition": "'arrival of no government', the beginning of anarchy",
+        "language": "toki pona"
+      }
+    ],
+    "kapesi": [
+      {
+        "definition": "brown, coffee (colour)",
+        "language": "Cantonese"
+      },
+      {
+        "definition": "brown, coffee (colour)",
+        "language": "mandarino"
+      }
+    ],
+    "kasi": [
+      {
+        "definition": "plant",
+        "language": "finlandese"
+      }
+    ],
+    "ken": [
+      {
+        "definition": "can",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "can",
+        "language": "inglese"
+      }
+    ],
+    "kepeken": [
+      {
+        "definition": "to use",
+        "language": "olandese"
+      }
+    ],
+    "kijetesantakalu": [
+      {
+        "definition": "kinkajou",
+        "language": "finlandese"
+      }
+    ],
+    "kiki": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "kili": [
+      {
+        "definition": "fruit",
+        "language": "georgiano"
+      }
+    ],
+    "kin": [
+      {
+        "definition": "too, also, still",
+        "language": "finlandese"
+      }
+    ],
+    "kipisi": [
+      {
+        "definition": "to cut (intransitive)",
+        "language": "Inuktitut"
+      }
+    ],
+    "kiwen": [
+      {
+        "definition": "stone (genitive case)",
+        "language": "finlandese"
+      }
+    ],
+    "ko": [
+      {
+        "definition": "cream, paste",
+        "language": "Cantonese"
+      }
+    ],
+    "kokosila": [
+      {
+        "definition": "to speak among Esperantists in a language other than Esperanto",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "crocodile",
+        "language": "Esperanto"
+      }
+    ],
+    "kon": [
+      {
+        "definition": "air, atmosphere, ambience, opinion",
+        "language": "mandarino"
+      }
+    ],
+    "konwe": [
+      {
+        "definition": "John Conway, creator of The Game of Life",
+        "language": "inglese"
+      },
+      {
+        "definition": "kon wile",
+        "language": "toki pona"
+      }
+    ],
+    "ku": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "kule": [
+      {
+        "definition": "color",
+        "language": "Acadian French"
+      }
+    ],
+    "kulijo": [
+      {
+        "definition": "coolio",
+        "language": "inglese"
+      }
+    ],
+    "kulupu": [
+      {
+        "definition": "group",
+        "language": "Tongan"
+      },
+      {
+        "definition": "group",
+        "language": "inglese"
+      }
+    ],
+    "kute": [
+      {
+        "definition": "listen",
+        "language": "Acadian French"
+      }
+    ],
+    "la": [
+      {
+        "definition": "(definite article)",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(feminine singular definite article)",
+        "language": "Romance"
+      },
+      {
+        "definition": "(proximal & topical suffix)",
+        "language": "Acadian French"
+      }
+    ],
+    "lanpan": [
+      {
+        "definition": "take, seize, grasp, receive",
+        "language": "Greek"
+      }
+    ],
+    "lape": [
+      {
+        "definition": "sleep",
+        "language": "olandese"
+      }
+    ],
+    "laso": [
+      {
+        "definition": "blue, inexperienced",
+        "language": "Welsh"
+      },
+      {
+        "definition": "green, blue",
+        "language": "Proto-Brythonic"
+      }
+    ],
+    "lawa": [
+      {
+        "definition": "head",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "leko": [
+      {
+        "definition": "Lego",
+        "language": "inglese"
+      },
+      {
+        "definition": "play well",
+        "language": "Danish"
+      },
+      {
+        "definition": "block, section",
+        "language": "finlandese"
+      }
+    ],
+    "len": [
+      {
+        "definition": "clothing",
+        "language": "Acadian French"
+      }
+    ],
+    "lete": [
+      {
+        "definition": "cold",
+        "language": "Acadian French"
+      },
+      {
+        "definition": "cold",
+        "language": "Old French"
+      }
+    ],
+    "li": [
+      {
+        "definition": "he",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "he",
+        "language": "Latin"
+      },
+      {
+        "definition": "he",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "he",
+        "language": "inglese"
+      }
+    ],
+    "lili": [
+      {
+        "definition": "small, little",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "small, little",
+        "language": "Ramoaaina"
+      }
+    ],
+    "linja": [
+      {
+        "definition": "line",
+        "language": "finlandese"
+      },
+      {
+        "definition": "line",
+        "language": "Old Swedish"
+      }
+    ],
+    "linluwi": [
+      {
+        "definition": "internet",
+        "language": "Welsh"
+      }
+    ],
+    "lipu": [
+      {
+        "definition": "flag, banner, ticket",
+        "language": "finlandese"
+      }
+    ],
+    "loje": [
+      {
+        "definition": "red (inflected)",
+        "language": "olandese"
+      }
+    ],
+    "lon": [
+      {
+        "definition": "at, in, on, (spacial particle)",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "along",
+        "language": "inglese"
+      }
+    ],
+    "luka": [
+      {
+        "definition": "hand, arm",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "lukin": [
+      {
+        "definition": "see, look at",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "look",
+        "language": "inglese"
+      },
+      {
+        "definition": "him",
+        "language": "inglese"
+      }
+    ],
+    "lupa": [
+      {
+        "definition": "loop",
+        "language": "Lojban"
+      },
+      {
+        "definition": "loop",
+        "language": "mandarino"
+      },
+      {
+        "definition": "loop",
+        "language": "inglese"
+      },
+      {
+        "definition": "loop",
+        "language": "Hindi"
+      },
+      {
+        "definition": "loop",
+        "language": "Arabic"
+      }
+    ],
+    "ma": [
+      {
+        "definition": "earth, land",
+        "language": "finlandese"
+      }
+    ],
+    "majuna": [
+      {
+        "definition": "old (not young)",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "bad",
+        "language": "Latin"
+      },
+      {
+        "definition": "young",
+        "language": "German"
+      },
+      {
+        "definition": "young",
+        "language": "francese"
+      }
+    ],
+    "mama": [
+      {
+        "definition": "father",
+        "language": "georgiano"
+      }
+    ],
+    "mani": [
+      {
+        "definition": "money",
+        "language": "inglese"
+      },
+      {
+        "definition": "livestock",
+        "language": "Proto-Germanic"
+      },
+      {
+        "definition": "cattle",
+        "language": "Latin"
+      }
+    ],
+    "meli": [
+      {
+        "definition": "woman, wife, feminine",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "pretty",
+        "language": "Tolai"
+      },
+      {
+        "definition": "Mary",
+        "language": "inglese"
+      }
+    ],
+    "melome": [
+      {
+        "definition": "women loving women",
+        "language": "toki pona"
+      }
+    ],
+    "meso": [
+      {
+        "definition": "middle",
+        "language": "Greek"
+      }
+    ],
+    "mi": [
+      {
+        "definition": "I, me",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "(1st person singular oblique)",
+        "language": "Romance"
+      }
+    ],
+    "mije": [
+      {
+        "definition": "man, husband",
+        "language": "finlandese"
+      }
+    ],
+    "mijomi": [
+      {
+        "definition": "men loving men",
+        "language": "toki pona"
+      }
+    ],
+    "misa": [
+      {
+        "definition": "mouse (diminutive)",
+        "language": "Ukrainian"
+      }
+    ],
+    "misikeke": [
+      {
+        "definition": "medicine, drug",
+        "language": "Ojibwe"
+      }
+    ],
+    "moku": [
+      {
+        "definition": "munching",
+        "language": "giapponese"
+      }
+    ],
+    "moli": [
+      {
+        "definition": "die",
+        "language": "Acadian French"
+      }
+    ],
+    "monsi": [
+      {
+        "definition": "my ass (vulgar)",
+        "language": "Acadian French"
+      }
+    ],
+    "monsuta": [
+      {
+        "definition": "monster",
+        "language": "giapponese"
+      },
+      {
+        "definition": "monster",
+        "language": "inglese"
+      }
+    ],
+    "mu": [
+      {
+        "language": "onomatopea"
+      }
+    ],
+    "mulapisu": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "mun": [
+      {
+        "definition": "moon",
+        "language": "inglese"
+      }
+    ],
+    "musi": [
+      {
+        "definition": "amuse, entertain",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "amuse, entertain",
+        "language": "francese"
+      }
+    ],
+    "mute": [
+      {
+        "definition": "a lot",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "a lot",
+        "language": "Latin"
+      }
+    ],
+    "n": [
+      {
+        "language": "onomatopea"
+      }
+    ],
+    "namako": [
+      {
+        "definition": "salt",
+        "language": "Hindi"
+      },
+      {
+        "definition": "salt",
+        "language": "Persian"
+      }
+    ],
+    "nanpa": [
+      {
+        "definition": "number",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "number",
+        "language": "inglese"
+      }
+    ],
+    "nasa": [
+      {
+        "definition": "dunderhead",
+        "language": "Tok Pisin"
+      }
+    ],
+    "nasin": [
+      {
+        "definition": "way, method",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "nena": [
+      {
+        "definition": "nose",
+        "language": "finlandese"
+      }
+    ],
+    "ni": [
+      {
+        "definition": "this",
+        "language": "Cantonese"
+      },
+      {
+        "definition": "(continuation of a state/action)",
+        "language": "Tai"
+      }
+    ],
+    "nimi": [
+      {
+        "definition": "name",
+        "language": "finlandese"
+      }
+    ],
+    "nimisin": [
+      {
+        "definition": "new word",
+        "language": "toki pona"
+      }
+    ],
+    "nja": [
+      {
+        "definition": "meow (onomatopoeia)",
+        "language": "giapponese"
+      }
+    ],
+    "noka": [
+      {
+        "definition": "foot, leg",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "o": [
+      {
+        "definition": "(vocative suffix)",
+        "language": "georgiano"
+      }
+    ],
+    "ojuta": [
+      {
+        "definition": "'lick my balls' (same as English 'ligma balls')",
+        "language": "toki pona"
+      }
+    ],
+    "oke": [
+      {
+        "definition": "okay",
+        "language": "inglese"
+      }
+    ],
+    "oko": [
+      {
+        "definition": "eye",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "olin": [
+      {
+        "definition": "I love",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "omekapo": [
+      {
+        "definition": "'eat a good fish', wishing somebody well",
+        "language": "toki pona"
+      }
+    ],
+    "ona": [
+      {
+        "definition": "she",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "open": [
+      {
+        "definition": "open",
+        "language": "inglese"
+      }
+    ],
+    "owe": [
+      {
+        "definition": "George Orwell, author of 1984",
+        "language": "inglese"
+      }
+    ],
+    "pakala": [
+      {
+        "definition": "accident",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "bugger up",
+        "language": "inglese"
+      }
+    ],
+    "pake": [
+      {
+        "definition": "block",
+        "language": "inglese"
+      }
+    ],
+    "pakola": [
+      {
+        "definition": "broken, damaged, harmed, destroyed",
+        "language": "toki pona"
+      }
+    ],
+    "pali": [
+      {
+        "definition": "do, make",
+        "language": "Esperanto"
+      }
+    ],
+    "palisa": [
+      {
+        "definition": "bat, rod, cane",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "pan": [
+      {
+        "definition": "bread",
+        "language": "Romance"
+      },
+      {
+        "definition": "bread",
+        "language": "giapponese"
+      },
+      {
+        "definition": "bread",
+        "language": "Portuguese"
+      }
+    ],
+    "pana": [
+      {
+        "definition": "put, set, place",
+        "language": "finlandese"
+      },
+      {
+        "definition": "give to each other",
+        "language": "Swahili"
+      }
+    ],
+    "penpo": [
+      {
+        "definition": "only toki pona",
+        "language": "toki pona"
+      }
+    ],
+    "pi": [
+      {
+        "definition": "of",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "belong",
+        "language": "inglese"
+      }
+    ],
+    "pika": [
+      {
+        "definition": "Pikachū, an electric Pokémon",
+        "language": "giapponese"
+      }
+    ],
+    "pilin": [
+      {
+        "definition": "feel",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "him",
+        "language": "inglese"
+      },
+      {
+        "definition": "him",
+        "language": "inglese"
+      }
+    ],
+    "pimeja": [
+      {
+        "definition": "dark",
+        "language": "finlandese"
+      }
+    ],
+    "pini": [
+      {
+        "definition": "finished, completed",
+        "language": "Acadian French"
+      },
+      {
+        "definition": "finish (perfective aspect)",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "finish",
+        "language": "inglese"
+      }
+    ],
+    "pipi": [
+      {
+        "definition": "bug",
+        "language": "Acadian French"
+      }
+    ],
+    "po": [
+      {
+        "definition": "quattro",
+        "language": "inglese"
+      }
+    ],
+    "poka": [
+      {
+        "definition": "side, flank (genitive)",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "poki": [
+      {
+        "definition": "box, female genitalia (vulgar)",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "box",
+        "language": "inglese"
+      }
+    ],
+    "pona": [
+      {
+        "definition": "good",
+        "language": "Esperanto"
+      }
+    ],
+    "powe": [
+      {
+        "definition": "not true",
+        "language": "Acadian French"
+      }
+    ],
+    "pu": [
+      {
+        "definition": "unworked wood, sincere, honest, inherent quality, simple",
+        "language": "mandarino"
+      },
+      {
+        "definition": "book",
+        "language": "inglese"
+      }
+    ],
+    "puwa": [
+      {
+        "definition": "fluffy things (onomatopoeia)",
+        "language": "giapponese"
+      }
+    ],
+    "sama": [
+      {
+        "definition": "same",
+        "language": "finlandese"
+      },
+      {
+        "definition": "same, alike",
+        "language": "Proto-Germanic"
+      },
+      {
+        "definition": "same",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "same",
+        "language": "inglese"
+      }
+    ],
+    "san": [
+      {
+        "definition": "tre",
+        "language": "giapponese"
+      },
+      {
+        "definition": "tre",
+        "language": "Cantonese"
+      },
+      {
+        "definition": "tre",
+        "language": "Cantonese"
+      }
+    ],
+    "seli": [
+      {
+        "definition": "hot",
+        "language": "georgiano"
+      }
+    ],
+    "selo": [
+      {
+        "definition": "skin, peel",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "peel, husk, shell",
+        "language": "German"
+      }
+    ],
+    "seme": [
+      {
+        "definition": "what, something",
+        "language": "mandarino"
+      }
+    ],
+    "sewi": [
+      {
+        "definition": "upwards",
+        "language": "georgiano"
+      }
+    ],
+    "sijelo": [
+      {
+        "definition": "body",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "sike": [
+      {
+        "definition": "circle",
+        "language": "inglese"
+      }
+    ],
+    "sin": [
+      {
+        "definition": "new, fresh",
+        "language": "mandarino"
+      }
+    ],
+    "sina": [
+      {
+        "definition": "tu, voi",
+        "language": "finlandese"
+      }
+    ],
+    "sinpin": [
+      {
+        "definition": "in front",
+        "language": "Cantonese"
+      }
+    ],
+    "sitelen": [
+      {
+        "definition": "paint",
+        "language": "olandese"
+      }
+    ],
+    "soko": [
+      {
+        "definition": "mushroom",
+        "language": "georgiano"
+      }
+    ],
+    "sona": [
+      {
+        "definition": "knowledge",
+        "language": "georgiano"
+      }
+    ],
+    "soto": [
+      {
+        "definition": "left side",
+        "language": "Swahili"
+      }
+    ],
+    "soweli": [
+      {
+        "definition": "beastly animal, lively, passionate",
+        "language": "georgiano"
+      }
+    ],
+    "su": [
+      {
+        "language": "a priori"
+      }
+    ],
+    "suli": [
+      {
+        "definition": "big, large, great",
+        "language": "finlandese"
+      }
+    ],
+    "suno": [
+      {
+        "definition": "sun",
+        "language": "Esperanto"
+      }
+    ],
+    "supa": [
+      {
+        "definition": "surface",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "surface",
+        "language": "Acadian French"
+      },
+      {
+        "definition": "surface",
+        "language": "inglese"
+      }
+    ],
+    "sutopatikuna": [
+      {
+        "definition": "platypus, (literally) strange beak",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "suwi": [
+      {
+        "definition": "sweet",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "sweet",
+        "language": "inglese"
+      }
+    ],
+    "taki": [
+      {
+        "definition": "the sound of two magnets hitting each other (onomatopoeia)",
+        "language": "coreano"
+      }
+    ],
+    "tan": [
+      {
+        "definition": "from",
+        "language": "Cantonese"
+      }
+    ],
+    "taso": [
+      {
+        "definition": "just, only, but, however",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "that’s all",
+        "language": "inglese"
+      }
+    ],
+    "tawa": [
+      {
+        "definition": "toward",
+        "language": "inglese"
+      }
+    ],
+    "te": [
+      {
+        "definition": "(quotative)",
+        "language": "giapponese"
+      }
+    ],
+    "teje": [
+      {
+        "definition": "right",
+        "language": "Welsh"
+      }
+    ],
+    "telo": [
+      {
+        "definition": "(some) water",
+        "language": "Acadian French"
+      }
+    ],
+    "tenpo": [
+      {
+        "definition": "time",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "time",
+        "language": "Latin"
+      }
+    ],
+    "to": [
+      {
+        "definition": "(quotative)",
+        "language": "giapponese"
+      }
+    ],
+    "toki": [
+      {
+        "definition": "talk",
+        "language": "Tok Pisin"
+      },
+      {
+        "definition": "talk",
+        "language": "inglese"
+      }
+    ],
+    "tomo": [
+      {
+        "definition": "house",
+        "language": "Esperanto"
+      },
+      {
+        "definition": "house",
+        "language": "Polish"
+      },
+      {
+        "definition": "house",
+        "language": "Latin"
+      },
+      {
+        "definition": "house",
+        "language": "Ancient Greek"
+      }
+    ],
+    "tonsi": [
+      {
+        "definition": "comrade (same will/purpose), LGBT+",
+        "language": "mandarino"
+      }
+    ],
+    "tu": [
+      {
+        "definition": "two",
+        "language": "inglese"
+      },
+      {
+        "definition": "two",
+        "language": "Esperanto"
+      }
+    ],
+    "unpa": [
+      {
+        "language": "onomatopea"
+      }
+    ],
+    "unu": [
+      {
+        "definition": "viola",
+        "language": "Malay-Indonesian"
+      }
+    ],
+    "usawi": [
+      {
+        "definition": "witchcraft, sorcery",
+        "language": "Swahili"
+      }
+    ],
+    "uta": [
+      {
+        "definition": "mouth",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "utala": [
+      {
+        "definition": "strike, hit, beat",
+        "language": "Serbo-Croatian"
+      }
+    ],
+    "wa": [
+      {
+        "language": "onomatopea"
+      }
+    ],
+    "walo": [
+      {
+        "definition": "white",
+        "language": "finlandese"
+      }
+    ],
+    "wan": [
+      {
+        "definition": "one",
+        "language": "inglese"
+      }
+    ],
+    "waso": [
+      {
+        "definition": "bird",
+        "language": "Acadian French"
+      }
+    ],
+    "wasoweli": [
+      {
+        "definition": "bird, flying creature",
+        "language": "toki pona"
+      },
+      {
+        "definition": "land animal, fuzzy creature",
+        "language": "toki pona"
+      }
+    ],
+    "wawa": [
+      {
+        "definition": "strong, powerful, thick",
+        "language": "finlandese"
+      }
+    ],
+    "weka": [
+      {
+        "definition": "away, gone",
+        "language": "olandese"
+      }
+    ],
+    "wekama": [
+      {
+        "definition": "'leave-arrive', to leave and come back",
+        "language": "toki pona"
+      }
+    ],
+    "wile": [
+      {
+        "definition": "want, desire",
+        "language": "olandese"
+      }
+    ],
+    "wuwojiti": [
+      {
+        "definition": "(sound)",
+        "language": "toki pona"
+      },
+      {
+        "definition": "(sound)",
+        "language": "toki pona"
+      },
+      {
+        "definition": "(sound)",
+        "language": "toki pona"
+      },
+      {
+        "definition": "(sound)",
+        "language": "toki pona"
+      }
+    ],
+    "yupekosi": [
+      {
+        "language": "a priori"
+      }
+    ]
+  },
+  "sp_etymology": {
+    "a": "exclamation radical + Latin lowercase letter A; radical from exclamation point (!), without the full stop at the bottom. compare o",
+    "akesi": "animal radical; pictogram of a lizard. radical represents eyes",
+    "ala": "X mark, a crosslinguistic symbol for negation",
+    "alasa": "pictogram of a bow and an arrow",
+    "ale": "infinity symbol (∞)",
+    "ali": "infinity symbol (∞)",
+    "anpa": "location radical + \"container\"; the latter perhaps from a truncated square for a general object (compare sinpin) or a container (compare poki). for the radical, see also how dots are used in blissymbols; compare blissymbol \"below\"",
+    "ante": "perhaps alteration from sama, or a combination of sama and ala. perhaps an ideogram representing a diversion of two lines",
+    "anu": "perhaps from mathematical symbol \"or\" (∨)",
+    "apeja": "",
+    "awen": "motion radical; legs facing against each other, implying standing",
+    "e": "",
+    "en": "from plus sign (+); compare blissymbol “and”.",
+    "epiku": "pona with emitters; [alternate] rotated ni",
+    "esun": "not from a currency symbol (sonja confirmed; said “i think that one is from Mikmaq” but couldn't find a mikmaq symbol similar to it).",
+    "ijo": "a circle, for a general object",
+    "ike": "pictogram of a frowning mouth. compare pona",
+    "ilo": "perhaps a pictogram of a hammer",
+    "insa": "location radical + “container”; compare blissymbol “in”",
+    "isipin": "",
+    "jaki": "a scribble",
+    "jami": "",
+    "jan": "head radical; pictogram of a person showing the shoulders",
+    "jasima": "",
+    "jelo": "color radical + suno",
+    "jo": "perhaps a pictogram of a person pointing at themself or holding something",
+    "jonke": "",
+    "kala": "pictogram of a fish",
+    "kalama": "“mouth” (or dotless uta) with emitters",
+    "kama": "motion radical; legs facing to the left. compare tawa and blissymbol “walk”",
+    "kamalawala": "circle-A, an anarchy symbol",
+    "kapesi": "",
+    "kasi": "pictogram of a sprout",
+    "ken": "perhaps from Latin letter K",
+    "kepeken": "hand modifier + ilo",
+    "kijetesantakalu": "a drawing of a raccoon with a tail",
+    "kiki": "",
+    "kili": "pictogram of a fruit, perhaps an apple",
+    "kin": "",
+    "kipisi": "",
+    "kiwen": "pictogram of a rock or a gem",
+    "ko": "pictogram of splashed goo",
+    "kokosila": "",
+    "kon": "ideogram; wavy lines to indicate the fluidity of gas. compare telo",
+    "konwe": "pictogram of a glider in Conway's Game of Life, a machine which moves across the game board.",
+    "ku": "pictogram of the front cover of “Toki Pona Dictionary”, depicting a jacket with a toki pona patch.",
+    "kule": "color radical; perhaps the horizontal line indicates the sense of “the concept itself”. or perhaps a pictogram of light passing through a prism (color radical)",
+    "kulijo": "",
+    "kulupu": "pictogram of a group consisting of three members represented by circles",
+    "kute": "pictogram of an ear. compare blissymbol “ear”",
+    "la": "perhaps related to blissymbol “later” and “ago”, or perhaps a parenthesis",
+    "lanpan": "",
+    "lape": "pictogram of a lying person",
+    "laso": "color radical + kasi",
+    "lawa": "head radical; perhaps the horizontal line for the same reason as in kule. alternatively perhaps a pictogram of a person wearing a cap",
+    "leko": "",
+    "len": "perhaps a pictogram of a piece of fabric",
+    "lete": "pictogram of a snowflake",
+    "li": "",
+    "lili": "ideogram showing smaller size compared to suli",
+    "linja": "pictogram of a string",
+    "linluwi": "",
+    "lipu": "pictogram of a sheet of paper. compare blissymbol “paper”",
+    "loje": "color radical + “mouth”",
+    "lon": "location radical above a line. compare blissymbol “over”",
+    "luka": "pictogram of a hand",
+    "lukin": "pictogram of an eye. compare blissymbol “eye”",
+    "lupa": "pictogram of a concave surface. compare nena",
+    "ma": "perhaps from modern astronomical symbol “earth” (⊕)",
+    "majuna": "",
+    "mama": "head radical; perhaps the smaller circle representing the child",
+    "mani": "a pictogram of a large domestic animal, such as a cow (sonja confirmed)",
+    "meli": "head radical with long hair",
+    "melome": "",
+    "meso": "",
+    "mi": "perhaps a hand pointing towards the speaker. compare sina and ona",
+    "mije": "head radical with perhaps wide shoulders. compare jan",
+    "mijomi": "",
+    "misa": "",
+    "misikeke": "",
+    "moku": "hand modifier + “mouth”",
+    "moli": "head radical; a dead person, represented by the crossed eyes",
+    "monsi": "location radical + rotate “container”. compare sinpin",
+    "monsuta": "visual representation of shaking as seen in cartoons",
+    "mu": "pictogram of a mammal",
+    "mulapisu": "",
+    "mun": "pictogram of a crescent moon. compare blissymbol “moon”",
+    "musi": "perhaps a pictogram of a smile with rosy cheeks or a lyre",
+    "mute": "ideogram consisting of three tally marks. compare wan and tu",
+    "n": "exclamation radical with the lowercase letter “n”",
+    "namako": "",
+    "nanpa": "from number sign (#). compare blissymbol “number”",
+    "nasa": "perhaps spiral representing “dizziness”, as can be commonly seen in Japanese manga and anime",
+    "nasin": "ideogram consisting of an arrow along a vertical line",
+    "nena": "pictogram of a convex surface. compare lupa",
+    "ni": "an arrow",
+    "nimi": "perhaps a pictogram of a nametag or sitelen pona cartouche",
+    "nimisin": "",
+    "nja": "",
+    "noka": "pictogram of a foot with an ankle",
+    "o": "exclamation radical + Latin lowercase letter O. compare a",
+    "ojuta": "",
+    "oke": "",
+    "oko": "eye from a side",
+    "olin": "two heart symbols (♡), perhaps to distinguish from pilin. [alternate] pilin with emitters",
+    "omekapo": "",
+    "ona": "perhaps a hand pointing sideways. compare mi and sina",
+    "open": "perhaps a pictogram of an opened container",
+    "owe": "lukin (or an eye) with emitters",
+    "pakala": "pictogram of a cracked object",
+    "pake": "",
+    "pakola": "",
+    "pali": "hand modifier + ijo",
+    "palisa": "pictogram of a stick",
+    "pan": "perhaps a pictogram of a grain crop",
+    "pana": "luka with emitters",
+    "penpo": "toki-pona with omnidirectional emitters",
+    "pi": "perhaps from tilted blissymbol “by”",
+    "pika": "",
+    "pilin": "from heart symbol (♡). compare blissymbol “feeling”",
+    "pimeja": "color radical; perhaps the cross representing the absence of light",
+    "pini": "perhaps a blocking wall",
+    "pipi": "animal radical; pictogram of a bug",
+    "po": "Arabic numeral 4",
+    "poka": "location radical + “container”",
+    "poki": "pictogram of a container",
+    "pona": "pictogram of a smiling mouth. compare ike",
+    "powe": "",
+    "pu": "pictogram of the cover of the book “Toki Pona: The Language of Good”. alternatively a semantic compound glyph of lipu and toki pona",
+    "puwa": "",
+    "sama": "from equal sign (=). compare blissymbol “same”",
+    "san": "",
+    "seli": "perhaps a pictogram of a lit campfire or a simplified pictogram of a fire",
+    "selo": "",
+    "seme": "from question mark (?). compare blissymbol “what”",
+    "sewi": "from arabic ١ّللَه‎ “allah”",
+    "sijelo": "perhaps a pictogram of a torso",
+    "sike": "two circles, perhaps to distinguish from ijo. alternatively outline of a thick empty circle",
+    "sin": "",
+    "sina": "perhaps a hand pointing towards the listener. compare mi and ona",
+    "sinpin": "location radical + rotate “container”. compare monsi",
+    "sitelen": "perhaps a representation of symbols on a piece of paper (lipu)",
+    "soko": "pictogram of a mushroom",
+    "sona": "lipu with emitters",
+    "soto": "",
+    "soweli": "animal radical; pictogram of a mammal",
+    "su": "pictogram of the front cover of The Wizard of Oz illustrated story book, depicting the yellow brick road from the story",
+    "suli": "ideogram showing bigger size compared to lili",
+    "suno": "pictogram of the sun",
+    "supa": "pictogram of a table. compare blissymbol “table”",
+    "sutopatikuna": "",
+    "suwi": "perhaps a pictogram of a smiling face",
+    "taki": "",
+    "tan": "a leaping arrow pointing from right to left, implying derivation or cause",
+    "taso": "from blissymbol “but”",
+    "tawa": "motion radical; legs facing to the right. compare kama and blissymbol “walk”",
+    "te": "",
+    "teje": "",
+    "telo": "pictogram of wave. compare blissymbol “water”",
+    "tenpo": "pictogram of a clock. compare blissymbol “time”",
+    "to": "",
+    "toki": "emitters + ijo or a general circle",
+    "tomo": "pictogram of a house. compare blissymbol “house”",
+    "tonsi": "",
+    "tu": "two tally marks. compare mute and wan",
+    "unpa": "perhaps a derivation of heart symbol (especially visible from the original drawing of the character), or a knot pattern implying intercourse, or perhaps a pictogram of a genitalia",
+    "unu": "",
+    "usawi": "nasa with emitters",
+    "uta": "“mouth” with a dot below",
+    "utala": "perhaps from crossed swords symbol (⚔️)",
+    "wa": "",
+    "walo": "color radical; perhaps the reverse of pimeja, the color radical cutting of the cross instead of vice versa",
+    "wan": "one tally mark or Indo-Arabic numeral 1, perhaps to make it more distinct",
+    "waso": "animal radical; pictogram of a bird",
+    "wasoweli": "",
+    "wawa": "perhaps a pictogram of a person with raised arms, to signify strength",
+    "weka": "“poof lines”; indicating the movement of something disappearing",
+    "wekama": "",
+    "wile": "perhaps from Latin letter W",
+    "wuwojiti": "",
+    "yupekosi": ""
+  }
+}
