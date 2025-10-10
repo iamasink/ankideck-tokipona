@@ -49,17 +49,27 @@ run setupfonts.py -->
 ## English
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-en.apkg  
 
-<!-- -->  
+---
+> [!NOTE]
+> These use English as a fallback for untranslated definitions, commentary, etc.
+---
+
+<!-- -->
+  
 
   
+## Dutch  
+(Nederlands) - `nl-NL`  
+Definitions: 100%, Commentary: 100%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nl.apkg  
+## Portuguese  
+(Português) - `pt-BR`  
+Definitions: 100%, Commentary: 100%  
+https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pt-BR.apkg  
 ## French  
 (Français) - `fr-FR`  
 Definitions: 99%, Commentary: 98%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-fr.apkg  
-## Dutch  
-(Nederlands) - `nl-NL`  
-Definitions: 99%, Commentary: 98%  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-nl.apkg  
 ## Polish  
 (Polski) - `pl-PL`  
 Definitions: 99%, Commentary: 98%  
@@ -104,10 +114,6 @@ https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona
 (Deutsch) - `de-DE`  
 Definitions: 90%, Commentary: 6%  
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-de.apkg  
-## Portuguese  
-(Português) - `pt-BR`  
-Definitions: 80%, Commentary: 40%  
-https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-pt-BR.apkg  
 ## Hebrew  
 (עברית) - `he-IL`  
 Definitions: 75%, Commentary: 47%  
