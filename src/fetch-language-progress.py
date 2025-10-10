@@ -1,7 +1,7 @@
 import requests
 
 project_id = 2
-token = "1addb5a9b8ee9e5080e879bb9cc8a896cc9fb4dd0aab60d6bac963f286d16685528e03279ad09f22"
+# token = "abc123"
 headers = {"Authorization": f"Bearer {token}"}
 
 # Get language metadata

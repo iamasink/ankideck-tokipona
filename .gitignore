@@ -4,3 +4,4 @@ scripts
 *.apkg
 wasona
 __pycache__/
+.env
