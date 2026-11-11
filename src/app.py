@@ -7,7 +7,6 @@ import genanki
 import logging
 import html
 import json
-import hashlib
 import os
 import random
 
@@ -50,18 +49,27 @@ def get_latest_usage(w):
 	return usage_data[latest_date]
 
 
+def load_translations(kind, lang, field):
+	with (BASE_DIR / "sona" / kind / "source" / f"{field}.toml").open("rb") as f:
+		source = tomllib.load(f)
+	path = BASE_DIR / "sona" / kind / "translations" / lang / f"{field}.toml"
+	if not path.exists():
+		return source
+	with path.open("rb") as f:
+		translated = tomllib.load(f)
+	return {key: translated.get(key) or value for key, value in source.items()}
+
+
 ids = []
 
 # update languages file
 GENERATED_DIR = BASE_DIR / "generated"
-WORDSDATA_DIR = GENERATED_DIR / "worddata"
 APKG_DIR = GENERATED_DIR / "apkg"
 
 LANGUAGE_FILE = BASE_DIR / "generated" / "languages.json"
 LANGUAGE_CONFIGFILE = BASE_DIR / "languageconfig.json"
 
 GENERATED_DIR.mkdir(parents=True, exist_ok=True)
-WORDSDATA_DIR.mkdir(parents=True, exist_ok=True)
 APKG_DIR.mkdir(parents=True, exist_ok=True)
 
 language_data = {}
@@ -269,7 +277,6 @@ for lang in language_data:
 			return genanki.guid_for("iamasink toki pona " + lang, self.fields[0])
 
 
-	DATA_FILE = WORDSDATA_DIR / f"worddata-{lang}.json"
  
 
 	AUDIO_SUBDIR = BASE_DIR / "ijo" / "kalama"
@@ -320,54 +327,17 @@ for lang in language_data:
  
 	lang_dir = SONA_DIR / "words" / "translations" / lang
  
-	lang_commentary_dir = lang_dir/"commentary.toml"
-	with open (lang_commentary_dir, "rb") as f :
-		lang_commentary = tomllib.load(f)
-	lang_definitions_dir = lang_dir/"definitions.toml"
-	with open (lang_definitions_dir, "rb") as f :
-		lang_definitions = tomllib.load(f)
-	lang_etymology_dir = lang_dir/"etymology.toml"
-	with open (lang_etymology_dir, "rb") as f :
-		lang_etymology = tomllib.load(f)
-	lang_sp_etymology_dir = lang_dir/"sp_etymology.toml"
-	with open (lang_sp_etymology_dir, "rb") as f :
-		lang_sp_etymology = tomllib.load(f)
-
- 
-	alldata = {
-		"word_list": word_list,
-		"commentary": lang_commentary,
-		"definitions": lang_definitions,
-		"etymology": lang_etymology,
-		"sp_etymology": lang_sp_etymology,
-	}
-	# print("alldata", alldata)
- 
-
-	def hash_data(data):
-		return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
-	# Load old data hash
-	if DATA_FILE.exists():
-		with DATA_FILE.open("r", encoding="utf-8") as f:
-			old_data = json.load(f)
-		# compare hash to see if changed
-		hashed_old = hash_data(old_data)
-		hashed_new = hash_data(alldata)
-		if hashed_old == hashed_new:
-			if not FORCE_CHANGE:
-				logger.info("Data unchanged.")
-				continue
-
-	# ensure folder exist
-	DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
-
-	# Save new data
-	with DATA_FILE.open("w", encoding="utf-8") as f:
-		logger.info("saving new data")
-		json.dump(alldata, f, ensure_ascii=False, indent=2)
-
-
-
+	lang_commentary = load_translations("words", lang, "commentary")
+	lang_definitions = load_translations("words", lang, "definition")
+	glyph_etymologies = load_translations("glyphs", lang, "etymology")
+	lang_sp_etymology = {}
+	for word, data in metadata.items():
+		etymologies = []
+		for glyph_id in data["glyph_ids"]:
+			etymology = glyph_etymologies.get(glyph_id, "")
+			if etymology not in etymologies:
+				etymologies.append(etymology)
+		lang_sp_etymology[word] = "\n".join(etymologies)
 
 
 	sorted_words = sorted(
@@ -423,9 +393,9 @@ for lang in language_data:
 		commentary = html.escape(lang_commentary[word])
 		glyph_etymology = html.escape(lang_sp_etymology[word])
 		
-		creator = html.escape(", ".join((wordmetadata["creator"])))
+		creator = html.escape(", ".join((wordmetadata["author"])))
 		coined_era = html.escape(wordmetadata["coined_era"])
-		coined_year = html.escape(wordmetadata["coined_year"])
+		coined_year = html.escape(wordmetadata["creation_date"])
   
 
 		origbook = wordmetadata["book"]
@@ -479,17 +449,7 @@ for lang in language_data:
 
 
 
-		ligatures = list(wordmetadata["representations"]["ligatures"])
-		# logger.info(ligatures)
-
-		processed = []
-		for lig in ligatures:
-			# logger.info("processing " + lig)
-			# If last char is not a digit, append “-1”
-			if (lig and lig[-1].isdigit()):
-				# add hyphen
-				lig = lig[0:-1] + "-" + lig[-1]
-			processed.append(lig)
+		processed = wordmetadata["glyph_ids"]
 
 		# logger.info("final ligatures: %s", processed)
 
