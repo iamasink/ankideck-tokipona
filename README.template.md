@@ -48,4 +48,9 @@ run setupfonts.py -->
 ## English
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-en.apkg  
 
+---
+> [!NOTE]
+> These use English as a fallback for untranslated definitions, commentary, etc.
+---
+
 <!-- -->
