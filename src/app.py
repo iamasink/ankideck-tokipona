@@ -274,7 +274,7 @@ for lang in language_data:
 	class MyNote(genanki.Note):
 		@property
 		def guid(self):
-			return genanki.guid_for("iamasink toki pona " + lang, self.fields[1]))
+			return genanki.guid_for("iamasink toki pona " + lang, self.fields[1])
 
 
  
