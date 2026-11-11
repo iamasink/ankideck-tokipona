@@ -35,13 +35,6 @@ Download the latest file below, and open in Anki by double-clicking it, dragging
 # todo
 
 - [ ] add extra card types?
-- [ ] fetch more updated translations?
-- [ ] use sona repo instead of linku api?
-
-<!-- 
-# setup fonts
-install fontforge
-run setupfonts.py -->
 
 
 # Downloads
@@ -49,10 +42,8 @@ run setupfonts.py -->
 ## English
 https://github.com/iamasink/ankideck-tokipona/releases/latest/download/toki-pona-deck-en.apkg  
 
----
-> [!NOTE]
-> These use English as a fallback for untranslated definitions, commentary, etc.
----
+
+Other languages use English as a fallback for untranslated definitions, commentary, etc.
 
 <!-- -->
   
