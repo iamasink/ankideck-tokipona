@@ -46,8 +46,6 @@ jobs:
         run: python src/app.py
         
 
-      - name: update readme
-        run: python src/fetch-language-progress.py
 
 
       # - name: git add
