@@ -154,7 +154,25 @@ my_model = genanki.Model(
 )
 
 # supported wasona langs https://wasona.com/translate/
-WASONA_LANGS = ["en", "de", "pl", "ru", "he"]
+WASONA_LANGS = {
+	"en": "en",
+	"cs": "cs",
+	"da": "da",
+	"de": "de",
+	"es": "es",
+	"fr": "fr",
+	"it": "it",
+	"hu": "hu",
+	"pl": "pl",
+	"pt": "pt",
+	"tl_l": "tl",
+	"ru": "ru",
+	"uk": "uk",
+	"he": "he",
+	"ar": "ar",
+	"th": "th",
+	"ja": "ja",
+}
 # order of word introduction from wasona https://wasona.com
 WASONA_WORDS = {
 	# "1":["mi", "ken", "jan", "kute", "nanpa", "kalama", "akesi",],
@@ -546,7 +564,7 @@ for lang in language_data:
 				mytags.append(lesson_tag)
 				word_lessons.append(lesson_num)
 
-		wasona_lang = lang if lang in WASONA_LANGS else "en"
+		wasona_lang = WASONA_LANGS.get(lang, "en")
 		if len(word_lessons) > 0:
 			if len(word_lessons) > 1:
 				links += "<br/>wasona lessons: "
