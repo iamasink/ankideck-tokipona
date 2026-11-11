@@ -1,7 +1,11 @@
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 project_id = 2
-# token = "abc123"
+token = os.environ["CROWDIN_TOKEN"]
 headers = {"Authorization": f"Bearer {token}"}
 
 # Get language metadata

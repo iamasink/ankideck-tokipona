@@ -2,3 +2,4 @@ requests
 genanki
 cairosvg
 lxml
+python-dotenv
