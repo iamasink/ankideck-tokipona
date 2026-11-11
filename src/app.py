@@ -88,7 +88,7 @@ else:
 	exit()
 
 resp = requests.get("https://api.linku.la/v1/languages")
-logger.info(f"Requested /languages endpoint, received status {resp.status_code}")
+# logger.info(f"Requested /languages endpoint, received status {resp.status_code}")
 resp.raise_for_status()
 apilanguages = resp.json() 
 logger.info(f"Got {len(apilanguages)} languages.")
@@ -246,24 +246,24 @@ for word in metadatafiles:
 	with open (METADATA_DIR / word, "rb") as f :
 		data = tomllib.load(f)
 		metadata[word_name] = data
-print("word list is ", word_list)
-print("metadata  is ", metadata)
+# print("word list is ", word_list)
+# print("metadata  is ", metadata)
 
 
 for lang in language_data:
 	if args.lang and lang != args.lang:
-		logger.info(f"skipping language {lang}")
+		# logger.info(f"skipping language {lang}")
 		continue
 
-	logger.info("lang: "+ lang)
+	# logger.info("lang: "+ lang)
 	langinfo = language_data[lang]
 	langconfig = language_config_data[lang]
 
-	logger.info("langinfo: " + str(langinfo))
+	# logger.info("langinfo: " + str(langinfo))
 	enabled = langconfig.get("enabled", False)
 	
 	if (not enabled):
-		logger.info(f"skipping disabled language ({langinfo["name"]["en"]})")
+		# logger.info(f"skipping disabled language ({langinfo["name"]["en"]})")
 		continue
 	
 	langid = langconfig["id"]
@@ -317,7 +317,7 @@ for lang in language_data:
 
 	my_package = genanki.Package(my_deck)
 
-	logger.info("Fetching words with full info...")
+	# logger.info("Fetching words with full info...")
 
 	# metadata = sona/words/metadata/[word].toml
 	# commentary = sona/words/translations/[lang]/commentary.toml -> [word:]
@@ -545,7 +545,7 @@ for lang in language_data:
 
 
 		my_deck.add_note(note)
-		logger.debug(f"Added note: {word}")
+		# logger.debug(f"Added note: {word}")
 
 	# Write out the .apkg file
 	output_file = APKG_DIR / f"toki-pona-deck-{lang}.apkg"
